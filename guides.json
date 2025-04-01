@@ -1,0 +1,37 @@
+[{"name":"Primeros pasos","repo":"gpfernandezflorio/curso-fundamentos",
+  "exercises": [
+    { "id":"1.1", "name": "Limpiar la cruz roja",
+      "path":"Proyectos/PrimerosPasos/Limpiar la cruz roja"
+    },
+    { "id":"1.2", "name": "Víbora de bolitas, horizontal",
+      "path":"Proyectos/PrimerosPasos/Víbora de bolitas, horizontal"
+    }
+  ]
+},{"name":"Programas más complejos","repo":"gpfernandezflorio/curso-fundamentos",
+  "exercises": [
+    { "id":"2.1", "name": "La gran aventura del mar encantado",
+      "path":"Proyectos/ProgramasMasComplejos/La gran aventura del mar encantado"
+    },
+    { "id":"2.2", "name": "Reparando la nave",
+      "path":"Proyectos/ProgramasMasComplejos/Reparando la nave"
+    }
+  ]
+},{"name":"Quitando la vestimenta","repo":"gpfernandezflorio/curso-fundamentos",
+  "exercises": [
+    { "id":"3.1", "name": "El docente",
+      "path":"Proyectos/QuitandoLaVestimenta/El docente"
+    },
+    { "id":"3.2", "name": "El granjero",
+      "path":"Proyectos/QuitandoLaVestimenta/El granjero"
+    },
+    { "id":"3.3", "name": "El docente, el granjero y las bolitas",
+      "path":"Proyectos/QuitandoLaVestimenta/El docente, el granjero y las bolitas"
+    },
+    { "id":"3.4", "name": "El alien toca botón",
+      "path":"Proyectos/QuitandoLaVestimenta/El alien toca botón"
+    },
+    { "id":"3.5", "name": "Armamos 'El alien toca botón'",
+      "path":"Proyectos/QuitandoLaVestimenta/Armamos 'El alien toca botón'"
+    }
+  ]
+}]

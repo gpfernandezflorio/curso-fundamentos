@@ -1,0 +1,62 @@
+name: Sembrando tomates
+rules:
+  - image: ParcelaAntes-conGranjero.png
+    when:
+      black: 2
+      blue: 0
+      green: 0
+      red: 0
+  - image: ParcelaAntes.png
+    when:
+      black: 0
+      blue: 0
+      green: 0
+      red: 0
+  - image: ParcelaYSiembra-conGranjero.png
+    when:
+      black: 2
+      blue: 0
+      green: 1
+      red: 0
+  - image: ParcelaYSiembra.png
+    when:
+      black: 0
+      blue: 0
+      green: 1
+      red: 0
+  - image: ParcelaYTomates-conGranjero.png
+    when:
+      black: 2
+      blue: 1
+      green: 0
+      red: 1
+  - image: ParcelaYTomates.png
+    when:
+      black: 0
+      blue: 1
+      green: 0
+      red: 1
+  - image: ParcelaCosechada-conGranjero.png
+    when:
+      black: 2
+      blue: 1
+      green: 0
+      red: 0
+  - image: ParcelaCosechada.png
+    when:
+      black: 0
+      blue: 1
+      green: 0
+      red: 0
+  - image: Granero-conGranjero.png
+    when:
+      black: 3
+      blue: 0
+      green: 0
+      red: 0
+  - image: Granero.png
+    when:
+      black: 1
+      blue: 0
+      green: 0
+      red: 0

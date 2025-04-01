@@ -1,0 +1,98 @@
+name: Reparando la nave
+rules:
+  - image: Fondo.png
+    when:
+      black: 0
+      blue: 0
+      green: 0
+      red: 0
+  - image: MarcianoSolo.png
+    when:
+      black: 0
+      blue: 0
+      green: 1
+      red: 0
+  - image: MarcianoConCarbon.png
+    when:
+      black: 0
+      blue: 0
+      green: 2
+      red: 0
+  - image: MarcianoConHierro.png
+    when:
+      black: 0
+      blue: 0
+      green: 3
+      red: 0
+  - image: CarbonSolo.png
+    when:
+      black: '*'
+      blue: 0
+      green: 0
+      red: 0
+  - image: CarbonYMarcianoSolo.png
+    when:
+      black: '*'
+      blue: 0
+      green: 1
+      red: 0
+  - image: CarbonYMarcianoConCarbon.png
+    when:
+      black: '*'
+      blue: 0
+      green: 2
+      red: 0
+  - image: CarbonYMarcianoConHierro.png
+    when:
+      black: '*'
+      blue: 0
+      green: 3
+      red: 0
+  - image: HierroSolo.png
+    when:
+      black: 0
+      blue: '*'
+      green: 0
+      red: 0
+  - image: HierroYMarcianoSolo.png
+    when:
+      black: 0
+      blue: '*'
+      green: 1
+      red: 0
+  - image: HierroYMarcianoConCarbon.png
+    when:
+      black: 0
+      blue: '*'
+      green: 2
+      red: 0
+  - image: HierroYMarcianoConHierro.png
+    when:
+      black: 0
+      blue: '*'
+      green: 3
+      red: 0
+  - image: NaveSola.png
+    when:
+      black: 0
+      blue: 0
+      green: 0
+      red: '*'
+  - image: NaveYMarcianoSolo.png
+    when:
+      black: 0
+      blue: 0
+      green: 1
+      red: '*'
+  - image: NaveYMarcianoConCarbon.png
+    when:
+      black: 0
+      blue: 0
+      green: 2
+      red: '*'
+  - image: NaveYMarcianoConHierro.png
+    when:
+      black: 0
+      blue: 0
+      green: 3
+      red: '*'

@@ -1,0 +1,101 @@
+/*
+   REPRESENTACIÓN:
+     * el marciano se representa con bolitas verdes
+		- 1 bolita, marciano con las manos libres
+		- 2 bolitas, marciano con carbón
+		- 3 bolitas, marciano con hierro
+	 * el carbón se representa con bolitas negras
+	    - 1 bolita por cada unidad de carbón
+	 * el hierro se representa con bolitas azules
+	    - 1 bolita por cada unidad de hierro
+	 * la nave se representa con bolitas rojas
+	    - 1 bolita roja, nave sin reparar
+		- 7 bolitas rojas, nave completamente reparada
+		- de 2 a 6 bolitas rojas, nave parcialmente reparada
+*/
+
+/*@ATTRIBUTE@PROPÓSITO@
+      * mover al marciano un lugar en la 
+	    dirección dada dejando el cabezal 
+		sobre el marciano@*/
+/*@ATTRIBUTE@PRECONDICIONES@
+      * el marciano está en la celda actual
+	  * hay una celda en la dirección dada@*/
+procedure MoverMarcianoAl_(dirección) {
+  n := nroBolitas(Verde)
+  TypeCheck(dirección, Norte, "`MoverAlMarcianoAl_` espera una dirección y no %1")
+  if (not puedeMover(dirección)) { BOOM("El marciano se cae si va en esa dirección") }
+  if (n==0)                      { BOOM("El marciano no está en esta celda")         }
+  repeat (n) { Sacar(Verde) }
+  Mover(dirección)
+  repeat (n) { Poner(Verde) }
+}
+
+/*@ATTRIBUTE@PROPÓSITO@tomar una unidad de carbón de la celda actual@*/
+/*@ATTRIBUTE@PRECONDICIONES@
+	  * el marciano está en la celda actual
+	    y hay al menos un carbón en ella
+	  * el marciano no está cargando nada
+@*/
+procedure AgarrarCarbón() {
+  if (not hayBolitas(Verde))  { BOOM("El marciano no está en esta celda") }
+  if (not hayBolitas(Negro))  { BOOM("No hay carbón en este lugar") }
+  if (nroBolitas(Verde) /= 1) { BOOM("Ya estoy cargando algo") }
+  Sacar(Negro)
+  Poner(Verde)
+}
+
+/*@ATTRIBUTE@PROPÓSITO@tomar una unidad de hierro de la celda actual@*/
+/*@ATTRIBUTE@PRECONDICIONES@
+	  * el marciano está en la celda actual
+	    y hay al menos un hierro en ella
+	  * el marciano no está cargando nada
+@*/
+procedure AgarrarHierro() {
+  if (not hayBolitas(Verde))  { BOOM("El marciano no está en esta celda") }
+  if (not hayBolitas(Azul))   { BOOM("No hay hierro en este lugar") }
+  if (nroBolitas(Verde) /= 1) { BOOM("Ya estoy cargando algo") }
+  Sacar(Azul)
+  Poner(Verde)
+  Poner(Verde)
+}
+
+/*@ATTRIBUTE@PROPÓSITO@dejar una unidad de carbón en la nave@*/
+/*@ATTRIBUTE@PRECONDICIONES@
+	  * el marciano y la nave están en la celda actual
+	  * el marciano tiene un carbón
+@*/
+procedure PonerCarbónEnLaNave() {
+  if (not hayBolitas(Verde))  { BOOM("El marciano no está en esta celda") }
+  if (not hayBolitas(Rojo))   { BOOM("No estoy en la nave") }
+  if (nroBolitas(Verde) /= 2) { BOOM("No tengo carbón") }
+  Sacar(Verde)
+  Poner(Rojo)
+}
+
+/*@ATTRIBUTE@PROPÓSITO@dejar una unidad de hierro en la nave@*/
+/*@ATTRIBUTE@PRECONDICIONES@
+	  * el marciano y la nave están en la celda actual
+	  * el marciano tiene un hierro
+@*/
+procedure PonerHierroEnLaNave() {
+  if (not hayBolitas(Verde))  { BOOM("El marciano no está en esta celda") }
+  if (not hayBolitas(Rojo))   { BOOM("No estoy en la nave") }
+  if (nroBolitas(Verde) /= 3) { BOOM("No tengo hierro") }
+  Sacar(Verde)
+  Sacar(Verde)
+  Poner(Rojo)
+}
+
+/*@ATTRIBUTE@PROPÓSITO@hacer que el marciano se vaya en la nave@*/
+/*@ATTRIBUTE@PRECONDICIONES@
+	  * el marciano y la nave están en la celda actual
+	  * la nave está completamente reparada
+@*/
+procedure VolverACasa() {
+  if (nroBolitas(Rojo) == 0)  { BOOM("No estoy en la nave") }
+  if (nroBolitas(Rojo) /= 5)  { BOOM("La nave no está lista") }
+  if (nroBolitas(Verde) /= 1) { BOOM("No estoy listo para manejar la nave") }
+  Sacar(Verde)
+  repeat (5) { Sacar(Rojo) }
+}

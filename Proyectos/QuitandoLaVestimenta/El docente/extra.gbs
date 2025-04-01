@@ -1,0 +1,60 @@
+procedure IrAlPróximoBanco() 
+ {
+   AuxSacarCursor()
+   AuxPasarASiguienteCelda() 
+   AuxPonerCursor()
+ }
+
+procedure EntregarCaramelo() {
+   if (nroBolitas(Negro) == 2) 
+          { Poner(Verde) } 
+     else { BOOM("No es lugar para entregar un caramelo") } 
+}
+
+procedure RecogerEnvoltorio() {
+    if (hayBolitas(Rojo)) 
+          { Sacar(Rojo) } 
+     else { BOOM("No hay envoltorio para recoger") } }
+
+procedure ComerCaramelos() {
+    while (auxHaySiguienteCelda()) {
+        AuxPasarASiguienteCelda()
+        AuxCambiarVerdePorAzulYRoja() 
+    }
+    IrAlBorde(Oeste); IrAlBorde(Sur)
+}
+
+procedure IrAlOrigen() 
+  { 
+    AuxSacarCursor()   
+    IrAlBorde(Oeste); IrAlBorde(Sur) 
+    AuxPonerCursor()
+  }
+
+procedure AuxSacarCursor() { 
+  if (nroBolitas(Negro) < 2) { BOOM("No hay suficientes bolitas negras") }
+  repeat(2) { Sacar(Negro) } 
+}
+
+procedure AuxPonerCursor() { 
+  if (nroBolitas(Negro) >= 2) { BOOM("Ya hay suficientes bolitas negras") }
+  repeat(2) { Poner(Negro) } 
+}
+
+procedure AuxCambiarVerdePorAzulYRoja() { 
+    if (hayBolitas(Verde)) 
+            { Sacar(Verde); Poner(Azul); Poner(Rojo) } 
+       else { BOOM("No se pueden cambiar las bolitas verdes por rojas si no están todas") } 
+}       
+
+function auxHaySiguienteCelda() 
+    { return (puedeMover(Este) || puedeMover(Norte)) }
+
+procedure AuxPasarASiguienteCelda() {
+    if (puedeMover(Este)) 
+         { Mover(Este) } 
+    else { if (puedeMover(Norte))
+                { Mover(Norte) IrAlBorde(Oeste) } 
+           else { BOOM("Se terminaron las celdas y no puedo pasar a la siguiente") }
+         }
+}

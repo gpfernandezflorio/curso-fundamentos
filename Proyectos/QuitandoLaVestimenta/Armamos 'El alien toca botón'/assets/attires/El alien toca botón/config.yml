@@ -1,0 +1,32 @@
+name: El alien toca botón
+rules:
+  - image: Fondo.png
+    when:
+      black: 0
+      blue: 0
+      green: 0
+      red: 0
+  - image: AlienSolo.png
+    when:
+      black: 0
+      blue: 0
+      green: 1
+      red: 0
+  - image: BotonSolo.png
+    when:
+      black: 0
+      blue: 0
+      green: 0
+      red: 2
+  - image: AlienYBoton.png
+    when:
+      black: 0
+      blue: 0
+      green: 1
+      red: 2
+  - image: AlienYBotonApretado.png
+    when:
+      black: 0
+      blue: 0
+      green: 1
+      red: 1
