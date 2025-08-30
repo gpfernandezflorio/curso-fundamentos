@@ -34,4 +34,16 @@
       "path":"Proyectos/QuitandoLaVestimenta/Armamos 'El alien toca botón'"
     }
   ]
+},{"name":"Código Morse","repo":"gpfernandezflorio/curso-fundamentos",
+  "exercises": [
+    { "id":"4.1", "name": "Código Morse",
+      "path":"Proyectos/Morse/Morse"
+    }
+  ]
+},{"name":"Rayuela","repo":"gpfernandezflorio/curso-fundamentos",
+  "exercises": [
+    { "id":"5.1", "name": "Rayuela",
+      "path":"Proyectos/Rayuela/Rayuela"
+    }
+  ]
 }]

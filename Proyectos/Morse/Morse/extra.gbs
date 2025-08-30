@@ -1,0 +1,131 @@
+procedure SonidoDurante_Milisegundos(n) {
+    if (hayBolitas(Rojo) || hayBolitas(Negro)) {
+        AuxPasar()
+    }
+    repeat (n) {Poner(Azul)}
+}
+procedure SilencioDurante_Milisegundos(n) {
+    if (n>=700) {
+        if (hayBolitas(Negro)) {AuxPasarSiSePuede()}
+        AuxPasarSiSePuede()
+    } else {
+        if (n>=300) {
+            AuxPonerLetra()
+        } else {
+            if (n>=100) {
+                AuxPonerSímbolo()
+            }
+        }
+    }
+}
+
+procedure AuxPasar() {
+    if (puedeMover(Este)) {
+        Mover(Este)
+    } else {
+        if (puedeMover(Sur)) {
+            Mover(Sur)
+            IrAlBorde(Oeste)
+        } else {
+            BOOM("Se acabó el espacio")
+        }
+    }
+}
+
+procedure AuxPasarSiSePuede() {
+    if (puedeMover(Este)) {
+        Mover(Este)
+    } else {
+        if (puedeMover(Sur)) {
+            Mover(Sur)
+            IrAlBorde(Oeste)
+        }
+    }
+}
+
+procedure AuxPonerLetra() {
+    símbolos := [auxSímboloActual()]
+    while(auxHaySímboloAlOeste()) {
+        repeat(nroBolitas(Rojo)) {Sacar(Rojo)} // Sacar símbolo actual
+        Mover(Oeste)
+        símbolos := [auxSímboloActual()] ++ símbolos
+    }
+    repeat(nroBolitas(Rojo)) {Sacar(Rojo)} // Sacar símbolo actual
+    repeat(auxLetraDeSímbolos(símbolos)) {Poner(Negro)}
+}
+
+function auxSímboloActual() {
+    return (choose "Punto" when (nroBolitas(Rojo) == 1)
+                   "Raya" when (nroBolitas(Rojo) == 2)
+                   "Nada" otherwise
+    )
+}
+
+function auxHaySímboloAlOeste() {
+    return (puedeMover(Oeste) && auxHaySímboloEnOeste())
+}
+
+function auxHaySímboloEnOeste() {
+    Mover(Oeste)
+    return (hayBolitas(Rojo))
+}
+
+procedure AuxPonerSímbolo() {
+    s := nroBolitas(Azul)
+    repeat(s) {Sacar(Azul)}
+    if (s >= 300) {
+        Poner(Rojo)
+        Poner(Rojo)
+    } else {
+        if (s >= 100) {
+            Poner(Rojo)
+        }
+    }
+}
+
+function auxLetraDeSímbolos(símbolos) {
+    return (choose 1 when (símbolos == ["Punto","Raya"]) // A
+                2 when (símbolos == ["Raya","Punto","Punto","Punto"]) // B
+                3 when (símbolos == ["Raya","Punto","Raya","Punto"]) // C
+                4 when (símbolos == ["Raya","Punto","Punto"]) // D
+                5 when (símbolos == ["Punto"]) // E
+                6 when (símbolos == ["Punto","Punto","Raya","Punto"]) // F
+                7 when (símbolos == ["Raya","Raya","Punto"]) // G
+                8 when (símbolos == ["Punto","Punto","Punto","Punto"]) // H
+                9 when (símbolos == ["Punto","Punto"]) // I
+                10 when (símbolos == ["Punto","Raya","Raya","Raya"]) // J
+                11 when (símbolos == ["Raya","Punto","Raya"]) // K
+                12 when (símbolos == ["Punto","Raya","Punto","Punto"]) // L
+                13 when (símbolos == ["Raya","Raya"]) // M
+                14 when (símbolos == ["Raya","Punto"]) // N
+                15 when (símbolos == ["Raya","Raya","Raya"]) // O
+                16 when (símbolos == ["Punto","Raya","Raya","Punto"]) // P
+                17 when (símbolos == ["Raya","Raya","Punto","Raya"]) // Q
+                18 when (símbolos == ["Punto","Raya","Punto"]) // R
+                19 when (símbolos == ["Punto","Punto","Punto"]) // S
+                20 when (símbolos == ["Raya"]) // T
+                21 when (símbolos == ["Punto","Punto","Raya"]) // U
+                22 when (símbolos == ["Punto","Punto","Punto","Raya"]) // V
+                23 when (símbolos == ["Punto","Raya","Raya"]) // W
+                24 when (símbolos == ["Raya","Punto","Punto","Raya"]) // X
+                25 when (símbolos == ["Raya","Punto","Raya","Raya"]) // Y
+                26 when (símbolos == ["Raya","Raya","Punto","Punto"]) // Z
+                0 otherwise
+    )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

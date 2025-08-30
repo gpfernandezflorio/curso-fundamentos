@@ -1,0 +1,38 @@
+library:
+  visible: false
+source:
+  visible: true
+  percentage: 0.6096019686544343
+board:
+  visible_edition: false
+  collapse_toolbox: false
+  user_permissions:
+    can_change_initial_board: false
+    can_change_initial_board_source: false
+    can_edit_board: false
+    can_view_size_section: false
+    can_view_attire_section: false
+    can_toggle_visibility: false
+  active: 1
+  initial_board_source: selected
+execution_speed:
+  user_permissions:
+    can_change_speed: true
+  active: high
+attire:
+  user_permissions:
+    can_toggle_visibility: false
+  visible: true
+  active: Morse
+initialDescription: false
+link: ''
+blocks:
+  visible:
+    - ProcedimientosPrimitivos
+    - MisProcedimientos
+    - Numero
+    - DefinicionDeProcedimientoSimple
+  disabled: []
+activity:
+  creation_mode: advanced
+name: Morse

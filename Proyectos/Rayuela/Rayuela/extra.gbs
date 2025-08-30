@@ -1,0 +1,46 @@
+procedure Avanzar_Pasos(k) {
+    repeat(k) {
+        Sacar(Azul)
+        if (hayBolitas(Verde)) {
+            Sacar(Verde)
+            Mover(Norte)
+            Poner(Verde)
+        } else {
+            Mover(Norte)
+        }
+        Poner(Azul)
+    }
+}
+procedure Retroceder_Pasos(k) {
+    repeat(k) {
+        Sacar(Azul)
+        if (hayBolitas(Verde)) {
+            Sacar(Verde)
+            Mover(Sur)
+            Poner(Verde)
+        } else {
+            Mover(Sur)
+        }
+        Poner(Azul)
+    }
+}
+procedure TomarPiedra() {
+    if (not hayBolitas(Rojo)) {
+        BOOM("No hay piedra acá.")
+    } else {
+        if (hayBolitas(Verde)) {
+            BOOM("No podés agarrar dos piedras a la vez.")
+        } else {
+            Sacar(Rojo)
+            Poner(Verde)
+        }
+    }
+}
+procedure DejarPiedra() {
+    if (not hayBolitas(Verde)) {
+        BOOM("No tenés una piedra para dejar.")
+    } else {
+        Sacar(Verde)
+        Poner(Rojo)
+    }
+}
