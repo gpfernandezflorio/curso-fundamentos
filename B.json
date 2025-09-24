@@ -1,0 +1,629 @@
+{ "course": {
+    "title": "Iniciación a la programación",
+    "description": "Curso básico de introducción a la programación. Cubre los aspectos fundamentales de la programación: comandos, expresiones, representación de información, procedimientos, funciones y parámetros. No se requiere ningún conocimiento previo.",
+    "status": "draft",
+    "requires_feedback": true
+  },
+  "modules": [
+    {"reference_id": "modLenguajes",
+    "title": "Lenguajes de programación",
+    "description": "Introducción a los lenguajes de programación a partir de varias plataformas simples que permiten escribir programas muy fácilmente.",
+    "status": "draft",
+    "requires_feedback": false,
+    "dependencies": [],
+    "activities": [
+      "presentación",
+      "ejercitaciónCodeSlime",
+      "codeSlime1",
+      "ejCodeSlime1",
+      "ejCodeSlime2",
+      "ejercitaciónPilasBloques1",
+      "pilasBloquesDuba",
+      "ejPilasBloques1",
+      "ejPilasBloques2",
+      "ejercitaciónPilasBloques2",
+      "pilasBloquesLita",
+      "ejPilasBloques3",
+      "ejPilasBloques4",
+      "universoDeDiscurso",
+      "universoDeDiscursoCodeSlime",
+      "universoDeDiscursoPilasBloques",
+      "operaciones",
+      "operacionesCodeSlime",
+      "operacionesPilasBloques",
+      "reglasSemanticas",
+      "reglasCodeSlime",
+      "reglasPilasBloques",
+      "cierreLenguajes"
+    ]
+  },{"reference_id": "modLiteralesYPrimitivas",
+    "title": "Expresiones literales y operaciones primitivas",
+    "description": "Construcción de programas a partir de las construcciones más elementales: las expresiones literales y las operaciones primitivas",
+    "status": "draft",
+    "requires_feedback": false,
+    "dependencies": ["modLenguajes"],
+    "activities": [
+      "programas1",
+      "comandos",
+      "ejercitaciónGbsJr",
+      "gbsJr1",
+      "noSoloComandos",
+      "expresiones",
+      "gbsJr2",
+      "programas2",
+      "ejercitaciónBlocklyGamesPelícula",
+      "blocklyGamesPelícula",
+      "clasificaciónConstrucciones1",
+      "expresionesPrimitivasVsLiterales",
+      "lenguajesTextuales",
+      "dibujandoConFiguras",
+      "textoVsBloques",
+      "erroresSintacticosVsSemanticos",
+      "gbsJrYGbsSr",
+      "operacionesParamétricas",
+      "cierreLiteralesYPrimitivas",
+      "recapitulandoComandosYExpresiones"
+    ]
+  },{"reference_id": "modPersonalizadas",
+    "title": "Operaciones personalizadas",
+    "description": "Construcción de programas a partir de las construcciones más elementales: las expresiones literales y las operaciones primitivas",
+    "status": "draft",
+    "requires_feedback": false,
+    "dependencies": ["modLiteralesYPrimitivas"],
+    "activities": [
+    ]
+  }],
+  "activities": [
+    {"reference_id": "presentación",
+    "title": "Presentación",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Bienvenida/o al curso de iniciación a la programación. El objetivo de este curso es **aprender los aspectos fundamentales de la programación** que son comunes a todos los lenguajes de programación. Por eso, a diferencia de la mayoría de los cursos de programación convencionales, no nos vamos a concentrar en la sintaxis específica de un lenguaje particular sino que estudiaremos las **herramientas fundamentales para programar** en cualquier lenguaje y luego veremos ejemplos concretos de cómo se implementan tales herramientas en algunos lengajes de programación específicos. En este primer módulo haremos una **breve introducción a los lenguajes de programación** y a algunas formas de caracterizarlos."
+    }
+  },{"reference_id": "ejercitaciónCodeSlime",
+    "title": "Mi primer lenguaje de programación: Code Slime",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Comencemos con un lenguaje de programación muy sencillo. Ingresá a [https://www.mathplayground.com/code-slime/](https://www.mathplayground.com/code-slime/) y resolvé los primeros 3 niveles. Podés acceder tanto desde el celular como desde una computadora. **IMPORTANTE**: no resuelvas más que los primeros 3 niveles. Cuando hayas terminado, continuá con la siguiente lección."
+    }
+  },{"reference_id": "codeSlime1",
+    "title": "Presentación de Code Slime",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Aunque se presenta como un simple videojuego, Code Slime **es un lenguaje de programación**. En Code Slime, cada nivel nos muestra un _escenario_ distinto y nos propone el desafío de programar a un _slime_ (algo así como una babosa, creo) para que recoja una gema. El _escenario_ es siempre una _grilla_ de 4 _filas_ y 4 _columnas_ sobre el cual se encuentra el _slime_, la gema y algunos obstáculos. Para crear un _programa_ debemos armar una secuencia vertical de _bloques_, donde cada _bloque_ simboliza una _instrucción_ que el _slime_ ejecutará. Al hacer clic en el botón 'RUN CODE' el _slime_ comenzará a ejecurar el _programa_, realizando las _instrucciones_ **en orden** y **de a una por vez** hasta haberlas ejecutado todas, haber alcanzado la gema o encontrarse con una que no puede ejecutar (ya sea porque se sale de la grilla o se choca con un obstáculo)."
+    }
+  },{"reference_id": "ejCodeSlime1",
+    "title": "Ejercitación de Code Slime (1)",
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuántas instrucciones tiene que ejecutar el _slime_ (como mínimo) para llegar hasta la gema en el escenario del nivel 3 de Code Slime?",
+      "is_multiple_selection": false,
+      "options": [{
+        "option": "2",
+        "score": 0
+      },{
+        "option": "3",
+        "score": 0
+      },{
+        "option": "4",
+        "score": 0
+      },{
+        "option": "5",
+        "score": 0
+      },{
+        "option": "6",
+        "score": 1
+      }]
+    }
+  },{"reference_id": "ejCodeSlime2",
+    "title": "Ejercitación de Code Slime (2)",
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuántas instrucciones tendría que ejecutar el _slime_ (como mínimo) para llegar hasta la gema en el escenario del nivel 3 **si se quitaran de él todos los obstáculos**?",
+      "is_multiple_selection": false,
+      "options": [{
+        "option": "2",
+        "score": 0
+      },{
+        "option": "3",
+        "score": 0
+      },{
+        "option": "4",
+        "score": 1
+      },{
+        "option": "5",
+        "score": 0
+      },{
+        "option": "6",
+        "score": 0
+      }]
+    }
+  },{"reference_id": "ejercitaciónPilasBloques1",
+    "title": "PilasBloques",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Veamos otro ejemplo de lenguaje de programación. Resolvé el desafío [Dieta a base de churrascos (3)](https://pilasbloques.program.ar/online/#/desafio/203) de PilasBloques."
+    }
+  },{"reference_id": "pilasBloquesDuba",
+    "title": "Presentación de PilasBloques",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "El _lenguaje de programación_ PilasBloques es muy similar a Code Slime. Ambos proponen _desafíos_ que consisten en darle _instrucciones_ a un personaje para que cumpla con un determinado _objetivo_. También ambos cuentan con un _escenario_ en forma de _grilla_ sobre la cual se encuentran tanto el personaje programable como otros objetos y obstáculos. El mecanismo para programar al personaje también es similar. En ambos se inicia con un _bloque principal_ (el bloque rojo con la inscripción 'CODE RUN' en Code Slime y el bloque verde con la inscripción 'AL EMPEZAR A EJECUTAR' en PilasBloques) y la construcción del _programa_ consiste en ir ubicando otros _bloques_ (los bloques de _instrucciones_) uno debajo del otro, dentro del principal (o debajo del mismo, en el caso de Code Slime). Las _reglas de ejecución_ son las mismas; las _instrucciones_ se ejecutan **en orden** y **de a una por vez** y la ejecución finaliza cuando se cumple el objetivo, cuando se acaban las instrucciones o cuando se intente ejecutar una instrucción que falla (moverse fuera de la grilla, moverse hacia un obstáculo o, en el caso de PilasBloques intentar comer un churrasco cuando Duba no está sobre un churrasco). Otra diferencia radica en la forma de iniciar la ejecución. Mientras que en Code Slime se inicia haciendo clic en el bloque principal, en PilasBloques existe un botón externo con la inscripción 'EJECUTAR'."
+    }
+  },{"reference_id": "ejPilasBloques1",
+    "title": "Ejercitación de PilasBloques (1)",
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuántas instrucciones tiene que ejecutar Duba (como mínimo) para comer el churrasco en el escenario del desafío 'Dieta a base de churrascos (3)' de PilasBloques?",
+      "is_multiple_selection": false,
+      "options": [{
+        "option": "2",
+        "score": 0
+      },{
+        "option": "3",
+        "score": 0
+      },{
+        "option": "4",
+        "score": 0
+      },{
+        "option": "5",
+        "score": 1
+      },{
+        "option": "6",
+        "score": 0
+      }]
+    }
+  },{"reference_id": "ejPilasBloques2",
+    "title": "Ejercitación de PilasBloques (2)",
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuántas instrucciones tendría que ejecutar Duba (como mínimo) para comer el churrasco en el escenario del desafío 'Dieta a base de churrascos (3)' de PilasBloques **si Duba comenzara una posición más abajo**?",
+      "is_multiple_selection": false,
+      "options": [{
+        "option": "2",
+        "score": 0
+      },{
+        "option": "3",
+        "score": 0
+      },{
+        "option": "4",
+        "score": 1
+      },{
+        "option": "5",
+        "score": 0
+      },{
+        "option": "6",
+        "score": 0
+      }]
+    }
+  },{"reference_id": "ejercitaciónPilasBloques2",
+    "title": "Más PilasBloques",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "No todos los desafíos de PilasBloques consisten en hacer que Duba coma un churrasco. Resolvé el desafío [¡Marche una de lechuga y tomate! (2)](https://pilasbloques.program.ar/online/#/desafio/215) de PilasBloques."
+    }
+  },{"reference_id": "pilasBloquesLita",
+    "title": "Otros desafíos de PilasBloques",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Como pudimos observar, en PilasBloques varios aspectos del lenguaje se modifican de un desafío a otro. Aunque las _reglas de ejecución_ se mantienen (la ejecución consiste en realizar las acciones correspondientes a cada uno de los bloques dentro del bloque principal, en orden y de a una a la vez, hasta que se acaben o hasta que alguna falle), cambian los elementos que aparecen en el _escenario_, así como los _bloques_ disponibles para construir el _programa_. En el caso de Duba, entre los elementos pertinentes están Duba (el personaje que podemos programar) y el churrasco. En el caso de Lita, contamos con Lita (el personaje que podemos programar), el tomate, la lechuga y el tazón donde se prepara la ensalada. En cuanto a los _bloques_ de _instrucciones_, ambos cuentan con aquellos que mueven al personaje programable una posición hacia alguna de las cuatro direcciones pero cambian las otras acciones que este personaje puede realizar además de moverse. Duba puede comer un churrasco (siempre que esté en la misma posición que un churrasco). Lita puede recoger un ingrediente (siempre que esté en la misma posición que un ingrediente) y puede preparar la ensalada (siempre que esté en la misma posición que el tazón y que haya recogido antes los dos ingredientes)."
+    }
+  },{"reference_id": "ejPilasBloques3",
+    "title": "Ejercitación de PilasBloques (3)",
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuántas instrucciones tiene que ejecutar Lita (como mínimo) para preparar la ensalada en el escenario del desafío '¡Marche una de lechuga y tomate! (2)' de PilasBloques?",
+      "is_multiple_selection": false,
+      "options": [{
+        "option": "1",
+        "score": 0
+      },{
+        "option": "3",
+        "score": 0
+      },{
+        "option": "6",
+        "score": 0
+      },{
+        "option": "7",
+        "score": 0
+      },{
+        "option": "8",
+        "score": 0
+      },{
+        "option": "9",
+        "score": 0
+      },{
+        "option": "10",
+        "score": 0
+      },{
+        "option": "11",
+        "score": 1
+      },{
+        "option": "12",
+        "score": 0
+      },{
+        "option": "13",
+        "score": 0
+      }]
+    }
+  },{"reference_id": "ejPilasBloques4",
+    "title": "Ejercitación de PilasBloques (4)",
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuántas instrucciones tendría que ejecutar Lita (como mínimo) para preparar la ensalada en el escenario del desafío '¡Marche una de lechuga y tomate! (2)' de PilasBloques **si el tazón estuviera en la misma posición que Lita**?",
+      "is_multiple_selection": false,
+      "options": [{
+        "option": "1",
+        "score": 0
+      },{
+        "option": "2",
+        "score": 0
+      },{
+        "option": "3",
+        "score": 0
+      },{
+        "option": "4",
+        "score": 0
+      },{
+        "option": "5",
+        "score": 0
+      },{
+        "option": "6",
+        "score": 0
+      },{
+        "option": "8",
+        "score": 0
+      },{
+        "option": "9",
+        "score": 0
+      },{
+        "option": "10",
+        "score": 0
+      },{
+        "option": "11",
+        "score": 1
+      }]
+    }
+  },{"reference_id": "universoDeDiscurso",
+    "title": "Concepto: Universo de discurso",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Una de las principales características que distinguen a un lenguaje de programación es lo que llamamos su _universo de discurso_. Todos los lenguajes (no sólo los de programación) _predican_ sobre un _universo de discurso_ (es decir, hablan sobre o se expresan respecto a este universo). En el caso de los lenguajes hablados por humanos (como el español o el inglés) el _universo de discurso_ es **prácticamente infinito**, ya que estos lenguajes pueden _predicar_ sobre **casi cualquier concepto**. Los lenguajes formales (entre los que se incluyen a los _lenguajes de programación_) suelen tener _universos de discurso_ **mucho más acotados**. Por ejemplo, el _universo de discurso_ de la _aritmética_ permite _predicar_ sobre los números y las relaciones entre ellos pero no sobre aspectos filosóficos o políticos de una sociedad. Para describir el _universo de discurso_ de un lenguaje se deben identificar los _elementos_ que pertenecen a dicho universo. A estos _elementos_ que conforman el _universo de discurso_ de un lenguaje los llamamos _elementos primitivos_. Al _universo de discurso_ también se lo suele llamar _dominio_ y a sus elementos, _elementos del dominio_. Ya dijimos que en la _aritmética_ el _dominio_ está compuesto únicamente por los números. Otros lenguajes formales podrían ser la notación musical (cuyo _dominio_ está compuesto por notas musicales, tiempos, escalas, etc.) y las señales de tránsito (cuyo _dominio_ está compuesto por tipos de transporte, tipos de rutas, reglas, etc.).\n\n**Para reflexionar**: Pensar qué otros lenguajes formales conocen e identificar cuál es su _universo de discurso_."
+    }
+  },{"reference_id": "universoDeDiscursoCodeSlime",
+    "title": "El universo de discurso de Code Slime",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "En Code Slime, el _universo de discurso_ está compuesto por el _escenario_ en forma de _grilla_, el _slime_, la gema y los obstáculos."
+    }
+  },{"reference_id": "universoDeDiscursoPilasBloques",
+    "title": "El universo de discurso de PilasBloques",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "En PilasBloques, el _universo de discurso_ depende de cada desafío. En todos se incluye el _escenario_ en forma de _grilla_ y los elementos que se pueden ubicar sobre él. En los desafíos de Duba, tales _elementos_ incluyen a Duba, al churrasco y a los obstáculos. En los desafíos de Lita, a Lita, a los ingredientes, al tazón y a los obstáculos. En todos los casos hay uno de esos elementos que es distinguido porque es el que se puede programar (Duba en el primer caso y Lita en el segundo)."
+    }
+  },{"reference_id": "operaciones",
+    "title": "Concepto: Operaciones",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Otra característica distintiva de los lenguajes de programación es el conjunto de _operaciones_ que se pueden utilizar para construir un _programa_. A estas _operaciones_ se las suele llamar _construcciones programáticas_, justamente porque son las que se utilizan para construir un _programa_. En términos formales, describir las _construcciones programáticas_ es equivalente a definir la _sintaxis_ del lenguaje. Las _construcciones programáticas_ más elementales son las _operaciones primitivas_ que se corresponden a aquellas operaciones que se realizan con los _elementos primitivos_ del lenguaje. Por ejemplo, en la _aritmética_ (cuyos _elementos primitivos_ son los números) las _operaciones primitivas_ son la suma, la multiplicación y el resto de operaciones aritméticas."
+    }
+  },{"reference_id": "operacionesCodeSlime",
+    "title": "Las operaciones primitivas de Code Slime",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "En Code Slime, las _operaciones primitivas_ son únicamente mover al _slime_ una posición hacia cada una de las cuatro direcciones."
+    }
+  },{"reference_id": "operacionesPilasBloques",
+    "title": "Las operaciones primitivas de PilasBloques",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "En PilasBloques, las _operaciones primitivas_ también dependen de cada desafío aunque la gran mayoría incluye mover al personaje programable hacia cada una de las cuatro direcciones, además de algunas _operaciones_ específicas del desafío. En el caso de Duba se trata únicamente de comer un churrasco, mientras que en el caso de Lita, estas incluyen recoger la lechuga, recoger el tomate y preparar la ensalada."
+    }
+  },{"reference_id": "reglasSemanticas",
+    "title": "Concepto: Reglas de ejecución",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "La tercera característica que vamos a resaltar sobre un _lenguaje de programación_ es el conjunto de reglas que explican cómo se produce la ejecución de un _programa_. A estas reglas las llamamos _reglas de ejecución_ o _reglas semánticas_ (ya que definen la _semántica_ de las _operaciones_). Entre las _reglas de ejecución_ se incluyen las _generales_, que explican cómo se interpreta en general un _programa_ y las _específicas_, que explican qué efecto produce cada una de las _operaciones_."
+    }
+  },{"reference_id": "reglasCodeSlime",
+    "title": "Las reglas de ejecución de Code Slime",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Las _reglas de ejecución_ generales de Code Slime establecen que, cuando inicia la ejecución del _programa_ (tras hacer clic en el botón 'RUN CODE'), cada una de las _operaciones_ que componen el _programa_ se van a ir ejecutando **en orden** y **de a una por vez** (según la _regla semántica_ específica de cada _operación_). La ejecución finaliza cuando se ejecuta la última _operación_ del _programa_, cuando el _slime_ se encuentra en la misma posición que la gema (independientemente de si quedan _operaciones_ por _ejecutar_) o cuando la ejecución de alguna de las _operaciones_ falla. Las _reglas de ejecución_ específicas de cada _operación_ establecen que, si el _slime_ se puede mover hacia la dirección correspondiente, lo hace y si no (ya sea porque se está intentando mover contra el borde del escenario o porque se está intentando mover hacia un obstáculo), falla."
+    }
+  },{"reference_id": "reglasPilasBloques",
+    "title": "Las reglas de ejecución de PilasBloques",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Las _reglas de ejecución_ generales de PilasBloques son muy similares a las de Code Slime. Cuando inicia la ejecución del _programa_ (tras hacer clic en el botón 'EJECUTAR'), cada una de las _operaciones_ que componen el _programa_ se van a ir ejecutando **en orden** y **de a una por vez** (según la _regla semántica_ específica de cada _operación_). La ejecución finaliza cuando se ejecuta la última _operación_ del _programa_ o cuando la ejecución de alguna de las _operaciones_ falla. Las _reglas de ejecución_ específicas de las _operaciones_ de movimiento (las que mueven al personaje programable hacia alguna de las cuatro direcciones) establecen que, si el personaje se puede mover hacia la dirección correspondiente, lo hace y si no (ya sea porque se está intentando mover contra el borde del escenario o porque se está intentando mover hacia un obstáculo), falla. La _regla de ejecución_ de la _operación_ para comer un churrasco establece que, si Duba está en la misma posición que el churrasco, lo come y si no, falla. Las _reglas de ejecución_ de las _operaciones_ para recoger la lechuga y para recoger el tomate establecen que, si Lita está en la misma posición que el ingrediente correspondiente, lo recoge y si no, falla. La _regla de ejecución_ de la _operación_ para preparar la ensalada establece que, si Lita está en la misma posición que el tazón y ya recogió el tomate y la lechuga, prepara la ensalada y si no, falla."
+    }
+  },{"reference_id": "cierreLenguajes",
+    "title": "Cierre",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Hicimos un primer acercamiento a los _lenguajes de programación_ y algunas de las principales características que los distinguen. Ejemplificamos estas características a partir de dos lenguajes (tres si consideramos los desafíos de PilasBloques como lenguajes distintos). La primera característica es su _universo de discurso_ o _dominio_ que consiste en el conjunto de _elementos_ (llamados _elementos primitivos_ o _elementos del dominio_) sobre el cual el lenguaje se puede expresar. En todos los lenguajes vistos, el _universo de discurso_ incluye un _escenario_ en forma de _grilla_ sobre el cual se pueden distintos _elementos_ (como personajes, objetos y obstáculos). En todos los casos uno de esos _elementos_ es un personaje programable (el _slime_, Duba y Lita).\n\nLa segunda característica es su conjunto de _construcciones programáticas_ que consiste en aquellas _operaciones_ que se pueden realizar al construir un _programa_ en el lenguaje (y se asocia a su _sintaxis_). En todos los lenguajes vistos, todas las _construcciones programáticas_ disponibles son _operaciones primitivas_ (_operaciones_ que se realizan sobre los _elementos primitivos_). En todos los casos, entre estas _operaciones_ se incluyen las de mover al personaje programable una posición hacia cada una de las cuatro direcciones. En el caso de Duba se incluye también la _operación_ de comer un churrasco. En el caso de Lita se incluyen también las _operaciones_ para recoger cada uno de los ingredientes y para preparar la ensalada.\n\nLa tercera característica es el conjunto de _reglas de ejecución_ o _reglas semánticas_ que consiste en aquellas reglas que explican cómo se interpreta un _programa_ en el lenguaje (y se asocia a su _semántica_). En todos los lenguajes vistos, las _reglas de ejecución_ establecen una _ejecución secuencial_ de las _operaciones_ que componen el _programa_ (esto es, cada _operación_ se ejecuta **en orden** y **de a una por vez** hasta terminar o hasta fallar).\n\nEn los próximos módulos estudiaremos otras categorías de _construcciones programáticas_ (además de sólo _operaciones primitivas_) y _reglas semánticas_ más complejas (que no consistirán únicamente en una _ejecución secuencial_ de _operaciones_)."
+    }
+  },{"reference_id": "programas1",
+    "title": "Programas (1)",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "En el módulo anterior utilizamos reiteradas veces el término _programa_ pero nunca lo definimos. La razón para no hacerlo es que su definición es más compleja de lo que podría parecer en primera instancia. A partir de lo visto hasta ahora, podríamos decir que un _programa_ es **una secuencia de _operaciones_, donde cada _operación_ expresa una _instrucción_** que va a ser realizada cuando esta sea ejecutada. Esta definición aplica a todos los _programas_ que construimos hasta ahora (tanto en Code Slime como en PilasBloques)."
+    }
+  },{"reference_id": "comandos",
+    "title": "Comandos",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Todas las _operaciones_ que vimos hasta ahora pertenecen a la categoría _comandos_. Los _comandos_ son **descripciones de acciones**. Esto quiere decir que la ejecución de un _comando_ tiene asociada una _acción_ que va a ser realizada cuando dicho _comando_ se ejecute."
+    }
+  },{"reference_id": "ejercitaciónGbsJr",
+    "title": "Gobstones Jr",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Comenzamos a trabajar con un nuevo _lenguaje de programación_. Resolver los desafíos [Víbora de bolitas, horizontal](https://gobstones.github.io/gobstones-jr/?github=gpfernandezflorio/curso-fundamentos&path=Proyectos/PrimerosPasos/V%C3%ADbora%20de%20bolitas,%20horizontal) y [Limpiar la cruz roja](https://gobstones.github.io/gobstones-jr/?github=gpfernandezflorio/curso-fundamentos&path=Proyectos/PrimerosPasos/Limpiar%20la%20cruz%20roja) de Gobstones Jr."
+    }
+  },{"reference_id": "gbsJr1",
+    "title": "Presentación de Gobstones Jr. (1)",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Analicemos este nuevo lenguaje.\n\nEl _universo de discurso_ consiste, igual que en los lenguajes anteriores, en un _escenario_ en forma de _grilla_. En este caso se le llama _tablero_ a la _grilla_. El _tablero_ está dividido en _celdas_ y en cada _celda_ se puede ubicar _bolitas_ de colores. No hay un personaje programable como en Code Slime o PilasBloques pero sí hay un _elemento_ que podemos programar. Aunque no se ve en forma gráfica, existe un _cabezal_ que se puede mover sobre las _celdas_ del _tablero_ y es quien pone y saca _bolitas_ de las _celdas_ (la ubicación del _cabezal_ está resaltada en el tablero con un recuadro verde).\n\nLas _operaciones primitivas_ incluyen tres _comandos_; uno para poner una _bolita_, uno para sacar una _bolita_ y otro para mover el _cabezal_.\n\nEn cuanto a las _reglas de ejecución_ generales, también establecen una _ejecución secuencial_ y la finalización también se da cuando se acaban los _comandos_ en el _bloque principal_ o cuando alguno de los _comandos_ falla. Las _reglas de ejecución_ específicas son las siguientes:\n* Bloque _Poner_: Pone una _bolita_ en la _celda_ en la que se encuentra el _cabezal_.\n* Bloque _Sacar_: Saca una _bolita_ de la _celda_ en la que se encuentra el _cabezal_. Si no hay una _bolita_ para sacar en dicha _celda_, falla.\n*Bloque _Mover_: Mueve el _cabezal_ una _celda_ hacia alguna dirección. Si el _cabezal_ no se puede mover hacia esa dirección (porque está sobre el borde del _tablero_), falla.\n\nComo en los casos anteriores, hay un _bloque principal_ (este con la inscripción 'programa') y un botón para ejecutar el _programa_ (con el ícono de una flecha)."
+    }
+  },{"reference_id": "noSoloComandos",
+    "title": "No todo en la vida son comandos",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Algo que quizás pasó desapercibido al analizar Gobstones Jr. es que aparecieron bloques con formas distintas a los que veníamos trabajando hasta ahora. Tanto en Code Slime como en PilasBloques contábamos con un cuatro bloques de _comandos_ distintos para mover al personaje programable, uno hacia cada dirección. En Gobstones Jr. tenemos un único _bloque_ de _comando_ para mover al _cabezal_ cuya inscripción es simplemente 'Mover'. La dirección hacia la cual se moverá viene dada por otro bloque que **no es un _comando_**. El bloque _Mover_ por sí solo no mueve el _cabezal_. Pero ese bloque tiene un _agujero_ en donde se puede colocar otro bloque que indique la dirección hacia la cual mover. Por la forma de los bloques, ningún _comando_ se puede colocar en ese _agujero_. Y tiene sentido, pues lo que se espera en ese _agujero_ es algo que exprese una dirección, no una acción. Los bloques que se pueden colocar en ese _agujero_ son los bloques verdes que tienen una _orejita_ hacia la izquierda. En particular, el bloque que tiene el ícono de un brújula y un selector desplegable desde el cual se puede seleccionar alguna de las cuatro direcciones: _Norte_, _Este_, _Sur_ y _Oeste_. Algo similar ocurre con los bloques _Poner_ y _Sacar_. Estos tienen un _agujero_ en donde se debe colocar un bloque que indique el color de _bolita_ a poner o a sacar. El bloque que se puede colocar en dicho _agujero_ es el que permite elegir entre alguno de los cuatro colores de bolitas: _Azul_, _Rojo_, _Verde_ y _Negro_."
+    }
+  },{"reference_id": "expresiones",
+    "title": "Expresiones",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Gobstones Jr. es el primer lenguaje que además de contar con _comandos_ cuenta con _expresiones_. Casi todas las _construcciones programáticas_ de (casi) **todos los lenguajes de programación** se pueden dividir entre _comandos_ y _expresiones_. Como ya dijimos, los _comandos_ son **descripciones** de _acciones_ (como activar un motor, imprimir un mensaje en pantalla o actualizar el estado de un registro en una base de datos). Ejecutar un bloque de _comando_ produce un _efecto_. Las _expresiones_, en cambio, son **descripciones** de _información_ (como la potencia con la cual activar un motor, el mensaje a imprimir en la pantalla o la información completa de un registro que debe ser actualizado en una base de datos). Esto significa que ejecutar una expresión no produce un _efecto_, ya que no tiene asociada una _acción_. Es simplemente un pedazo de información que se puede _evaluar_.\n\nGeneralmente los _comandos_ requieren _expresiones_ para terminar de definir la _acción_ que se debe realizar cuando el _comando_ se ejecute. Algunos lenguajes (como Code Slime y los desafíos vistos de PilasBloques) sólo cuentan con _comandos_ (cada _comando_ está completamente definido por sí mismo y no requiere _información_ adicioanl). Así como hay lengauajes que sólo cuentan con _comandos_, también existen lenguajes que sólo cuentan con _expresiones_. La **gran mayoría de los lenguajes de programación** cuenta tanto con _comandos_ como con _expresiones_."
+    }
+  },{"reference_id": "gbsJr2",
+    "title": "Presentación de Gobstones Jr. (2)",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Ahora que presentamos las _expresiones_, podemos revisar las _reglas de ejecución_ específicas de Gobstones Jr., distinguiendo entre los _comandos_ y las _expresiones_:\n**Comadnos**\n* Bloque _Poner_: Pone una _bolita_ en la _celda_ en la que se encuentra el _cabezal_. El color de la _bolita_ a poner depende del bloque de _expresión_ que se le coloque.\n* Bloque _Sacar_: Saca una _bolita_ de la _celda_ en la que se encuentra el _cabezal_. El color de la _bolita_ a sacar depende del bloque de _expresión_ que se le coloque. Si no hay una _bolita_ de ese color en esa _celda_, falla.\n*Bloque _Mover_: Mueve el _cabezal_ una _celda_. La dirección hacia la cual se mueve depende del bloque de _expresión_ que se le coloque. Si el _cabezal_ no se puede mover hacia esa dirección (porque está sobre el borde del _tablero_), falla.\n**Expresiones**\n* Bloque de color: Describe un color (el que se seleccione en su selector desplegable).\n* Bloque de dirección: Describe una dirección (la que se seleccione en su selector desplegable)."
+    }
+  },{"reference_id": "programas2",
+    "title": "Programas (2)",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Algunas actividades atrás definimos _programa_ como una **secuencia de _operaciones_**. Como sólo conocíamos _comandos_, esa definición era equivalente a **secuencia de _acciones_** o **secuencia de instrucciones**. Ahora que sabemos que además de los _comandos_ existen las instrucciones, podemos refinar esa definición. No sólo se trata de una secuencia de _comandos_. La mayoría de las veces, esos _comandos_ están compuestos también por _expresiones_. Como veremos a lo largo del curso, las _expresiones_ son fundamentales para crear _programas_, tanto o incluso más que los _comandos_. Es por eso que no sería adecuado limitar la definición de programa únicamente a una **secuencia de _comandos_**. Diremos a partir de ahora que un _programa_ es **una composición entre _comandos_ y _expresiones_**. Esta definición incluye a los primeros _programas_ que construimos, en los que simplemente secuenciamos _comandos_, pero no excluye _programas_ más complejos en los que además de _comandos_ podemos usar _expresiones_."
+    }
+  },{"reference_id": "ejercitaciónBlocklyGamesPelícula",
+    "title": "Blockly Games: Película",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Ingresá a [https://blockly.games/movie?lang=es&level=1](https://blockly.games/movie?lang=es&level=1) y resolvé los primeros 5 niveles. Podés acceder tanto desde el celular como desde una computadora. **IMPORTANTE**: no resuelvas más que los primeros 5 niveles. Cuando hayas terminado, continuá con la siguiente lección."
+    }
+  },{"reference_id": "blocklyGamesPelícula",
+    "title": "Presentación de Blockly Games: Película",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Analicemos este nuevo lenguaje.\n\nEl _universo de discurso_ difiere bastante de los que estuvimos viendo hasta ahora. Si bien seguimos teniendo un _escenario_, por primera vez, este no es una _grilla_ sino que es un espacio contínuo que simula una hoja de papel en blanco sobre la cual podemos dibujar. Los _elementos_ que podemos agregar sobre el escenario son _figuras_ (círculos, rectángulos y líneas). Otros _elementos primitivos_ (no son _elementos_ que se puedan dibujar pero también pertenecen al _universo de discurso_ en tanto el lenguaje permite _predicar_ sobre ellos) incluyen a los números y a los colores. También por primera vez, no hay un _elemento_ programable (en Gobstones Jr. era invisible pero existía, en tanto podíamos moverlo y saber todo el tiempo dónde estaba). Podríamos pensar que el _elemento_ programable es un lápiz invisible que dibuja pero carece de sentido ya que ni siquiera tenemos noción de dónde se encuentra.\n\nEntre las _operaciones_ disponibles contamos tanto con _comandos_ como con _expresiones_. Los _comandos_ permiten dibujar un círculo, dibujar un rectángulo, dibujar una línea y cambiar el color de las próximas figuras a dibujar. Las _expresiones_ permiten describir números, colores, operaciones aritméticas entre números (suma, resta, multiplicación, división y potencia) y la cantidad de tiempo que transcurrió desde que inició la ejecución.\n\nLas _reglas de ejecución_ generales establecen que, una vez iniciada la ejecución el tiempo comienza a avanzar y, en cada instante, todo el _escenario_ se vuelve a dibujar a partir del _programa_. No hay _ejecución secuencial_ como en los casos anteriores. En su lugar, todo el _programa_ se ejecuta **al mismo tiempo** 100 veces. La ejecución finaliza después de haber ejecutado el _programa_ 100 veces. Ninguna _operación_ puede fallar (ni siquiera ingresando números negativos o dividiendo por cero). Las _reglas de ejecución_ específicas son las siguientes:\n**Comandos**\n* Bloque _círculo_: Dibuja un círculo. La posición y el radio dependen de los bloques de _expresiones_ que se le coloquen. El color depende del último color que se estableció (negro si no se estableció ninguno).\n* Bloque _rectángulo_: Dibuja un rectángulo. La posición y el tamaño dependen de los bloques de _expresiones_ que se le coloquen. El color depende del último color que se estableció (negro si no se estableció ninguno).\n* Bloque _línea_: Dibuja una línea. Los puntos entre los cuales se dibuja y su grosor dependen de los bloques de _expresiones_ que se le coloquen. El color depende del último color que se estableció (negro si no se estableció ninguno).\n* Bloque _establecer el color a_: Establece el color de dibujo al que corresponda al bloque de _expresión_ que se le coloque.\n**Expresiones**\n* Bloque numérico: Describe un número (el que se ingrese en su campo de texto).\n* Bloque de color: Describe un color (el que se seleccione en su paleta).\n* Bloque aritmético: Describe el resultado de aplicar la operación aritmética seleccionada entre los dos números correspondientes a los bloques de _expresiones_ que se le coloquen.\n* Bloque _time (0 -> 100)_: Describe la cantidad de tiempo que transcurrió desde que comenzó la ejecución.\n\nEn este caso no hay nada parecido a un _bloque principal_ que permita identificar el comienzo del _programa_. Si bien todos los comandos se ejecutan **al mismo tiempo**, las asignaciones de colores ocurren en orden vertical (el color de un bloque de dibujo depende del bloque de asignación de color que esté por encima de él). Sí hay un botón para ejecutar el _programa_ (como en Gobstones Jr., con el ícono de una flecha)."
+    }
+  },{"reference_id": "clasificaciónConstrucciones1",
+    "title": "Clasificación de construcciones programáticas (1)",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Con lo visto hasta ahora podemos hacer una primera clasificación de las _construcciones programáticas_ de un lenguaje. Esta clasificación se basa en lo que llamamos su _categoría sintáctica_ y distingue a las _operaciones_ entre _comandos_ y _expresiones_. También hablamos sobre _operaciones primitivas_, que son aquellas _operaciones_ que se realizan con los _elementos primitivos_ del lenguaje. Estas _operaciones_ pueden ser tanto _comandos_ como _expresiones_ así que diremos que los lenguajes, en general, cuentan tanto con _comandos primitivos_ como con _expresiones primitivas_. En Code Slime, y en los desafíos vistos de PilasBloques sólo hay _comandos_ y todos los _comandos_ son _comandos primitivos_. Todos los _comandos_ de Gobstones Jr. vistos (Mover, Poner y Sacar) y todos los _comandos_ de Blockly Games : Película vistos (los de dibuajar y el de establecer el color) son _comandos primitivos_. En cuanto a las _expresiones_, no todas las _expresiones_ vistas son _expresiones primitivas_."
+    }
+  },{"reference_id": "expresionesPrimitivasVsLiterales",
+    "title": "Expresiones primitivas vs expresiones literales",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Ya dijimos que las _expresiones_ son **descripciones** de _información_. Esto significa que una _expresión_ **describe** (en el sentido de, hace referencia a) un _dato_ o _valor_. Generalmente, hay muchas formas posibles de **describir** un _valor_. Lo que significa que hay muchas _expresiones_ que **describen** al mismo _valor_. Por ejemplo, el segundo número natural se puede **describir** con la _expresión_ \"dos\", con el símbolo que parece un pato (2), con la suma entre dos _expresiones_ que describan al primer número natural (1+1), etc. En general, hay infinitas maneras de **describir** a un _valor_ (hay infinitas _expresiones_ que **describen** al mismo _valor_). También en general, hay **una** de todas esas _expresiones_ que es la forma más directa o inmediata de hacerlo. En el caso del segundo número natural, solemos usar el símbolo del pato para **describirlo** de manera directa. Las _expresiones_ \"1+1\", \"6-4*1\", \"hora del día\" (cuando son entre las dos y las tres de la tarde), etc. también **describen** al dos pero requieren procesar la _expresión_ (evaluarla, operar con ella) para saber exactamente cuál es el _valor_ que **describen**. El bloque _time (0 -> 100)_ de Blockly Games : Película también es una _expresión_ que (en algún momento de la ejecución del _programa_) **describe** al número dos.\n\nAsí, llamamos _expresiones literales_ a aquellas _expresiones_ que **describen** un _valor_ de la forma más directa posible. Los bloques de color y de dirección de Gobstones Jr. son _expresiones literales_. Los bloques de número y de color de Blockly Games : Película son _expresiones literales_. El resto de las _expresiones_ de Blockly Games : Película (el bloque de tiempo y el de operación aritmética) también **describen** números (como el bloque de número) pero no son _expresiones literales_, ya que no lo hacen de forma directa sino que deben ser _evaluadas_ para determinar qué _valor_ **describen** (en el caso del bloque de tiempo, observar en qué instante de la ejecución nos encontramos y en el caso del bloque de operación aritmética, resolver la operación). Estas _expresiones_ son _expresiones primitivas_ en tanto son _expresiones_ y son _primitivas_ (por que operan con los _elementos primitivos_ del lenguaje) pero no son _literales_ porque no **describen** de manera directa un _valor_."
+    }
+  },{"reference_id": "lenguajesTextuales",
+    "title": "Lenguajes textuales",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Hasta ahora venimos trabajando exclusivamente con _lenguajes de progrmación_ **basados en bloques**. Esto es, la forma de construir un _programa_ en estos lenguajes es arrastrando bloques en la pantalla y conectándolos entre sí para definir el comportamiento deseado. La mayoría de los _lenguajes de programación_ no funcionan de esta forma sino que la construcción del _programa_ se hace escribiendo texto. Resolvé los desafíos [Mi primer dibujo](https://gpfernandezflorio.github.io/aDibujar/?d=casaSimple) y [Ahora sin ayuda](https://gpfernandezflorio.github.io/aDibujar/?d=casaSinAyuda) de Dibujando con figuras."
+    }
+  },{"reference_id": "dibujandoConFiguras",
+    "title": "Dibujando con figuras",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "A pesar de ser un _lenguaje de programación_ textual, podemos hacer el mismo análisis que veníamos haciendo con cada uno de los lenguajes que fuimos descubriendo.\n\nEl _universo de discurso_ es muy similar al de Blockly Games: Película. Hay un _escenario_ que simuala una hoja de papel en blanco sobre la cual podemos dibujar y los _elementos_ que podemos agregar sobre el escenario son _figuras_ (círculos, rectángulos y líneas). No hay colores (todo se dibuja con negro) pero sí hay números. Volvemos a tener un _elemento_ programable (un _cursor_) que podemos mover a través del escenario (el punto rojo que simula el lápiz que realiza los dibujos, similar al _cabezal_ de Gobstones Jr.).\n\nLos _comandos primitivos_ también son similares a los de Blockly Games: Película. Tenemos uno para dibujar un rectángulo, uno para dibujar un círculo, uno para dibujar una línea y uno para dibujar un rectángulo (este último no lo teníamos en Blockly Games: Película). Otros _comandos primitivos_ que se agregan son los que mueven al cursor hacia cada una de las cuatro direcciones. No hay _expresiones primitivas_ pero sí hay _expresiones literales_: los números.\n\nLas _reglas de ejecución_ generales son más parecidas a los primeros lenguajes trabajados: _ejecución secuencial_ hasta terminar. Las _operaciones_ no pueden fallar (aunque sí puede fallar el _programa_ si está mal escrito). Las _reglas de ejecución_ específicas son las siguientes:\n**Comandos**\n* _círculo_: Dibuja un círculo desde la ubicación del _cursor_. El radio depende de la _expresión_ que lo acompañe.\n* _cuadrado_: Dibuja un cuadrado desde la ubicación del _cursor_. El tamaño depende de la _expresión_ que lo acompañe.\n* _rectángulo_: Dibuja un rectángulo desde la ubicación del _cursor_. El tamaño depende de las _expresiones_ que lo acompañen.\n* _línea_: Dibuja una línea desde la ubicación del _cursor_. También mueve el _cursor_ hasta el extremo final de la línea dibujada. El tamaño (cuánto se desplaza la línea sobre cada eje) depende de las _expresiones_ que lo acompañen.\n* _arriba_: Mueve el _cursor_ hacia arriba. La cantidad que se desplaza depende de la _expresión_ que lo acompañe.\n* _abajo_: Mueve el _cursor_ hacia abajo. La cantidad que se desplaza depende de la _expresión_ que lo acompañe.\n* _izquierda_: Mueve el _cursor_ hacia la izquierda. La cantidad que se desplaza depende de la _expresión_ que lo acompañe.\n* _derecha_: Mueve el _cursor_ hacia la derecha. La cantidad que se desplaza depende de la _expresión_ que lo acompañe.\n**Expresiones**\n* numéro: Describe un número.\n\nTampoco hay nada parecido a un _bloque principal_ que permita identificar el comienzo del _programa_. Cada línea del texto que compone el _programa_ se va ejecutando una por una desde la primera línea hasta la última. Las líneas en blanco se ignoran. También hay un botón para ejecutar el _programa_ (con la inscripción 'Ejecutar')."
+    }
+  },{"reference_id": "textoVsBloques",
+    "title": "Programación textual vs programación por bloques",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Acabamos de descubrir nuestro primer _lenguaje de programación_ basado en texto (en contraposición a los _lenguajes de programación_ basados en bloques con los que veníamos trabajando hasta ahora). En los _lenguajes de programación_ basados en bloques, los programas se construyen con elementos visuales con formas de bloques. En los _lenguajes de programación_ textuales, en cambio, para describir un programa hay que escribirlo en texto."
+    }
+  },{"reference_id": "erroresSintacticosVsSemanticos",
+    "title": "Errores sintácticos vs errores semánticos",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Quizás te haya pasado mientras escribías tu programa en el _lenguaje de programación_ textual Dibujando con figuras que algunas de las cosas que escribías no funcionaban pero no porque la ejecución fallaba (como cuando Duba intentaba caminar contra un obstáculo o cuando el cabezal de Gobstones Jr. intentaba sacar una bolita en una celda vacía) sino porque eso que escribiste estaba mal escrito. Hablamos de _errores sintácticos_ cuando el error es que lo que escribiste no puede ser ejecutado por el lenguaje. Eso que escribiste no es parte del lenguaje y el lenguaje no puedo interpretarlo (como usar una palabra que no existe en un lenguaje hablado). Hablamos de _errores semánticos_ cuando lo que escribiste es sintácticamente correcto en el lenguaje pero cuando se ejecuta provoca una falla (como pedir abrir una puerta pero al intentarlo nos damos cuenta que está bajo llave). En los _lenguajes de programación_ basados en bloques no hay errores sintácticos, ya que los bloques no impiden construir programas que no respeten la sintaxis del lenguaje. En los _lenguajes de programación_ textuales podemos escribir cualquier cosa, así que tenemos que tener cuidado con lo que escribimos y asegurarnos que es algo válido en el lenguaje en el que estamos trabajando."
+    }
+  },{"reference_id": "gbsJrYGbsSr",
+    "title": "Gobstones Jr. y Gobstones Sr.",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Una particularidad del entorno Gobstones es que se puede programar tanto en bloques como en texto. Además de Gobstones Jr., el _lenguaje de programación_ por bloques que ya conocemos, existe una versión textual de Gobstones llamada Gobstones Sr. Más allá del mecanismo utilizado para construir los programas, el lenguaje es esencialmente el mismo (y por lo tanto también lo son su _universo de discurso_ y sus _operaciones_).\n\nEl lado derecho de la interfaz siempre muestra el tablero. El lado izquierdo, donde se construye el _programa_, depende de si ingresamos a través de la versión Junior (Jr) o Senior (Sr) del entorno. En el primer caso, esta sección se asemeja a la de PilasBloques, donde disponemos de un lienzo blanco sobre el cual podemos arrastrar bloques, y comenzamos con un único bloque principal que determina el comportamiento del _programa_ que estamos construyendo a partir de los bloques que incluye. En el segundo, aparece en su lugar un campo de texto sobre el cual podemos escribir el código en versión textual. A diferencia de lo que ocurría con Dibujando con figuras, en Gobstones Sr. no podemos simplemente escribir _comandos_ uno debajo del otro para construir un _programa_. En cambio, hay que iniciar escribiendo la palabra clave `program` y, entre llaves, aquellos _comandos_ que queremos que se ejecuten. Esta declaración es la traducción del bloque principal de Gobstones Jr. con la inscripción 'programa'.\n\nEl resto de los bloques de Gobstones Jr. se traducen a su versión textual a partir de la palabra que lo define, comenzando con mayúsculas. Por ejemplo, para ejecutar el _comando_ que pone una bolita escribimos \"Poner\". Para marcar que un bloque está dentro de otro (como los bloques verdes que están dentro de los bloques azules) se utilizan paréntesis. Entonces, para poner una bolita de color azul, escribimos \"Poner(Azul)\". A continuación se muestran las dos versiones de un programa que pone una bolita de cada color, una en texto y otra en bloques:\n![Dos formas de construir un programa que pone una bloita de cada color. A la izquierda usando programación por bloques con Gobstones Jr. A la derecha usando programación textual con Gobstones Sr.](https://raw.githubusercontent.com/gpfernandezflorio/curso-fundamentos/refs/heads/main/img/gbsJrVsGbsSr.png)"
+    }
+  },{"reference_id": "operacionesParamétricas",
+    "title": "Operaciones paramétricas",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Tanto los _comandos_ como las _expresiones_ pueden llevar _argumentos_. Los _argumentos_ son _expresiones_ que acompañan a una _operación_ y le agregan información. Hablaremos de _operaciones no paramétricas_ cuando estemos hablando de _operaciones_ que no requieren _argumentos_ adicionales, como los _comandos primitivos_ de Code Slime y PilasBloques o la _expresión primitiva_ _time (0 -> 100)_. En cambio, hablaremos de _operaciones paramétricas_ cuando estemos hablando de _operaciones_ que sí requieren al menos un _argumento_ adicional, como los _comandos primitivos_ de Gobstones (los de poner y sacar bolitas que esperaban un color y el de mover el cabezal que espera una dirección), los _comandos primitivos_ de Dibujando con figuras (los que dibujan figuras que esperaban uno o dos números y los de mover el cursor que esperan un número) y los _comandos primitivos_ de Blockly Games: Películas (los que dibujan figuras que esperaban varios números y el de establecer el color que espera un color) y su _expresión primitiva_ para las operaciones aritméticas (que esperan dos números). Es importante notar que una _operación paramétrica_ no está completamente definida sin sus argumentos. Es decir, no podemos usar, por ejemplo, el comando _Poner_ de Gobstones sin pasarle un color como argumento porque no está definido de qué color debe ser la bolita a poner."
+    }
+  },{"reference_id": "cierreLiteralesYPrimitivas",
+    "title": "Cierre",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Establecimos una primera clasificación de las _construcciones programáticas_ de los _lenguajes de programación_ a partir de su categoría sintáctica. Distinguimos aquellas _operaciones_ que _describen acciones_ (los _comandos_) de aquellas que _describen información_ (las _expresiones_). Además, vimos las _construcciones programáticas_ más elementales para construir _programas_. Dentro de los _comandos_ encontramos a los _comandos primitivos_; los _comandos_ que realizan acciones con los _elementos primitivos_ del lenguaje. Entre las _expresiones_ encontramos tanto _expresiones primitivas_ (las _expresiones_ que describen información relacionada a los _elementos primitivos_ del lenguaje) como _expresiones literales_ (las _expresiones_ que describen directamente a los _elementos primitivos_, o a partes de ellos). Finalmente, introdujimos las _operaciones paramétricas_, que son _operaciones_ (pueden ser tanto _comandos_ como _expresiones_) que requieren información adicional para terminar definirse. A las _expresiones_ que les pasamos a las _operaciones paramétricas_ las llamamos _argumentos_. En el siguiente cuadro se resumen las categorías identificadas y algunos ejemplos de las _construcciones programáticas_ vistas en cada lenguaje:\n![Varias de las operaciones de los distintos lenguajes vistos hasta ahora, clasificadas según si son comandos o expresiones, literales o primitivas y paramétricas o no paramétricas.](https://raw.githubusercontent.com/gpfernandezflorio/curso-fundamentos/refs/heads/main/img/cierreLiteralesYPrimitivas.png)"
+    }
+  },{"reference_id": "recapitulandoComandosYExpresiones",
+    "title": "Recapitulando ...",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "En el primer módulo hablamos sobre _lenguajes de programación_ y sobre ciertas características de los mismos: su _universo de discurso_ (los _elementos_ sobre los que el lenguaje puede predicar), sus _operaciones_ (las que se pueden realizar con dichos _elementos_) y sus _reglas de ejecución_ (las reglas que permiten describir cómo va a ser la ejecución de un _programa_ en dicho lenguaje). Hablamos también de la forma de expresar las _operaciones_ del lenguaje por medio de _construcciones programáticas_, que usadas para construir _programas_. En este segundo módulo empezamos a reconocer y clasificar esas _construcciones programáticas_. Distinguimos primero entre _comandos_ y _expresiones_. Hablamos luego de las _operaciones primitivas_ y de las _expresiones literales_ y cerramos introduciendo las _operaciones paramétricas_. Distinguimos también a los _lenguajes de programación_ basados en bloques (aquellos en los que las _construcciones programáticas_ se expresan por medio de bloques) de los _lenguajes de programación_ textuales (aquellos en los que las _construcciones programáticas_ se expresan por medio de cadenas de texto). En el siguiente módulo veremos cómo expandir el _universo de discurso_ definiendo nuestras propias _operaciones_ que permitan resolver problemas de otros dominios."
+    }
+  },{"reference_id": "programas3",
+    "title": "Programas (3)",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Como ya dijimos, cada lenguaje puede predicar sobre un _universo de discurso_ particular. Los lenguajes hablados por humanos (como el español o el inglés) tienen _universos de discurso_ **prácticamente infinitos**, ya que pueden _predicar_ sobre **casi cualquier concepto**. Los lenguajes formales (como los _lenguajes de programación_) suelen tener _universos de discurso_ **mucho más acotados**. Así como los lenguajes hablados nos permiten _expresar_ ideas, conceptos, propiedades u órdenes, a través de oraciones, los _lenguajes de programación_ nos permiten lo mismo a través de _programas_. Antes definimos un _programa_ como **una composición entre _comandos_ y _expresiones_**. Esta definición es correcta pero tiene un problema. Definir a un _programa_ de esa forma es equivalente a definir una oración del lenguaje natural como una composición entre sustantivos, adjetivos y verbos: si bien es cierto, lo relevante de una oración no es **cómo está construida** sino **qué nos permite _expresar_**. Así, diremos que un _programa_ no **es** una composición de _comandos_ y _expresiones_ sino que **se construye** a partir de ella. Un _programa_ **es**, como una oración en el lenguaje natural, una forma de _expresar_ algo, que puede ser una idea, un concepto, una propiedad o una órden."
+    }
+  },{"reference_id": "introPersonalizadas",
+    "title": "Introducción a las operaciones personalizadas",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Hasta ahora vimos cómo escribir _programas_ en un _lenguaje de programación_ usando únicamente las _operaciones primitivas_ (y _expresiones literales_) de dicho lenguaje para _expresar transformaciones_ sobre los _elementos_ del dominio del mismo. En Code Slime escribimos programas para _expresar una transformación_ del _escenario_ en el que cambiamos la ubicación del _slime_. Hicimos algo similar en PilasBloques con las ubicaciones de Duba y Lita, pero agregando también los otros _elementos_ (el churrasco, la lechuga, el tomate y el tazón). Luego usamos Blockly Games: Películas y Dibujando con figuras para _expresar transformaciones_ sobre un lienzo, agregando y moviendo figuras geométricas sobre el mismo. ¿Qué pasa cuando queremos _expresar una transformación_ sobre elementos de un dominio distinto al _universo de discurso_ del lenguaje? ¿Cómo hacemos para _expresar_ el movimiento de un personaje sobre una grilla en Gobstones? ¿Y en Dibujando con figuras? ¿Y cómo _expresamos_ un dibujo sobre un lienzo en Code Slime? ¿Y en PilasBloques? ¿Podemos _expresar_ una cuenta aritmética en Gobstones? ¿Y en Code Slime?"
+    }
+  },{"reference_id": "sinVestimenta1",
+    "title": "Quitando la vestimenta (1)",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Resolver los desafíos [El docente](https://gobstones.github.io/gobstones-jr/?github=gpfernandezflorio/curso-fundamentos&path=Proyectos/QuitandoLaVestimenta/El%20docente) y [El granjero](https://gobstones.github.io/gobstones-jr/?github=gpfernandezflorio/curso-fundamentos&path=Proyectos/QuitandoLaVestimenta/El%20granjero) de Gobstones Jr."
+    }
+  },{"reference_id": "GbsONoGbs",
+    "title": "¿Es Gobstones o no es Gobstones?",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Anteriormente establecimos que el _universo de discurso_ de Gobstones estaba compuesto por un tablero, bolitas de colores y un cabezal que podíamos _programar_ para que se mueva sobre el tablero poniendo y sacando bolitas. En estas últimas actividades vemos _universos de discurso_ totalmente distintos. En el primer caso tenemos un aula con bancos y un docente que se puede mover por los bancos dejando caramelos o recogiendo envoltorios; en el segundo, una granja con plantaciones y un granjero que se puede mover por las plantaciones sembrando semillas o cosechando tomates."
+    }
+  },{"reference_id": "sinVestimenta2",
+    "title": "Quitando la vestimenta (2)",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Resolver el desafío [El docente, el granjero y las bolitas](https://gobstones.github.io/gobstones-jr/?github=gpfernandezflorio/curso-fundamentos&path=Proyectos/QuitandoLaVestimenta/El%20docente,%20el%20granjero%20y%20las%20bolitas) de Gobstones Jr."
+    }
+  },{"reference_id": "vestimentas",
+    "title": "Diferentes vestimentas, mismo programa",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Una vez más, tenemos un _programa_ ya armado. Sin embargo, los textos de los bloques ya no hablan de bancos y caramelos ni de parcelas y tomates. Ahora estos bloques hablan de bolitas. Sin embargo, cuando lo ejecutamos no vemos que se agreguen y saquen bolitas sino que volvemos a ver al granjero. Sobre el tablero hay un botón con el ícono de un ojo que nos permite ocultar la _vestimenta_ y, junto a él, un selector que nos permite cambiarla (podemos elegir entra las _vestimentas_ \"Sembrando tomates\" y \"Repartiendo caramelos\"). El _programa_ que se ejecuta es siempre el mismo, pero según la _vestimenta_ que elijamos el problema que estamos resolviendo es distinto."
+    }
+  },{"reference_id": "conVestimentas",
+    "title": "Agregando una vestimenta",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Al comienzo del curso establecimos que cada _lenguaje de programación_ tenía un _universo de discurso_, que era el universo sobre el cual el lenguaje puede _predicar_. Como hasta ahora venimos trabajando únicamente con _operaciones primitivas_ y _expresiones literales_, cualquier _programa_ que construyamos estará _expresado_ en términos de los _elementos_ de ese _universo de discurso_.\n\nEn Code Slime los _programas_ siempre _expresan_ el movimiento del _slime_ sobre el _escenario_. En PilasBloques los _programas_ siempre _expresan_ las acciones realizadas por el personaje. En Gobstones Jr. los _programas_ siempre _expresan_ las acciones realizadas por el cabezal. En Blockly Games: Películas los _programas_ siempre _expresan_ el conjunto de figuras que se dibujan sobre el lienzo. En Dibujando con figuras los _programas_ siempre _expresan_ las acciones realizadas por el cursor.\n\nEn todos los casos, sólo podemos _expresarnos_ en el contexto del _universo de discurso_ de cada lenguaje. Sin embargo, la mayoría de los _lenguajes de programación_ proveen herramientas que nos van a permitir _expresarnos_ en términos de otros _dominios_. Esto se logra a través de dos _mecanismos de abstracción_, que veremos a continuación."
+    }
+  },{"reference_id": "abstracción",
+    "title": "Mecanismos de abstracción",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Cuando construimos _programas_ en un _lenguaje de programación_ lo hacemos para _expresar_ algo. Generalmente, lo que _expresamos_ con un _programa_ es la _solución_ a un _problema_ y ese _problema_ se enmarca en un _contexto_ o _dominio_ particular. Pocas veces sudece que el _dominio_ del _problema_ que queremos resolver es el mismo que el _universo de discurso_ del lenguaje que estamos usando. Necesitamos entonces _mecanismos_ que nos permitan _expresarnos_ en términos del _dominio del problema_ y no en términos del _universo de discurso_ del lenguaje.\n\nEl primero de los _mecanismos_ que la mayoría de los _lenguajes de programación_ para lograr esto es la _representación de información_. Este consiste en utilizar los _elementos primitivos_ del lenguaje para _representar_ otros _elementos_ de otros _dominios_. El segundo _mecanismo_ es la posibilidad de crear nuevas _operaciones_ en el lenguaje, que se definan a partir de composiciones de las ya existentes. Esto es agregar _comandos_ y _expresiones_ que _describan_ acciones y datos, respectivamente, ya no del _universo de discurso_ del lenguaje sino del _dominio del problema_ que queremos resolver.\n\nEn otras palabras, usando estos dos _mecanismos_ podemos cambiar tanto el _universo de discurso_ del lenguaje (_representando_ nuevos _elementos_ a partir de los _elementos primitivos_) como sus _operaciones_ (definiendo nuevas _operaciones_ a partir de las _operaciones_ ya definidas). Llamamos a estas herramientas _mecanismos de abstracción_ porque nos permiten _abstraernos_ del _universo de discurso_ original del lenguaje y _expresarnos_ como si estuviéramos trabajando de manera _primitiva_ en el _dominio del problema_, usando _operaciones_ de ese _dominio_ que operan con _elementos_ de ese _dominio_."
+    }
+  },{"reference_id": "representaciónConcreta",
+    "title": "Representación concreta",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "La forma más simple de usar _elementos primitivos_ de un lenguaje para _representar elementos_ de otros _dominios_ es asignar a cada _elemento primitivo_ (o conjunto de ellos) uno de los _elementos_ del _dominio del problema_. Por ejemplo, para resolver en Gobstones un _problema_ del _dominio_ de Duba, tendríamos que decidir cómo _representar_ cada uno de los _elementos primitivos_ de Duba (el _escenario_, a Duba, el churrasco y los obstáculos) usando _elementos primitivos_ de Gobstones (el _tablero_ y las _bolitas_). Una posible _representación_ podría ser usar el _tablero_ de Gobstones para _representar_ el _escenario_ de Duba. Cada _celda_ del _tablero_ de Gobstones_representa_ una posición del _escenario_ de Duba. Los _elementos_ de Duba que se ubican sobre el _escenario_ se _representarán_ con alguna cantidad de _bolitas_. Por ejemplo, una _bolita_ verde para _representar_ a Duba, dos _bolitas_ verdes para _representar_ el churrasco y alguna cantidad de _bolitas_ negras para _representar_ los obstáculos.\n\nOtros ejemplos podrían ser usar un desafío de Lita para resolver un _problema_ del _dominio_ de Code Slime (usando a Lita para _representar_ al _slime_ y al tomate para _representar_ la gema) o usar Blockly Games: Película para resolver un _problema_ del _dominio_ de Dibujando con figuras (usando una figura específica para _representar_ al cursor y otras figuras para _representar_ a las figuras dibujadas por él). Notar sin embargo que no cualquier _lenguaje de programación_ se puede utilizar para _representar_ el _dominio_ de otro. En Code Slime no se pueden resolver _problemas_ del _dominio_ de Gobstones (ya que no hay suficientes _elementos primitivos_ como para representar todos los _elementos primitivos_ de Gobstones) y en Gobstones, a priori, no pareciera ser posible resolver _problemas_ del _dominio_ de Blockly Games: Película."
+    }
+  },{"reference_id": "operacionesPersonalizadas",
+    "title": "Operaciones personalizadas",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Una vez establecida la _representación_, podemos definir las nuevas _operaciones_ a partir de las _operaciones_ ya definidas. Estas nuevas _operaciones_ interactuarán con los _elementos primitivos_ del lenguaje real, simulando el comportamiento que las _operaciones_ simuladas tienen en el _dominio del problema_ al interactuar con sus respectivos _elementos primitivos_.\n\nSiguiendo con el ejemplo de usar Gobstones para representar el _universo de discurso_ de Duba, se había propuesto representar a Lita con una _bolita_ verde, al churrasco con dos _bolitas_ verdes y a los obstáculos con _bolitas_ negras. Para resolver un desafío de Duba se requieren los _comandos_ que mueven a Duba hacia cada una de las cuatro direcciones y el comando para hacer que Duba coma el churrasco. Dado que elegimos _representar_ a Duba con una _bolita_ verde, el _comando_ para mover a Duba una posición hacia una dirección consistirá en sacar una _bolita_ verde de una _celda_ y poner una _bolita_ verde en una _celda_ contigua, siempre asgurando antes que no haya _bolitas_ negras en la _celda_ destino. Por otro lado, el _comando_ para hacer que Duba coma el churrasco consistirá en sacar dos _bolitas_ rojas de una _celda_ (las dos que corresponden al churrasco), siempre que haya en esa _celda_ tres _bolitas_ rojas (asegurando así que el churrasco está en la misma ubicación que Duba)."
+    }
+  },{"reference_id": "sinVestimenta3",
+    "title": "Quitando la vestimenta (3)",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Resolver los desafíos [El alien toca botón](https://gobstones.github.io/gobstones-jr/?github=gpfernandezflorio/curso-fundamentos&path=Proyectos/QuitandoLaVestimenta/El%20alien%20toca%20bot%C3%B3n) y [Armamos 'El alien toca botón'](https://gobstones.github.io/gobstones-jr/?github=gpfernandezflorio/curso-fundamentos&path=Proyectos/QuitandoLaVestimenta/Armamos%20%27El%20alien%20toca%20bot%C3%B3n%27) de Gobstones Jr."
+    }
+  },{"reference_id": "defOperaciones",
+    "title": "Definiendo nuevas operaciones",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "En el desafío 'El alien toca botón', como pasaba en los desafíos 'El docente' y 'El granjero', no tenemos disponibles las _operaciones primitivas_ de Gobstones, sino que contamos únicamente con los _comandos_ del _dominio del problema_ (uno para mover al alien y otro para hacer que el alien toque el botón). En el desafío 'Armamos El alien toca botón' sí podemos usar las _operaciones primitivas_ de Gobstones. Sin embargo, el _programa_ ya viene definido, usando las mismas _operaciones_ que en la actividad anterior (las del _dominio del problema_). El objetivo en este caso no es construir un _programa_ para hacer que el alien toque el botón (eso ya viene hecho), sino definir las _operaciones_ necesarias para que ese _programa_ funcione. Además del bloque principal que define el _programa_ que se va a ejecutar, aparecen otros dos bloques violetas que son las definiciones de dichas _operaciones_. Estas definiciones inician vacías y tenemos que completarlas ubicando bloques de _comandos_ en la ranura con forma de letra C, ocupada inicialmente por el bloque con la inscripción 'COMPLETAR COMANDO'. En esta actividad podemos ver ambos _mecanismos de abstracción_ funcionando a la vez. Por un lado, la _vestimenta_ nos permite abstraernos de los _elementos primitivos_ del lenguaje, mostrando en su lugar los _elementos_ del _dominio del problema_. Por otro, los bloques que definen nuevas _operaciones_ nos permiten abstraernos de las _operaciones primitivas_ del lenguaje, utilizando en su lugar las correspondientes al _dominio del problema_ para construir el _programa_."
+    }
+  },{"reference_id": "codigoMorse1",
+    "title": "Código Morse (1)",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Resolver el desafío [Escribiendo mensajes en código Morse](https://gobstones.github.io/gobstones-jr/?github=gpfernandezflorio/curso-fundamentos&path=Proyectos/Procedimientos/Escribiendo%20mensajes%20en%20código%20Morse) de Gobstones Jr. Al finalizar, no olvides guardar tu solución."
+    }
+  },{"reference_id": "codigoMorse2",
+    "title": "Código Morse (2)",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Modificar el _programa_ que escribiste en la actividad anterior para que, en lugar de decir \"TEMA\", diga \"MATE\". Al finalizar, no olvides guardar tu solución."
+    }
+  },{"reference_id": "codigoMorse3",
+    "title": "Código Morse (3)",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Modificar el _programa_ que escribiste en la actividad anterior para que, en lugar de decir \"MATE\", diga \"MAAATE\". Al finalizar, no olvides guardar tu solución."
+    }
+  },{"reference_id": "legibilidad",
+    "title": "Mejorando la legibilidad",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Nuevamente tenemos un desafío de Gobstones en el que se nos proveen _operaciones_ que se _expresan_ en términos del _dominio del problema_ (hacer ruido y hacer silencio) en lugar de proveernos las _operaciones primitivas_ de Gobstones. En esta actividad no tenemos acceso a la _representación_ usada (no podemos ver cómo se _representan_ los _elementos_ usando _bolitas_) ni a las definiciones de los _comandos_ (cómo se definen las _operaciones_ a partir de las _operaciones primitivas_) como sucedía en la actividad del alien. Luego, no pareciera ser necesario utilizar _mecanismos de abstracción_. Sin embargo, definir nuevas _operaciones_ no sólo nos brindan la posibilidad de _expresar_ nuestros _programas_ en términos del _dominio del problema_. También nos ayudan a mejorar la _legibilidad_ del mismo. En este caso, los _programas_ que definimos resultaron ser excesivamente largos y complejos. Modificar el primer _programa_ para convertirlo en el segundo requiere identificar exactamente qué partes del mismo corresponden a la parte de decir \"TE\" y cuáles a la de decir \"MA\", para poder reordenarlas. Sería mucho más fácil si en el _programa_ se leyera \"Decir T\", \"Decir E\", \"Decir M\" y \"Decir A\". Definir nuevas _operaciones_ no sólo sirve para proveer _abstracción_ sino también para que el código sea más fácil de leer y modificar. Al haberlo hecho recientemente, es probable que no te haya costado tanto identificar las partes del _programa_ correspondientes a cada letra pero, ¿creés que te hubiera resultado tan fácil si hubieras tenido que modificar un _programa_ que hiciste hace varios días? ¿Y si hubiese sido un _programa_ hecho por otra persona? ¿Podrías decir qué mensaje produce el siguiente _programa_?\n![Programa con muchos comandos para hacer sonidos y hacer silencios en el que es difícil determinar cuál es el mensaje que se está generando.](https://raw.githubusercontent.com/gpfernandezflorio/curso-fundamentos/refs/heads/main/img/programaPocoLegible.png)"
+    }
+  }]
+}
