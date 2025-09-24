@@ -5,17 +5,15 @@ procedure SonidoDurante_Milisegundos(n) {
     repeat (n) {Poner(Azul)}
 }
 procedure SilencioDurante_Milisegundos(n) {
+    if (n>=100) {
+        AuxPonerSímbolo()
+    }
+    if (n>=300) {
+        AuxPonerLetra()
+    }
     if (n>=700) {
         if (hayBolitas(Negro)) {AuxPasarSiSePuede()}
         AuxPasarSiSePuede()
-    } else {
-        if (n>=300) {
-            AuxPonerLetra()
-        } else {
-            if (n>=100) {
-                AuxPonerSímbolo()
-            }
-        }
     }
 }
 

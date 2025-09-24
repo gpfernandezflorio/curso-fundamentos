@@ -2,7 +2,7 @@ library:
   visible: false
 source:
   visible: true
-  percentage: 0.6096019686544343
+  percentage: 0.5720087920489296
 board:
   visible_edition: false
   collapse_toolbox: false
@@ -24,15 +24,15 @@ attire:
     can_toggle_visibility: false
   visible: true
   active: Morse
-initialDescription: false
+initialDescription: true
 link: ''
 blocks:
   visible:
     - ProcedimientosPrimitivos
-    - MisProcedimientos
     - Numero
-    - DefinicionDeProcedimientoSimple
   disabled: []
 activity:
   creation_mode: advanced
-name: Morse
+  construction_mode: blocks
+  execution_type: sequential
+name: Escribiendo mensajes en código Morse

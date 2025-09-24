@@ -1,0 +1,6 @@
+# Escribiendo mensajes en código Morse
+En este desafío vamos a aprender a escribir mensajes usando [código Morse](https://es.wikipedia.org/wiki/C%C3%B3digo_morse). El código Morse es una forma de codificar mensajes usando únicamente dos símbolos; un punto y una raya. Originalmente se usaba para transmitir mensajes por medio de pulsos eléctricos que se interpretaban como sonidos. Los puntos generaban sonidos cortos y las rayas sonidos largos.
+
+Vamos a simular esta codificación de mensajes en Gobstones. Tenés a tu disposición dos comandos; uno para hacer un sonido y otro para hacer un silencio. Ambos comandos esperan un argumento que corresponde a la cantidad de milisegundos que debe durar el sonido o el silencio, respectivamete. El objetivo es usar estos comandos para generar el mensaje "TEMA" en código Morse.
+
+Para eso, empezá buscando en internet cómo es la codificación de cada letra. Una vez que la encuentres, usá los comandos para generar sonidos y silencios que codifiquen las distintas letras que querés escribir, teniendo en cuenta que la duración de un punto es 100 milisegundos, la de una raya es 300 milisegundos, el silencio entre símbolos es 100 milisegundos, el silencio entre letras es 300 milisegundos y el silencio entre palabras es 700 milisegundos.
