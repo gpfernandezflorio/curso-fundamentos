@@ -1,4 +1,5 @@
 { "course": {
+    "id":69,
     "title": "Iniciación a la programación",
     "description": "Curso básico de introducción a la programación. Cubre los aspectos fundamentales de la programación: comandos, expresiones, representación de información, procedimientos, funciones y parámetros. No se requiere ningún conocimiento previo.",
     "status": "draft",
@@ -598,41 +599,40 @@
   },{"reference_id": "ejComandosYExpresiones",
     "title":"Comandos y expresiones",
     "activity_type":"exercise",
+    "requires_feedback": true,
     "content": {
       "exercise_type":"fill_gap",
-      "content": {
-        "statement": "Completar la siguiente oración.",
-        "code": "Los comandos son descripciones de {{1}} mientras que las expresiones son descripciones de {{2}}. En general, los lenguajes de programación definen {{3}}.",
-        "options": [{
-          "option": "acciones",
-          "position": 1,
-          "score": 1
-        },{
-          "option": "datos",
-          "position": 2,
-          "score": 1
-        },{
-          "option": "información",
-          "position": 2,
-          "score": 1
-        },{
-          "option": "tanto comandos como expresiones",
-          "position": 3,
-          "score": 1
-        },{
-          "option": "código",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "comandos",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "expresiones",
-          "position": 0,
-          "score": 0
-        }]
-      }
+      "statement": "Completar la siguiente oración.",
+      "code": "Los comandos son descripciones de {{1}} mientras que las expresiones son descripciones de {{2}}. En general, los lenguajes de programación definen {{3}}.",
+      "options": [{
+        "option": "acciones",
+        "position": 1,
+        "score": 1
+      },{
+        "option": "datos",
+        "position": 2,
+        "score": 1
+      },{
+        "option": "información",
+        "position": 2,
+        "score": 1
+      },{
+        "option": "tanto comandos como expresiones",
+        "position": 3,
+        "score": 1
+      },{
+        "option": "código",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "comandos",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "expresiones",
+        "position": 0,
+        "score": 0
+      }]
     }
   },{"reference_id": "gbsJr2",
     "title": "Presentación de Gobstones Jr. (2)",
@@ -816,7 +816,6 @@
       "statement": "¿Cuáles de las siguientes palabras de Dibujando con figuras corresponden a expresiones (es decir, descripciones de información)?",
       "is_multiple_selection": true,
       "options": [{
-      },{
         "option": "círculo",
         "score": 0
       },{
@@ -854,61 +853,60 @@
   },{"reference_id": "ejDibuFiguras3",
     "title":"Dibujando un cuadrado con líneas",
     "activity_type":"exercise",
+    "requires_feedback": true,
     "content": {
       "exercise_type":"fill_gap",
-      "content": {
-        "statement": "En el lenguaje de programación Dibujando con figuras existe un comando que permite dibujar un cuadrado a partir de un número que se corresponde con la longitud de lado del mismo. Otra forma de dibujar un cuadrado es dibujando las cuatro líneas que lo componen. Completar el siguiente código de Dibujando con figuras para que el programa resultante dibuje un cuadrado de lado 100 pero usando 4 líneas en lugar de un cuadrado.",
-        "code": "línea 100 0\nlínea {{1}} 100\n{{2}} -100 0\nlínea 0 {{3}}",
-        "options": [{
-          "option": "0",
-          "position": 1,
-          "score": 1
-        },{
-          "option": "línea",
-          "position": 2,
-          "score": 1
-        },{
-          "option": "-100",
-          "position": 3,
-          "score": 1
-        },{
-          "option": "100",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "150",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "200",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "50",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "cuadrado",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "arriba",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "abajo",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "izquierda",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "derecha",
-          "position": 0,
-          "score": 0
-        }]
-      }
+      "statement": "En el lenguaje de programación Dibujando con figuras existe un comando que permite dibujar un cuadrado a partir de un número que se corresponde con la longitud de lado del mismo. Otra forma de dibujar un cuadrado es dibujando las cuatro líneas que lo componen. Completar el siguiente código de Dibujando con figuras para que el programa resultante dibuje un cuadrado de lado 100 pero usando 4 líneas en lugar de un cuadrado.",
+      "code": "línea 100 0\nlínea {{1}} 100\n{{2}} -100 0\nlínea 0 {{3}}",
+      "options": [{
+        "option": "0",
+        "position": 1,
+        "score": 1
+      },{
+        "option": "línea",
+        "position": 2,
+        "score": 1
+      },{
+        "option": "-100",
+        "position": 3,
+        "score": 1
+      },{
+        "option": "100",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "150",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "200",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "50",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "cuadrado",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "arriba",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "abajo",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "izquierda",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "derecha",
+        "position": 0,
+        "score": 0
+      }]
     }
   },{"reference_id": "dibujandoConFiguras",
     "title": "Dibujando con figuras",
@@ -941,41 +939,40 @@
   },{"reference_id": "ejErrores",
     "title":"Errores",
     "activity_type":"exercise",
+    "requires_feedback": true,
     "content": {
       "exercise_type":"fill_gap",
-      "content": {
-        "statement": "Completar la siguiente oración.",
-        "code": "Los errores sintácticos son {{1}}. Los errores semánticos son {{2}}. En general, en los lenguajes de programación por bloques {{3}} y en los lenguajes de programación textuales {{4}}.",
-        "options": [{
-          "option": "errores en cómo está construido el código",
-          "position": 1,
-          "score": 1
-        },{
-          "option": "errores que ocurren durante la ejecución de un programa",
-          "position": 2,
-          "score": 1
-        },{
-          "option": "sólo existen los errores semánticos",
-          "position": 3,
-          "score": 1
-        },{
-          "option": "existen tanto los errores sintácticos como los semánticos",
-          "position": 4,
-          "score": 1
-        },{
-          "option": "sólo existen los errores sintácticos",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "cuando el programa tarda mucho",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "cuando el programa no cumple el objetivo esperado",
-          "position": 0,
-          "score": 0
-        }]
-      }
+      "statement": "Completar la siguiente oración.",
+      "code": "Los errores sintácticos son {{1}}. Los errores semánticos son {{2}}. En general, en los lenguajes de programación por bloques {{3}} y en los lenguajes de programación textuales {{4}}.",
+      "options": [{
+        "option": "errores en cómo está construido el código",
+        "position": 1,
+        "score": 1
+      },{
+        "option": "errores que ocurren durante la ejecución de un programa",
+        "position": 2,
+        "score": 1
+      },{
+        "option": "sólo existen los errores semánticos",
+        "position": 3,
+        "score": 1
+      },{
+        "option": "existen tanto los errores sintácticos como los semánticos",
+        "position": 4,
+        "score": 1
+      },{
+        "option": "sólo existen los errores sintácticos",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "cuando el programa tarda mucho",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "cuando el programa no cumple el objetivo esperado",
+        "position": 0,
+        "score": 0
+      }]
     }
   },{"reference_id": "gbsJrYGbsSr",
     "title": "Gobstones Jr. y Gobstones Sr.",
@@ -994,89 +991,88 @@
   },{"reference_id": "ejGbsSr1",
     "title":"Ejercitación de Gobstones Sr. (1)",
     "activity_type":"exercise",
+    "requires_feedback": true,
     "content": {
       "exercise_type":"fill_gap",
-      "content": {
-        "statement": "Completar el siguiente código de Gobstones Sr. para que el programa resultante dibuje una víbora de bolitas como la del desafío 'Víbora de bolitas, horizontal' pero usando bolitas rojas en lugar de bolitas verdes, vertical en lugar de horizontal (que vaya hacia arriba) y de longitud 2 en lugar de 3.",
-        "code": "{{1}} {\n  {{2}}(Rojo)\n  {{3}}(Norte)\n  Poner({{4}})\n}",
-        "options": [{
-          "option": "program",
-          "position": 1,
-          "score": 1
-        },{
-          "option": "Poner",
-          "position": 2,
-          "score": 1
-        },{
-          "option": "Mover",
-          "position": 3,
-          "score": 1
-        },{
-          "option": "Rojo",
-          "position": 4,
-          "score": 1
-        },{
-          "option": "Verde",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "Azul",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "Norte",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "Sur",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "Este",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "Sacar",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "programa",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "Program",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "poner",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "sacar",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "mover",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "rojo",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "verde",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "este",
-          "position": 0,
-          "score": 0
-        },{
-          "option": "norte",
-          "position": 0,
-          "score": 0
-        }]
-      }
+      "statement": "Completar el siguiente código de Gobstones Sr. para que el programa resultante dibuje una víbora de bolitas como la del desafío 'Víbora de bolitas, horizontal' pero usando bolitas rojas en lugar de bolitas verdes, vertical en lugar de horizontal (que vaya hacia arriba) y de longitud 2 en lugar de 3.",
+      "code": "{{1}} {\n  {{2}}(Rojo)\n  {{3}}(Norte)\n  Poner({{4}})\n}",
+      "options": [{
+        "option": "program",
+        "position": 1,
+        "score": 1
+      },{
+        "option": "Poner",
+        "position": 2,
+        "score": 1
+      },{
+        "option": "Mover",
+        "position": 3,
+        "score": 1
+      },{
+        "option": "Rojo",
+        "position": 4,
+        "score": 1
+      },{
+        "option": "Verde",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "Azul",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "Norte",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "Sur",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "Este",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "Sacar",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "programa",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "Program",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "poner",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "sacar",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "mover",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "rojo",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "verde",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "este",
+        "position": 0,
+        "score": 0
+      },{
+        "option": "norte",
+        "position": 0,
+        "score": 0
+      }]
     }
   },{"reference_id": "estilo",
     "title": "Cuestiones de estilo",
