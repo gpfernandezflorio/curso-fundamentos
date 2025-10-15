@@ -2,7 +2,7 @@ library:
   visible: false
 source:
   visible: true
-  percentage: 0.55
+  percentage: 0.5499928325688074
 board:
   visible_edition: false
   collapse_toolbox: false
@@ -23,6 +23,14 @@ attire:
   active: null
 initialDescription: true
 blocks:
+  visible:
+    - COMANDOS
+    - Poner
+    - Mover
+    - EXPRESIONES
+    - Color
+    - Direccion
+  disabled: []
   defaultToolbox: |
     <category name="COMANDOS">
     </category>
@@ -100,13 +108,8 @@ blocks:
       <block type="ExpresionCompletar"></block>
       <block type="AsociacionDeTeclaCompletar"></block>
     </category>
-  disabled: []
-  visible:
-    - COMANDOS
-    - Poner
-    - Mover
-    - EXPRESIONES
-    - Color
-    - Direccion
 customErrors: null
 name: 'Víbora de bolitas, horizontal'
+activity:
+  construction_mode: blocks
+  execution_type: sequential
