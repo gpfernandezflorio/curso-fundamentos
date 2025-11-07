@@ -90,6 +90,27 @@
     "requires_feedback": false,
     "dependencies": ["modLiteralesYPrimitivas"],
     "activities": [
+      "programas3",
+      "ejProgramas3a",
+      "ejProgramas3b",
+      "introPersonalizadas",
+      "sinVestimenta1",
+      "GbsONoGbs",
+      "sinVestimenta2",
+      "vestimentas",
+      "conVestimentas",
+      "abstracción",
+      "representaciónConcreta",
+      "operacionesPersonalizadas",
+      "sinVestimenta3",
+      "defOperaciones",
+      "codigoMorse1",
+      "codigoMorse2",
+      "codigoMorse3",
+      "legibilidad",
+      "procedimientos",
+      "funciones",
+      "cierrePersonalizadas"
     ]
   }],
   "activities": [
@@ -1257,6 +1278,27 @@
     "requires_feedback": false,
     "content": {
       "markdown": "Nuevamente tenemos un desafío de Gobstones en el que se nos proveen _operaciones_ que se _expresan_ en términos del _dominio del problema_ (hacer ruido y hacer silencio) en lugar de proveernos las _operaciones primitivas_ de Gobstones. En esta actividad no tenemos acceso a la _representación_ usada (no podemos ver cómo se _representan_ los _elementos_ usando _bolitas_) ni a las definiciones de los _comandos_ (cómo se definen las _operaciones_ a partir de las _operaciones primitivas_) como sucedía en la actividad del alien. Luego, no pareciera ser necesario utilizar _mecanismos de abstracción_. Sin embargo, definir nuevas _operaciones_ no sólo nos brinda la posibilidad de _expresar_ nuestros _programas_ en términos del _dominio del problema_. También nos ayudan a mejorar la _legibilidad_ del mismo. En este caso, los _programas_ que definimos resultaron ser excesivamente largos y complejos. Modificar el primer _programa_ para convertirlo en el segundo requiere identificar exactamente qué partes del mismo corresponden a la parte de decir \"TE\" y cuáles a la de decir \"MA\", para poder reordenarlas. Sería mucho más fácil si en el _programa_ se leyera \"Decir T\", \"Decir E\", \"Decir M\" y \"Decir A\". Definir nuevas _operaciones_ no sólo sirve para proveer _abstracción_ sino también para que el código sea más fácil de leer y modificar. Al haberlo hecho recientemente, es probable que no te haya costado tanto identificar las partes del _programa_ correspondientes a cada letra pero, ¿creés que te hubiera resultado tan fácil si hubieras tenido que modificar un _programa_ que hiciste hace varios días? ¿Y si hubiese sido un _programa_ hecho por otra persona? ¿Podrías decir qué mensaje produce el siguiente _programa_?\n![Programa con muchos comandos para hacer sonidos y hacer silencios en el que es difícil determinar cuál es el mensaje que se está generando.](https://raw.githubusercontent.com/gpfernandezflorio/curso-fundamentos/refs/heads/main/img/programaPocoLegible.png)"
+    }
+  },{"reference_id": "procedimientos",
+    "title": "Procedimientos",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Finalmente estamos en condiciones de presentar este nuevo concepto. Estamos hablando de _procedimientos_. Los _procedimientos_ son _comandos_ que no vienen definidos en el lenguaje. Es decir, son _comandos_ que pueden ser incorporados al lenguaje por quien está construyendo el _programa_. Para definir un nuevo _procedimiento_ se debe elegir un nombre y establecer cuál será el _comando_ (o la secuencia de _comandos_) que queremos que se ejecute cuando el _programa_ tenga que ejecutar dicho _procedimiento_. Por ejemplo, si queremos definir el _procedimiento_ para mover al alien una posición a la derecha (y suponiendo que seguimos representando al alien con una bolita verde) entonces tenemos que elegir un nombre como \"Mover al Alien al Este\" y establecer la secuencia de _comandos_ correspondiente a la ejecución como sacar una bolita verde, mover el cabezal una celda hacia el Este y poner una bolita verde.\nEn Gobstones Jr. los _procedimientos_ se definen a través del bloque violeta con la inscripción 'Define que'. Este bloque tiene un campo de texto en donde debemos escribir el nombre del _procedimiento_ que estamos definiendo y un agujero de _comando_ (la ranura con forma de letra C) en donde debemos ubicar el _comando_ (o la secuencia de _comandos_) que corresponen a su ejecución.\nEn Gobstones Sr. para definir un _procedimiento_ escribimos la palabra clave `procedure` seguida del nombre del _procedimiento_ y, entre llaves, el _comando_ (o la secuencia de _comandos_) correspondientes a su ejecución. Un detalle a tener en cuenta al trabajar en lenguajes textuales es que los nombres de los _procedimientos_ no pueden tener espacios. Así que, si quisiéramos definir en Gobstones Sr. el _procedimiento_ para mover al Alien al Este, no podríamos llamarlo \"Mover al Alien al Este\" como en Gobstones Jr. En su lugar podemos llamarlo \"MoverAlAlienAlEste\". A continuación se muestra cómo quedaría la definición del _procedimiento_ para mover al Alien en Gobstones Sr.:\n\n```\nprocedure MoverAlAlienAlEste {\n  Sacar(Verde)\n  Mover(Este)\n  Poner(Verde)\n}"
+    }
+  },{"reference_id": "funciones",
+    "title": "Funciones",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "¿Y qué pasa si en lugar de definir un nuevo _comando_ queremos definir una nueva _expresión_. Esto es posible mediante un mecanismo muy similar. Las _expresiones_ que son incorporadas al lenguaje por quien está construyendo el _programa_ se llaman _funciones_. Al igual que sucedía con los _procedimientos_, cuando alguien define una _función_ tiene que elegir un nombre y definir su comportamiento. La principal diferencia es que, como los _procedimientos_ son _comandos_, su comportamiento se describe a través de un _comando_ (o de una secuencia de _comandos_). Las _funciones_ son _expresiones_ así que su comportamiento se describe a través de una _expresión_.\nEn Gobstones Jr. las _funciones_ también se definen a través de un bloque violeta con la inscripción 'Define que' (aunque el color es ligeramente más oscuro). Este bloque tiene un campo de texto en donde debemos escribir el nombre del _procedimiento_ que estamos definiendo. Sin embargo, a diferencia del bloque usado para definir _procedimientos_, este otro no tiene un agujero de _comando_ sino uno de _expresión_ (la ranura con forma de orejita, similar a la que tienen los comandos primitivos como _Mover_ y _Poner_). En ese agujero debemos ubicar la _expresión_ que queremos describir por medio de la _función_ que estamos definiendo.\nEn Gobstones Sr. para definir una _función_ escribimos la palabra clave `function` seguida del nombre de la _función_ y, entre llaves, la palabra clave `return` seguida de la _expresión_ que queremos describir encerrada entre paréntesis. Nuevamente, los nombres de las _funciones_ no pueden tener espacios, así que, si quisiéramos definir en Gobstones Sr. una _función_ que describa la cantidad de días que tiene un año biciesto podríamos llamarla \"cantidadDeDíasEnAñoBiciesto\". A continuación se muestra cómo quedaría la definición de dicha _función_ en Gobstones Sr.:\n\n```\nfunction cantidadDeDíasEnAñoBiciesto {\n  return (366)\n}"
+    }
+  },{"reference_id": "cierrePersonalizadas",
+    "title": "Cierre",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "En los primeros dos módulos empezamos a trabajar sobre los _lenguajes de programación_ y sobre las _operaciones primitivas_ de cada uno. En este módulo aprendimos cómo definir nuevas _operaciones_ que no venían ya incluídas en el lenguaje. Esto nos permite expresar soluciones a problemas en _dominios_ distintos al _universo de discurso_ del lenguaje que estamos usandos."
     }
   }]
 }
