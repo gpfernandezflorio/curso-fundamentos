@@ -1,5 +1,5 @@
 { "course": {
-    "id":69,
+    "id":74,
     "title": "Iniciación a la programación",
     "description": "Curso básico de introducción a la programación. Cubre los aspectos fundamentales de la programación: comandos, expresiones, representación de información, procedimientos, funciones y parámetros. No se requiere ningún conocimiento previo.",
     "status": "draft",
@@ -14,6 +14,7 @@
     "dependencies": [],
     "activities": [
       "presentación",
+      "introMC",
       "ejercitaciónCodeSlime",
       "ejCodeSlime1",
       "ejCodeSlime2",
@@ -26,16 +27,31 @@
       "ejPilasBloques3",
       "ejPilasBloques4",
       "pilasBloquesLita",
+      "mcPilasBloques",
+      "mcPilasBloquesA",
+      "mcPilasBloquesB",
+      "mcPilasBloquesC",
+      "mcPilasBloquesD",
+      "mcPilasBloquesE",
+      "mcPilasBloquesF",
+      "mcPilasBloquesG",
       "universoDeDiscurso",
       "universoDeDiscursoCodeSlime",
       "universoDeDiscursoPilasBloques",
+      "mcUniversoDeDiscurso1",
+      "mcUniversoDeDiscurso2",
       "operaciones",
       "operacionesCodeSlime",
       "operacionesPilasBloques",
+      "mcOperaciones1",
+      "mcOperaciones2",
       "reglasSemanticas",
       "reglasCodeSlime",
       "reglasPilasBloques",
-      "cierreLenguajes"
+      "mcReglasSemánticas1",
+      "mcReglasSemánticas2",
+      "cierreLenguajes",
+      "mcCierreLenguajes"
     ]
   },{"reference_id": "modLiteralesYPrimitivas",
     "title": "Expresiones literales y operaciones primitivas",
@@ -53,35 +69,75 @@
       "ejGbsJr2",
       "ejGbsJr3",
       "ejGbsJr4",
+      "mcGbsJr",
+      "mcGbsJrA",
+      "mcGbsJrB",
+      "mcGbsJrC",
+      "mcGbsJrD",
+      "mcGbsJrE",
+      "mcGbsJrF",
+      "mcGbsJrG",
       "gbsJr1",
+      "mcTransferencia1",
+      "mcTransferencia2",
       "noSoloComandos",
       "expresiones",
       "ejComandosYExpresiones",
       "gbsJr2",
+      "mcExpresiones1",
+      "mcExpresiones2",
       "programas2",
       "ejProgramas2",
       "ejercitaciónBlocklyGamesPelícula",
       "ejBlockly1",
       "ejBlockly2",
+      "mcBlocklyGamesPelícula",
+      "mcBlocklyGamesPelículaA",
+      "mcBlocklyGamesPelículaB",
+      "mcBlocklyGamesPelículaC",
+      "mcBlocklyGamesPelículaD",
+      "mcBlocklyGamesPelículaE",
+      "mcBlocklyGamesPelículaF",
+      "mcBlocklyGamesPelículaG",
       "blocklyGamesPelícula",
       "clasificaciónConstrucciones1",
       "expresionesPrimitivasVsLiterales",
+      "mcLiterales1",
+      "mcLiterales2",
+      "mcLiterales3Texto",
       "lenguajesTextuales",
       "ejDibuFiguras1",
       "ejDibuFiguras2",
       "ejDibuFiguras3",
+      "mcDibuFiguras",
+      "mcDibuFigurasA",
+      "mcDibuFigurasB",
+      "mcDibuFigurasC",
+      "mcDibuFigurasD",
+      "mcDibuFigurasE",
+      "mcDibuFigurasF",
+      "mcDibuFigurasG",
       "dibujandoConFiguras",
       "textoVsBloques",
+      "mcTexto1",
+      "mcTexto2",
       "erroresTextuales",
       "erroresSintacticosVsSemanticos",
       "ejErrores",
+      "mcErrores",
+      "mcErroresA",
+      "mcErroresB",
+      "mcErroresC",
+      "mcErroresD",
+      "mcErroresE",
       "gbsJrYGbsSr",
       "ejercitaciónGbsSr",
       "ejGbsSr1",
       "estilo",
       "operacionesParamétricas",
       "cierreLiteralesYPrimitivas",
-      "recapitulandoComandosYExpresiones"
+      "recapitulandoComandosYExpresiones",
+      "mcCierreLiteralesYPrimitivas"
     ]
   },{"reference_id": "modPersonalizadas",
     "title": "Operaciones personalizadas",
@@ -93,6 +149,7 @@
       "programas3",
       "ejProgramas3a",
       "ejProgramas3b",
+      "mcProgramas",
       "introPersonalizadas",
       "sinVestimenta1",
       "GbsONoGbs",
@@ -102,15 +159,36 @@
       "abstracción",
       "representaciónConcreta",
       "operacionesPersonalizadas",
+      "mcPersonalizadas1",
+      "mcPersonalizadas2",
       "sinVestimenta3",
+      "mcSinVestimenta",
+      "mcSinVestimentaA",
+      "mcSinVestimentaB",
+      "mcSinVestimentaC",
+      "mcSinVestimentaD",
+      "mcSinVestimentaE",
+      "mcSinVestimentaF",
+      "mcSinVestimentaG",
       "defOperaciones",
       "codigoMorse1",
       "codigoMorse2",
       "codigoMorse3",
+      "mcMorse",
+      "mcMorseA",
+      "mcMorseB",
+      "mcMorseC",
+      "mcMorseD",
+      "mcMorseE",
+      "mcMorseF",
+      "mcMorseG",
       "legibilidad",
       "procedimientos",
       "funciones",
-      "cierrePersonalizadas"
+      "mcProcedimientosYFunciones1",
+      "mcProcedimientosYFunciones2",
+      "cierrePersonalizadas",
+      "mcCierrePersonalizadas"
     ]
   }],
   "activities": [
@@ -120,6 +198,14 @@
     "requires_feedback": false,
     "content": {
       "markdown": "Bienvenida/o al curso de iniciación a la programación. El objetivo de este curso es **aprender los aspectos fundamentales de la programación** que son comunes a todos los lenguajes de programación. Por eso, a diferencia de la mayoría de los cursos de programación convencionales, no nos vamos a concentrar en la sintaxis específica de un lenguaje particular sino que estudiaremos las **herramientas fundamentales para programar** en cualquier lenguaje y luego veremos ejemplos concretos de cómo se implementan tales herramientas en algunos lenguajes de programación específicos. En este primer módulo haremos una **breve introducción a los lenguajes de programación** y a algunas formas de caracterizarlos."
+    }
+  },{"reference_id": "introMC",
+    "title": "Antes de comenzar ...",
+    "alts":["conMC"],
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "En este curso, el aprendizaje requerirá de algunos momentos donde vas a reflexionar sobre ciertos aspectos trabajados, sobre cómo encaraste ese trabajo, sobre cómo los aprendiste o sobre ciertas estrategias de aprendizaje generales. Te pedimos máxima colaboración para realizar las actividades que esto conlleva."
     }
   },{"reference_id": "ejercitaciónCodeSlime",
     "title": "Mi primer lenguaje de programación: Code Slime",
@@ -343,6 +429,112 @@
     "content": {
       "markdown": "Como pudimos observar, en PilasBloques varios aspectos del lenguaje se modifican de un desafío a otro. Aunque las _reglas de ejecución_ se mantienen (la ejecución consiste en realizar las acciones correspondientes a cada uno de los bloques dentro del bloque principal, en orden y de a una a la vez, hasta que se acaben o hasta que alguna falle), cambian los elementos que aparecen en el _escenario_, así como los _bloques_ disponibles para construir el _programa_. En el caso de Duba, entre los elementos pertinentes están Duba (el personaje que podemos programar) y el churrasco. En el caso de Lita, contamos con Lita (el personaje que podemos programar), el tomate, la lechuga y el tazón donde se prepara la ensalada. En cuanto a los _bloques_ de _instrucciones_, ambos cuentan con aquellos que mueven al personaje programable una posición hacia alguna de las cuatro direcciones pero cambian las otras acciones que este personaje puede realizar además de moverse. Duba puede comer un churrasco (siempre que esté en la misma posición que un churrasco). Lita puede recoger un ingrediente (siempre que esté en la misma posición que un ingrediente) y puede preparar la ensalada (siempre que esté en la misma posición que el tazón y que haya recogido antes los dos ingredientes)."
     }
+  },{"reference_id": "mcPilasBloques",
+    "title": "Evaluá tu propio aprendizaje",
+    "alts":["conMC"],
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Antes de continuar, evaluá tu propio aprendizaje respondiendo a las siguientes afirmaciones. Marcá en cada caso cuánto estás de acuerdo, usando la escala del 1 al 5, dónde 1 significa \"Totalmente en desacuerdo\" y 5 \"Totalmente de acuerdo\"."
+    }
+  },{"reference_id": "mcPilasBloquesA",
+    "title": "Evaluá tu propio aprendizaje (a)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nConsideré varias alternativas al problema antes de probar.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcPilasBloquesB",
+    "title": "Evaluá tu propio aprendizaje (b)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nPensé una posible solución antes de comenzar a manipular los bloques.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcPilasBloquesC",
+    "title": "Evaluá tu propio aprendizaje (c)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nAntes de ejecutar el programa sabía si iba a funcionar o no.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcPilasBloquesD",
+    "title": "Evaluá tu propio aprendizaje (d)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nConcentré conscientemente mi atención en la información importante.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcPilasBloquesE",
+    "title": "Evaluá tu propio aprendizaje (e)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nMe hice preguntas sobre el desafío antes de empezar a ejecutarlo.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcPilasBloquesF",
+    "title": "Evaluá tu propio aprendizaje (f)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nPensé en varias formas de resolver el desafío y elegí la mejor.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcPilasBloquesG",
+    "title": "Evaluá tu propio aprendizaje (g)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nFui buena/o juzgando cuán bien iba a resolver el desafío.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
   },{"reference_id": "universoDeDiscurso",
     "title": "Concepto: Universo de discurso",
     "activity_type": "lesson",
@@ -363,6 +555,32 @@
     "requires_feedback": false,
     "content": {
       "markdown": "En PilasBloques, el _universo de discurso_ depende de cada desafío. En todos se incluye el _escenario_ en forma de _grilla_ y los elementos que se pueden ubicar sobre él. En los desafíos de Duba, tales _elementos_ incluyen a Duba, al churrasco y a los obstáculos. En los desafíos de Lita, a Lita, a los ingredientes, al tazón y a los obstáculos. En todos los casos hay uno de esos elementos que es distinguido porque es el que se puede programar (Duba en el primer caso y Lita en el segundo)."
+    }
+  },{"reference_id": "mcUniversoDeDiscurso1",
+    "title": "Evaluá tu propio aprendizaje (1)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que calificar del 0 al 10 tu aprendizaje sobre los conceptos que aquí trabajamos (_universo de discurso_, _elementos primitivos_, _elementos de dominio_), ¿qué puntaje te darías?",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
+  },{"reference_id": "mcUniversoDeDiscurso2",
+    "title": "Evaluá tu propio aprendizaje (2)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que identificar esos conceptos en un lenguaje diferente, ¿cuán bien crees que lo harías? Calificate usando una escala del 0 al 10, dónde 0 significa \"No podría hacerlo\" y 10 \"Podría hacerlo muy bien\".",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
     }
   },{"reference_id": "operaciones",
     "title": "Concepto: Operaciones",
@@ -385,6 +603,32 @@
     "content": {
       "markdown": "En PilasBloques, las _operaciones primitivas_ también dependen de cada desafío aunque la gran mayoría incluye mover al personaje programable hacia cada una de las cuatro direcciones, además de algunas _operaciones_ específicas del desafío. En el caso de Duba se trata únicamente de comer un churrasco, mientras que en el caso de Lita, estas incluyen recoger la lechuga, recoger el tomate y preparar la ensalada."
     }
+  },{"reference_id": "mcOperaciones1",
+    "title": "Evaluá tu propio aprendizaje (1)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que calificar del 0 al 10 tu aprendizaje sobre los conceptos que aquí trabajamos (_operaciones primitivas_), ¿qué puntaje te darías?",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
+  },{"reference_id": "mcOperaciones2",
+    "title": "Evaluá tu propio aprendizaje (2)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que identificar esos conceptos en un lenguaje diferente, ¿cuán bien crees que lo harías? Calificate usando una escala del 0 al 10, dónde 0 significa \"No podría hacerlo\" y 10 \"Podría hacerlo muy bien\".",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
   },{"reference_id": "reglasSemanticas",
     "title": "Concepto: Reglas de ejecución",
     "activity_type": "lesson",
@@ -406,12 +650,45 @@
     "content": {
       "markdown": "Las _reglas de ejecución_ generales de PilasBloques son muy similares a las de Code Slime. Cuando inicia la ejecución del _programa_ (tras hacer clic en el botón 'EJECUTAR'), cada una de las _operaciones_ que componen el _programa_ se van a ir ejecutando **en orden** y **de a una por vez** (según la _regla semántica_ específica de cada _operación_). La ejecución finaliza cuando se ejecuta la última _operación_ del _programa_ o cuando la ejecución de alguna de las _operaciones_ falla. Las _reglas de ejecución_ específicas de las _operaciones_ de movimiento (las que mueven al personaje programable hacia alguna de las cuatro direcciones) establecen que, si el personaje se puede mover hacia la dirección correspondiente, lo hace y si no (ya sea porque se está intentando mover contra el borde del escenario o porque se está intentando mover hacia un obstáculo), falla. La _regla de ejecución_ de la _operación_ para comer un churrasco establece que, si Duba está en la misma posición que el churrasco, lo come y si no, falla. Las _reglas de ejecución_ de las _operaciones_ para recoger la lechuga y para recoger el tomate establecen que, si Lita está en la misma posición que el ingrediente correspondiente, lo recoge y si no, falla. La _regla de ejecución_ de la _operación_ para preparar la ensalada establece que, si Lita está en la misma posición que el tazón y ya recogió el tomate y la lechuga, prepara la ensalada y si no, falla."
     }
+  },{"reference_id": "mcReglasSemánticas1",
+    "title": "Evaluá tu propio aprendizaje (1)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que calificar del 0 al 10 tu aprendizaje sobre los conceptos que aquí trabajamos (_reglas de ejecución_), ¿qué puntaje te darías?",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
+  },{"reference_id": "mcReglasSemánticas2",
+    "title": "Evaluá tu propio aprendizaje (2)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que identificar esos conceptos en un lenguaje diferente, ¿cuán bien crees que lo harías? Calificate usando una escala del 0 al 10, dónde 0 significa \"No podría hacerlo\" y 10 \"Podría hacerlo muy bien\".",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
   },{"reference_id": "cierreLenguajes",
     "title": "Cierre",
     "activity_type": "lesson",
     "requires_feedback": false,
     "content": {
-      "markdown": "Hicimos un primer acercamiento a los _lenguajes de programación_ y algunas de las principales características que los distinguen. Ejemplificamos estas características a partir de dos lenguajes (tres si consideramos los desafíos de PilasBloques como lenguajes distintos). La primera característica es su _universo de discurso_ o _dominio_ que consiste en el conjunto de _elementos_ (llamados _elementos primitivos_ o _elementos del dominio_) sobre el cual el lenguaje se puede expresar. En todos los lenguajes vistos, el _universo de discurso_ incluye un _escenario_ en forma de _grilla_ sobre el cual se pueden distintos _elementos_ (como personajes, objetos y obstáculos). En todos los casos uno de esos _elementos_ es un personaje programable (el _slime_, Duba y Lita).\n\nLa segunda característica es su conjunto de _construcciones programáticas_ que consiste en aquellas _operaciones_ que se pueden realizar al construir un _programa_ en el lenguaje (y se asocia a su _sintaxis_). En todos los lenguajes vistos, todas las _construcciones programáticas_ disponibles son _operaciones primitivas_ (_operaciones_ que se realizan sobre los _elementos primitivos_). En todos los casos, entre estas _operaciones_ se incluyen las de mover al personaje programable una posición hacia cada una de las cuatro direcciones. En el caso de Duba se incluye también la _operación_ de comer un churrasco. En el caso de Lita se incluyen también las _operaciones_ para recoger cada uno de los ingredientes y para preparar la ensalada.\n\nLa tercera característica es el conjunto de _reglas de ejecución_ o _reglas semánticas_ que consiste en aquellas reglas que explican cómo se interpreta un _programa_ en el lenguaje (y se asocia a su _semántica_). En todos los lenguajes vistos, las _reglas de ejecución_ establecen una _ejecución secuencial_ de las _operaciones_ que componen el _programa_ (esto es, cada _operación_ se ejecuta **en orden** y **de a una por vez** hasta terminar o hasta fallar).\n\nEn los próximos módulos estudiaremos otras categorías de _construcciones programáticas_ (además de sólo _operaciones primitivas_) y _reglas semánticas_ más complejas (que no consistirán únicamente en una _ejecución secuencial_ de _operaciones_)."
+      "markdown": "Hicimos un primer acercamiento a los _lenguajes de programación_ y algunas de las principales características que los distinguen. Ejemplificamos estas características a partir de dos lenguajes (tres si consideramos los desafíos de PilasBloques como lenguajes distintos). La primera característica es su _universo de discurso_ o _dominio_ que consiste en el conjunto de _elementos_ (llamados _elementos primitivos_ o _elementos del dominio_) sobre el cual el lenguaje se puede expresar. En todos los lenguajes vistos, el _universo de discurso_ incluye un _escenario_ en forma de _grilla_ sobre el cual se pueden encontrar distintos _elementos_ (como personajes, objetos y obstáculos). En todos los casos uno de esos _elementos_ es un personaje programable (el _slime_, Duba y Lita).\n\nLa segunda característica es su conjunto de _construcciones programáticas_ que consiste en aquellas _operaciones_ que se pueden realizar al construir un _programa_ en el lenguaje (y se asocia a su _sintaxis_). En todos los lenguajes vistos, todas las _construcciones programáticas_ disponibles son _operaciones primitivas_ (_operaciones_ que se realizan sobre los _elementos primitivos_). En todos los casos, entre estas _operaciones_ se incluyen las de mover al personaje programable una posición hacia cada una de las cuatro direcciones. En el caso de Duba se incluye también la _operación_ de comer un churrasco. En el caso de Lita se incluyen también las _operaciones_ para recoger cada uno de los ingredientes y para preparar la ensalada.\n\nLa tercera característica es el conjunto de _reglas de ejecución_ o _reglas semánticas_ que consiste en aquellas reglas que explican cómo se interpreta un _programa_ en el lenguaje (y se asocia a su _semántica_). En todos los lenguajes vistos, las _reglas de ejecución_ establecen una _ejecución secuencial_ de las _operaciones_ que componen el _programa_ (esto es, cada _operación_ se ejecuta **en orden** y **de a una por vez** hasta terminar o hasta fallar).\n\nEn los próximos módulos estudiaremos otras categorías de _construcciones programáticas_ (además de sólo _operaciones primitivas_) y _reglas semánticas_ más complejas (que no consistirán únicamente en una _ejecución secuencial_ de _operaciones_)."
+    }
+  },{"reference_id": "mcCierreLenguajes",
+    "title": "¿Qué aprendiste?",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Antes de pasar al siguiente módulo, te pedimos que completes la siguiente encuesta acerca de lo que aprendiste en este módulo del curso.\n\n[https://forms.gle/QVfJixoXC1VmUgJc6](https://forms.gle/QVfJixoXC1VmUgJc6)"
     }
   },{"reference_id": "programas1",
     "title": "Programas (1)",
@@ -596,12 +873,146 @@
         "score": 1
       }]
     }
+  },{"reference_id": "mcGbsJr",
+    "title": "Evaluá tu propio aprendizaje",
+    "alts":["conMC"],
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Antes de continuar, evaluá tu propio aprendizaje respondiendo a las siguientes afirmaciones. Marcá en cada caso cuánto estás de acuerdo, usando la escala del 1 al 5, dónde 1 significa \"Totalmente en desacuerdo\" y 5 \"Totalmente de acuerdo\"."
+    }
+  },{"reference_id": "mcGbsJrA",
+    "title": "Evaluá tu propio aprendizaje (a)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nConsideré varias alternativas al problema antes de probar.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcGbsJrB",
+    "title": "Evaluá tu propio aprendizaje (b)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nPensé una posible solución antes de comenzar a manipular los bloques.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcGbsJrC",
+    "title": "Evaluá tu propio aprendizaje (c)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nAntes de ejecutar el programa sabía si iba a funcionar o no.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcGbsJrD",
+    "title": "Evaluá tu propio aprendizaje (d)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nConcentré conscientemente mi atención en la información importante.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcGbsJrE",
+    "title": "Evaluá tu propio aprendizaje (e)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nMe hice preguntas sobre el desafío antes de empezar a ejecutarlo.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcGbsJrF",
+    "title": "Evaluá tu propio aprendizaje (f)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nPensé en varias formas de resolver el desafío y elegí la mejor.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcGbsJrG",
+    "title": "Evaluá tu propio aprendizaje (g)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nFui buena/o juzgando cuán bien iba a resolver el desafío.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
   },{"reference_id": "gbsJr1",
     "title": "Presentación de Gobstones Jr. (1)",
     "activity_type": "lesson",
     "requires_feedback": false,
     "content": {
       "markdown": "Analicemos este nuevo lenguaje.\n\nEl _universo de discurso_ consiste, igual que en los lenguajes anteriores, en un _escenario_ en forma de _grilla_. En este caso se le llama _tablero_ a la _grilla_. El _tablero_ está dividido en _celdas_ y en cada _celda_ se puede ubicar _bolitas_ de colores. No hay un personaje programable como en Code Slime o PilasBloques pero sí hay un _elemento_ que podemos programar. Aunque no se ve en forma gráfica, existe un _cabezal_ que se puede mover sobre las _celdas_ del _tablero_ y es quien pone y saca _bolitas_ de las _celdas_ (la ubicación del _cabezal_ está resaltada en el tablero con un recuadro verde).\n\nLas _operaciones primitivas_ incluyen tres _comandos_; uno para poner una _bolita_, uno para sacar una _bolita_ y otro para mover el _cabezal_.\n\nEn cuanto a las _reglas de ejecución_ generales, también establecen una _ejecución secuencial_ y la finalización también se da cuando se acaban los _comandos_ en el _bloque principal_ o cuando alguno de los _comandos_ falla. Las _reglas de ejecución_ específicas son las siguientes:\n* Bloque _Poner_: Pone una _bolita_ en la _celda_ en la que se encuentra el _cabezal_.\n* Bloque _Sacar_: Saca una _bolita_ de la _celda_ en la que se encuentra el _cabezal_. Si no hay una _bolita_ para sacar en dicha _celda_, falla.\n* Bloque _Mover_: Mueve el _cabezal_ una _celda_ hacia alguna dirección. Si el _cabezal_ no se puede mover hacia esa dirección (porque está sobre el borde del _tablero_), falla.\n\nComo en los casos anteriores, hay un _bloque principal_ (este con la inscripción 'programa') y un botón para ejecutar el _programa_ (con el ícono de una flecha)."
+    }
+  },{"reference_id": "mcTransferencia1",
+    "title": "Evaluá tu propio aprendizaje (1)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente afirmación?\n\nFue fácil transferir lo que había aprendido en el módulo anterior a este nuevo lenguaje de programación.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcTransferencia2",
+    "title": "Evaluá tu propio aprendizaje (2)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente afirmación?\n\nCreo que podría transferir lo que aprendí en el módulo anterior a otro lenguaje de programación más complejo.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
     }
   },{"reference_id": "noSoloComandos",
     "title": "No todo en la vida son comandos",
@@ -661,6 +1072,32 @@
     "requires_feedback": false,
     "content": {
       "markdown": "Ahora que presentamos las _expresiones_, podemos revisar las _reglas de ejecución_ específicas de Gobstones Jr., distinguiendo entre los _comandos_ y las _expresiones_:\n\n**Comandos**\n* Bloque _Poner_: Pone una _bolita_ en la _celda_ en la que se encuentra el _cabezal_. El color de la _bolita_ a poner depende del bloque de _expresión_ que se le coloque.\n* Bloque _Sacar_: Saca una _bolita_ de la _celda_ en la que se encuentra el _cabezal_. El color de la _bolita_ a sacar depende del bloque de _expresión_ que se le coloque. Si no hay una _bolita_ de ese color en esa _celda_, falla.\n*Bloque _Mover_: Mueve el _cabezal_ una _celda_. La dirección hacia la cual se mueve depende del bloque de _expresión_ que se le coloque. Si el _cabezal_ no se puede mover hacia esa dirección (porque está sobre el borde del _tablero_), falla.\n\n**Expresiones**\n* Bloque de color: Describe un color (el que se seleccione en su selector desplegable).\n* Bloque de dirección: Describe una dirección (la que se seleccione en su selector desplegable)."
+    }
+  },{"reference_id": "mcExpresiones1",
+    "title": "Evaluá tu propio aprendizaje (1)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que calificar del 0 al 10 tu aprendizaje sobre los conceptos que aquí trabajamos (_expresiones_), ¿qué puntaje te darías?",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
+  },{"reference_id": "mcExpresiones2",
+    "title": "Evaluá tu propio aprendizaje (2)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que identificar esos conceptos en un lenguaje diferente, ¿cuán bien crees que lo harías? Calificate usando una escala del 0 al 10, dónde 0 significa \"No podría hacerlo\" y 10 \"Podría hacerlo muy bien\".",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
     }
   },{"reference_id": "programas2",
     "title": "Programas (2)",
@@ -757,6 +1194,112 @@
         "score": 1
       }]
     }
+  },{"reference_id": "mcBlocklyGamesPelícula",
+    "title": "Evaluá tu propio aprendizaje",
+    "alts":["conMC"],
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Antes de continuar, evaluá tu propio aprendizaje respondiendo a las siguientes afirmaciones. Marcá en cada caso cuánto estás de acuerdo, usando la escala del 1 al 5, dónde 1 significa \"Totalmente en desacuerdo\" y 5 \"Totalmente de acuerdo\"."
+    }
+  },{"reference_id": "mcBlocklyGamesPelículaA",
+    "title": "Evaluá tu propio aprendizaje (a)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nConsideré varias alternativas al problema antes de probar.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcBlocklyGamesPelículaB",
+    "title": "Evaluá tu propio aprendizaje (b)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nPensé una posible solución antes de comenzar a manipular los bloques.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcBlocklyGamesPelículaC",
+    "title": "Evaluá tu propio aprendizaje (c)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nAntes de ejecutar el programa sabía si iba a funcionar o no.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcBlocklyGamesPelículaD",
+    "title": "Evaluá tu propio aprendizaje (d)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nConcentré conscientemente mi atención en la información importante.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcBlocklyGamesPelículaE",
+    "title": "Evaluá tu propio aprendizaje (e)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nMe hice preguntas sobre el desafío antes de empezar a ejecutarlo.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcBlocklyGamesPelículaF",
+    "title": "Evaluá tu propio aprendizaje (f)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nPensé en varias formas de resolver el desafío y elegí la mejor.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcBlocklyGamesPelículaG",
+    "title": "Evaluá tu propio aprendizaje (g)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nFui buena/o juzgando cuán bien iba a resolver el desafío.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
   },{"reference_id": "blocklyGamesPelícula",
     "title": "Presentación de Blockly Games: Película",
     "activity_type": "lesson",
@@ -772,11 +1315,50 @@
       "markdown": "Con lo visto hasta ahora podemos hacer una primera clasificación de las _construcciones programáticas_ de un lenguaje. Esta clasificación se basa en lo que llamamos su _categoría sintáctica_ y distingue a las _operaciones_ entre _comandos_ y _expresiones_. También hablamos sobre _operaciones primitivas_, que son aquellas _operaciones_ que se realizan con los _elementos primitivos_ del lenguaje. Estas _operaciones_ pueden ser tanto _comandos_ como _expresiones_ así que diremos que los lenguajes, en general, cuentan tanto con _comandos primitivos_ como con _expresiones primitivas_. En Code Slime, y en los desafíos vistos de PilasBloques sólo hay _comandos_ y todos los _comandos_ son _comandos primitivos_. Todos los _comandos_ de Gobstones Jr. vistos (Mover, Poner y Sacar) y todos los _comandos_ de Blockly Games : Película vistos (los de dibujar y el de establecer el color) son _comandos primitivos_. En cuanto a las _expresiones_, no todas las _expresiones_ vistas son _expresiones primitivas_."
     }
   },{"reference_id": "expresionesPrimitivasVsLiterales",
-    "title": "Expresiones primitivas vs expresiones literales",
+    "title": "Expresiones primitivas vs. expresiones literales",
     "activity_type": "lesson",
     "requires_feedback": false,
     "content": {
       "markdown": "Ya dijimos que las _expresiones_ son **descripciones** de _información_. Esto significa que una _expresión_ **describe** (en el sentido de, hace referencia a) un _dato_ o _valor_. Generalmente, hay muchas formas posibles de **describir** un _valor_. Lo que significa que hay muchas _expresiones_ que **describen** al mismo _valor_. Por ejemplo, el segundo número natural se puede **describir** con la _expresión_ \"dos\", con el símbolo que parece un pato (2), con la suma entre dos _expresiones_ que describan al primer número natural (1+1), etc. En general, hay infinitas maneras de **describir** a un _valor_ (hay infinitas _expresiones_ que **describen** al mismo _valor_). También en general, hay **una** de todas esas _expresiones_ que es la forma más directa o inmediata de hacerlo. En el caso del segundo número natural, solemos usar el símbolo del pato para **describirlo** de manera directa. Las _expresiones_ \"1+1\", \"6-4*1\", \"hora del día\" (cuando son entre las dos y las tres de la tarde), etc. también **describen** al dos pero requieren procesar la _expresión_ (evaluarla, operar con ella) para saber exactamente cuál es el _valor_ que **describen**. El bloque _time (0 -> 100)_ de Blockly Games : Película también es una _expresión_ que (en algún momento de la ejecución del _programa_) **describe** al número dos.\n\nAsí, llamamos _expresiones literales_ a aquellas _expresiones_ que **describen** un _valor_ de la forma más directa posible. Los bloques de color y de dirección de Gobstones Jr. son _expresiones literales_. Los bloques de número y de color de Blockly Games : Película son _expresiones literales_. El resto de las _expresiones_ de Blockly Games : Película (el bloque de tiempo y el de operación aritmética) también **describen** números (como el bloque de número) pero no son _expresiones literales_, ya que no lo hacen de forma directa sino que deben ser _evaluadas_ para determinar qué _valor_ **describen** (en el caso del bloque de tiempo, observar en qué instante de la ejecución nos encontramos y en el caso del bloque de operación aritmética, resolver la operación). Estas _expresiones_ son _expresiones primitivas_ en tanto son _expresiones_ y son _primitivas_ (porque operan con los _elementos primitivos_ del lenguaje) pero no son _literales_ porque no **describen** de manera directa un _valor_."
+    }
+  },{"reference_id": "mcLiterales1",
+    "title": "Evaluá tu propio aprendizaje (1)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que calificar del 0 al 10 tu aprendizaje sobre los conceptos que aquí trabajamos (_expresiones literales_), ¿qué puntaje te darías?",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
+  },{"reference_id": "mcLiterales2",
+    "title": "Evaluá tu propio aprendizaje (2)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que identificar esos conceptos en un lenguaje diferente, ¿cuán bien crees que lo harías? Calificate usando una escala del 0 al 10, dónde 0 significa \"No podría hacerlo\" y 10 \"Podría hacerlo muy bien\".",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
+  },{"reference_id": "mcLiterales3Texto",
+    "title": "Evaluá tu propio aprendizaje (3)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que pasar de este lenguaje de bloques a programar en texto, ¿cuán fácil considerás que sería ese pasaje? Calificate usando una escala del 0 al 10, dónde 0 significa \"Creo que no sería para nada fácil\" y 10 \"Creo que sería extremadamente fácil\".",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
     }
   },{"reference_id": "lenguajesTextuales",
     "title": "Lenguajes textuales",
@@ -929,6 +1511,112 @@
         "score": 0
       }]
     }
+  },{"reference_id": "mcDibuFiguras",
+    "title": "Evaluá tu propio aprendizaje",
+    "alts":["conMC"],
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Antes de continuar, evaluá tu propio aprendizaje respondiendo a las siguientes afirmaciones. Marcá en cada caso cuánto estás de acuerdo, usando la escala del 1 al 5, dónde 1 significa \"Totalmente en desacuerdo\" y 5 \"Totalmente de acuerdo\"."
+    }
+  },{"reference_id": "mcDibuFigurasA",
+    "title": "Evaluá tu propio aprendizaje (a)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nConsideré varias alternativas al problema antes de probar.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcDibuFigurasB",
+    "title": "Evaluá tu propio aprendizaje (b)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nPensé una posible solución antes de comenzar a escribir el código.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcDibuFigurasC",
+    "title": "Evaluá tu propio aprendizaje (c)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nAntes de ejecutar el programa sabía si iba a funcionar o no.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcDibuFigurasD",
+    "title": "Evaluá tu propio aprendizaje (d)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nConcentré conscientemente mi atención en la información importante.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcDibuFigurasE",
+    "title": "Evaluá tu propio aprendizaje (e)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nMe hice preguntas sobre el desafío antes de empezar a ejecutarlo.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcDibuFigurasF",
+    "title": "Evaluá tu propio aprendizaje (f)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nPensé en varias formas de resolver el desafío y elegí la mejor.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcDibuFigurasG",
+    "title": "Evaluá tu propio aprendizaje (g)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nFui buena/o juzgando cuán bien iba a resolver el desafío.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
   },{"reference_id": "dibujandoConFiguras",
     "title": "Dibujando con figuras",
     "activity_type": "lesson",
@@ -937,11 +1625,37 @@
       "markdown": "A pesar de ser un _lenguaje de programación_ textual, podemos hacer el mismo análisis que veníamos haciendo con cada uno de los lenguajes que fuimos descubriendo.\n\nEl _universo de discurso_ es muy similar al de Blockly Games: Película. Hay un _escenario_ que simula una hoja de papel en blanco sobre la cual podemos dibujar y los _elementos_ que podemos agregar sobre el escenario son _figuras_ (círculos, rectángulos y líneas). No hay colores (todo se dibuja con negro) pero sí hay números. Volvemos a tener un _elemento_ programable (un _cursor_) que podemos mover a través del escenario (el punto rojo que simula el lápiz que realiza los dibujos, similar al _cabezal_ de Gobstones Jr.).\n\nLos _comandos primitivos_ también son similares a los de Blockly Games: Película. Tenemos uno para dibujar un rectángulo, uno para dibujar un círculo, uno para dibujar una línea y uno para dibujar un rectángulo (este último no lo teníamos en Blockly Games: Película). Otros _comandos primitivos_ que se agregan son los que mueven al cursor hacia cada una de las cuatro direcciones. No hay _expresiones primitivas_ pero sí hay _expresiones literales_: los números.\n\nLas _reglas de ejecución_ generales son más parecidas a los primeros lenguajes trabajados: _ejecución secuencial_ hasta terminar. Las _operaciones_ no pueden fallar (aunque sí puede fallar el _programa_ si está mal escrito). Las _reglas de ejecución_ específicas son las siguientes:\n\n**Comandos**\n* _círculo_: Dibuja un círculo desde la ubicación del _cursor_. El radio depende de la _expresión_ que lo acompañe.\n* _cuadrado_: Dibuja un cuadrado desde la ubicación del _cursor_. El tamaño depende de la _expresión_ que lo acompañe.\n* _rectángulo_: Dibuja un rectángulo desde la ubicación del _cursor_. El tamaño depende de las _expresiones_ que lo acompañen.\n* _línea_: Dibuja una línea desde la ubicación del _cursor_. También mueve el _cursor_ hasta el extremo final de la línea dibujada. El tamaño (cuánto se desplaza la línea sobre cada eje) depende de las _expresiones_ que lo acompañen.\n* _arriba_: Mueve el _cursor_ hacia arriba. La cantidad que se desplaza depende de la _expresión_ que lo acompañe.\n* _abajo_: Mueve el _cursor_ hacia abajo. La cantidad que se desplaza depende de la _expresión_ que lo acompañe.\n* _izquierda_: Mueve el _cursor_ hacia la izquierda. La cantidad que se desplaza depende de la _expresión_ que lo acompañe.\n* _derecha_: Mueve el _cursor_ hacia la derecha. La cantidad que se desplaza depende de la _expresión_ que lo acompañe.\n\n**Expresiones**\n* numéro: Describe un número.\n\nTampoco hay nada parecido a un _bloque principal_ que permita identificar el comienzo del _programa_. Cada línea del texto que compone el _programa_ se va ejecutando una por una desde la primera línea hasta la última. Las líneas en blanco se ignoran. También hay un botón para ejecutar el _programa_ (con la inscripción 'Ejecutar')."
     }
   },{"reference_id": "textoVsBloques",
-    "title": "Programación textual vs programación por bloques",
+    "title": "Programación textual vs. programación por bloques",
     "activity_type": "lesson",
     "requires_feedback": false,
     "content": {
       "markdown": "Acabamos de descubrir nuestro primer _lenguaje de programación_ basado en texto (en contraposición a los _lenguajes de programación_ basados en bloques con los que veníamos trabajando hasta ahora). En los _lenguajes de programación_ basados en bloques, los programas se construyen con elementos visuales con formas de bloques. En los _lenguajes de programación_ textuales, en cambio, para describir un programa hay que escribirlo en texto."
+    }
+  },{"reference_id": "mcTexto1",
+    "title": "Evaluá tu propio aprendizaje (1)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Pasamos de lenguaje de bloques a texto. Si tuvieras que indicar qué tan fácil fue ese pasaje, ¿qué dirías? Calificate usando una escala del 0 al 10, dónde 0 significa \"Me costó muchísimo\" y 10 \"Me resultó extremadamente fácil\".",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
+  },{"reference_id": "mcTexto2",
+    "title": "Evaluá tu propio aprendizaje (2)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que indicar cuánta diferencia hubo entre lo que creías respecto de la dificultad de este pasaje, y lo que experimentaste haciéndolo, ¿qué dirías? Calificate usando una escala del 0 al 10, dónde 0 significa \"Fue totalmente diferente a lo que esperaba\" y 10 \"Fue exactamente como lo esperaba\".",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
     }
   },{"reference_id": "erroresTextuales",
     "title": "Errores en lenguajes de programación textuales",
@@ -951,7 +1665,7 @@
       "markdown": "Quizás te haya pasado mientras escribías tu programa en el _lenguaje de programación_ textual Dibujando con figuras que algunas de las cosas que escribías no funcionaban pero no porque la ejecución fallaba (como cuando Duba intentaba caminar contra un obstáculo o cuando el cabezal de Gobstones Jr. intentaba sacar una bolita en una celda vacía) sino porque eso que escribiste estaba mal escrito. Algunos de estos errores incluyen olvidar la tilde en ciertas palabras, usar mayúsculas en lugar de minúsculas (o viceversa) y no respetar los espacios entre palbras. En los _lenguajes de programación_ textuales tenemos que tener cuidado de escribir _exactamente_ las palabras que el lenguaje conoce. No es lo mismo escribir \"circulo\" o \"Círculo\" que \"círculo\" ni es lo mismo escribir \"círculo100\" que \"círculo 100\"."
     }
   },{"reference_id": "erroresSintacticosVsSemanticos",
-    "title": "Errores sintácticos vs errores semánticos",
+    "title": "Errores sintácticos vs. errores semánticos",
     "activity_type": "lesson",
     "requires_feedback": false,
     "content": {
@@ -993,6 +1707,84 @@
         "option": "cuando el programa no cumple el objetivo esperado",
         "position": 0,
         "score": 0
+      }]
+    }
+  },{"reference_id": "mcErrores",
+    "title": "Evaluá tu propio aprendizaje",
+    "alts":["conMC"],
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Antes de continuar, evaluá tu propio aprendizaje respondiendo a las siguientes afirmaciones. Marcá en cada caso cuánto estás de acuerdo, usando la escala del 1 al 5, dónde 1 significa \"Totalmente en desacuerdo\" y 5 \"Totalmente de acuerdo\"."
+    }
+  },{"reference_id": "mcErroresA",
+    "title": "Evaluá tu propio aprendizaje (a)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nCometí errores sintácticos.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcErroresB",
+    "title": "Evaluá tu propio aprendizaje (b)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nReflexioné sobre los errores sintácticos y aprendí cómo evitarlos la próxima vez.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcErroresC",
+    "title": "Evaluá tu propio aprendizaje (c)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nCometí errores semánticos.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcErroresD",
+    "title": "Evaluá tu propio aprendizaje (d)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nReflexioné sobre los errores semánticos y aprendí cómo evitarlos la próxima vez.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcErroresE",
+    "title": "Evaluá tu propio aprendizaje (e)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nSiempre aprendo de los errores.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
       }]
     }
   },{"reference_id": "gbsJrYGbsSr",
@@ -1123,6 +1915,13 @@
     "content": {
       "markdown": "En el primer módulo hablamos sobre _lenguajes de programación_ y sobre ciertas características de los mismos: su _universo de discurso_ (los _elementos_ sobre los que el lenguaje puede predicar), sus _operaciones_ (las que se pueden realizar con dichos _elementos_) y sus _reglas de ejecución_ (las reglas que permiten describir cómo va a ser la ejecución de un _programa_ en dicho lenguaje). Hablamos también de la forma de expresar las _operaciones_ del lenguaje por medio de _construcciones programáticas_, que son usadas para construir _programas_. En este segundo módulo empezamos a reconocer y clasificar esas _construcciones programáticas_. Distinguimos primero entre _comandos_ y _expresiones_. Hablamos luego de las _operaciones primitivas_ y de las _expresiones literales_ y cerramos introduciendo las _operaciones paramétricas_. Distinguimos también a los _lenguajes de programación_ basados en bloques (aquellos en los que las _construcciones programáticas_ se expresan por medio de bloques) de los _lenguajes de programación_ textuales (aquellos en los que las _construcciones programáticas_ se expresan por medio de cadenas de texto). En el siguiente módulo veremos cómo expandir el _universo de discurso_ definiendo nuestras propias _operaciones_ que permitan resolver problemas de otros dominios."
     }
+  },{"reference_id": "mcCierreLiteralesYPrimitivas",
+    "title": "¿Qué aprendiste?",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Antes de pasar al siguiente módulo, te pedimos que completes la siguiente encuesta acerca de lo que aprendiste en este módulo del curso.\n\n[https://forms.gle/bDeEmSzaMsNdJ7Ai9](https://forms.gle/bDeEmSzaMsNdJ7Ai9)"
+    }
   },{"reference_id": "programas3",
     "title": "Programas (3)",
     "activity_type": "lesson",
@@ -1173,6 +1972,19 @@
         "option": "Una descripción de una solución a un problema.",
         "score": 0
       }]
+    }
+  },{"reference_id": "mcProgramas",
+    "title": "Evaluá tu propio aprendizaje",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que calificar del 0 al 10 tu aprendizaje hasta el momento, ¿qué puntaje te darías?",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
     }
   },{"reference_id": "introPersonalizadas",
     "title": "Introducción a las operaciones personalizadas",
@@ -1237,12 +2049,144 @@
     "content": {
       "markdown": "Una vez establecida la _representación_, podemos definir las nuevas _operaciones_ a partir de las _operaciones_ ya definidas. Estas nuevas _operaciones_ interactuarán con los _elementos primitivos_ del lenguaje real, simulando el comportamiento que las _operaciones_ simuladas tienen en el _dominio del problema_ al interactuar con sus respectivos _elementos primitivos_.\n\nSiguiendo con el ejemplo de usar Gobstones para representar el _universo de discurso_ de Duba, se había propuesto representar a Lita con una _bolita_ verde, al churrasco con dos _bolitas_ verdes y a los obstáculos con _bolitas_ negras. Para resolver un desafío de Duba se requieren los _comandos_ que mueven a Duba hacia cada una de las cuatro direcciones y el comando para hacer que Duba coma el churrasco. Dado que elegimos _representar_ a Duba con una _bolita_ verde, el _comando_ para mover a Duba una posición hacia una dirección consistirá en sacar una _bolita_ verde de una _celda_ y poner una _bolita_ verde en una _celda_ contigua, siempre asegurando antes que no haya _bolitas_ negras en la _celda_ destino. Por otro lado, el _comando_ para hacer que Duba coma el churrasco consistirá en sacar dos _bolitas_ rojas de una _celda_ (las dos que corresponden al churrasco), siempre que haya en esa _celda_ tres _bolitas_ rojas (asegurando así que el churrasco está en la misma ubicación que Duba)."
     }
+  },{"reference_id": "mcPersonalizadas1",
+    "title": "Evaluá tu propio aprendizaje (1)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que calificar del 0 al 10 tu aprendizaje sobre los conceptos que aquí trabajamos (_abstracción_, _dominio_, _representación_), ¿qué puntaje te darías?",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
+  },{"reference_id": "mcPersonalizadas2",
+    "title": "Evaluá tu propio aprendizaje (2)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que identificar esos conceptos en un lenguaje diferente, ¿cuán bien crees que lo harías? Calificate usando una escala del 0 al 10, dónde 0 significa \"No podría hacerlo\" y 10 \"Podría hacerlo muy bien\".",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
   },{"reference_id": "sinVestimenta3",
     "title": "Quitando la vestimenta (3)",
     "activity_type": "lesson",
     "requires_feedback": false,
     "content": {
       "markdown": "Resolver los desafíos [El alien toca botón](https://gobstones.github.io/gobstones-jr/?github=gpfernandezflorio/curso-fundamentos&path=Proyectos/QuitandoLaVestimenta/El%20alien%20toca%20bot%C3%B3n) y [Armamos 'El alien toca botón'](https://gobstones.github.io/gobstones-jr/?github=gpfernandezflorio/curso-fundamentos&path=Proyectos/QuitandoLaVestimenta/Armamos%20%27El%20alien%20toca%20bot%C3%B3n%27) de Gobstones Jr."
+    }
+  },{"reference_id": "mcSinVestimenta",
+    "title": "Evaluá tu propio aprendizaje",
+    "alts":["conMC"],
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Antes de continuar, evaluá tu propio aprendizaje respondiendo a las siguientes afirmaciones. Marcá en cada caso cuánto estás de acuerdo, usando la escala del 1 al 5, dónde 1 significa \"Totalmente en desacuerdo\" y 5 \"Totalmente de acuerdo\"."
+    }
+  },{"reference_id": "mcSinVestimentaA",
+    "title": "Evaluá tu propio aprendizaje (a)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nConsideré varias alternativas al problema antes de probar.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcSinVestimentaB",
+    "title": "Evaluá tu propio aprendizaje (b)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nPensé una posible solución antes de comenzar a manipular los bloques.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcSinVestimentaC",
+    "title": "Evaluá tu propio aprendizaje (c)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nAntes de ejecutar el programa sabía si iba a funcionar o no.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcSinVestimentaD",
+    "title": "Evaluá tu propio aprendizaje (d)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nConcentré conscientemente mi atención en la información importante.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcSinVestimentaE",
+    "title": "Evaluá tu propio aprendizaje (e)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nMe hice preguntas sobre el desafío antes de empezar a ejecutarlo.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcSinVestimentaF",
+    "title": "Evaluá tu propio aprendizaje (f)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nPensé en varias formas de resolver el desafío y elegí la mejor.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcSinVestimentaG",
+    "title": "Evaluá tu propio aprendizaje (g)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nFui buena/o juzgando cuán bien iba a resolver el desafío.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
     }
   },{"reference_id": "defOperaciones",
     "title": "Definiendo nuevas operaciones",
@@ -1272,6 +2216,112 @@
     "content": {
       "markdown": "Modificar el _programa_ que escribiste en la actividad anterior para que, en lugar de decir \"MATE\", diga \"MAAATE\". Al finalizar, no olvides guardar tu solución."
     }
+  },{"reference_id": "mcMorse",
+    "title": "Evaluá tu propio aprendizaje",
+    "alts":["conMC"],
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Antes de continuar, evaluá tu propio aprendizaje respondiendo a las siguientes afirmaciones. Marcá en cada caso cuánto estás de acuerdo, usando la escala del 1 al 5, dónde 1 significa \"Totalmente en desacuerdo\" y 5 \"Totalmente de acuerdo\"."
+    }
+  },{"reference_id": "mcMorseA",
+    "title": "Evaluá tu propio aprendizaje (a)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nConsideré varias alternativas al problema antes de probar.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcMorseB",
+    "title": "Evaluá tu propio aprendizaje (b)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nPensé una posible solución antes de comenzar a manipular los bloques.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcMorseC",
+    "title": "Evaluá tu propio aprendizaje (c)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nAntes de ejecutar el programa sabía si iba a funcionar o no.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcMorseD",
+    "title": "Evaluá tu propio aprendizaje (d)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nConcentré conscientemente mi atención en la información importante.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcMorseE",
+    "title": "Evaluá tu propio aprendizaje (e)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nMe hice preguntas sobre el desafío antes de empezar a ejecutarlo.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcMorseF",
+    "title": "Evaluá tu propio aprendizaje (f)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nPensé en varias formas de resolver el desafío y elegí la mejor.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcMorseG",
+    "title": "Evaluá tu propio aprendizaje (g)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nFui buena/o juzgando cuán bien iba a resolver el desafío.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
   },{"reference_id": "legibilidad",
     "title": "Mejorando la legibilidad",
     "activity_type": "lesson",
@@ -1293,12 +2343,45 @@
     "content": {
       "markdown": "¿Y qué pasa si en lugar de definir un nuevo _comando_ queremos definir una nueva _expresión_. Esto es posible mediante un mecanismo muy similar. Las _expresiones_ que son incorporadas al lenguaje por quien está construyendo el _programa_ se llaman _funciones_. Al igual que sucedía con los _procedimientos_, cuando alguien define una _función_ tiene que elegir un nombre y definir su comportamiento. La principal diferencia es que, como los _procedimientos_ son _comandos_, su comportamiento se describe a través de un _comando_ (o de una secuencia de _comandos_). Las _funciones_ son _expresiones_ así que su comportamiento se describe a través de una _expresión_.\nEn Gobstones Jr. las _funciones_ también se definen a través de un bloque violeta con la inscripción 'Define que' (aunque el color es ligeramente más oscuro). Este bloque tiene un campo de texto en donde debemos escribir el nombre del _procedimiento_ que estamos definiendo. Sin embargo, a diferencia del bloque usado para definir _procedimientos_, este otro no tiene un agujero de _comando_ sino uno de _expresión_ (la ranura con forma de orejita, similar a la que tienen los comandos primitivos como _Mover_ y _Poner_). En ese agujero debemos ubicar la _expresión_ que queremos describir por medio de la _función_ que estamos definiendo.\nEn Gobstones Sr. para definir una _función_ escribimos la palabra clave `function` seguida del nombre de la _función_ y, entre llaves, la palabra clave `return` seguida de la _expresión_ que queremos describir encerrada entre paréntesis. Nuevamente, los nombres de las _funciones_ no pueden tener espacios, así que, si quisiéramos definir en Gobstones Sr. una _función_ que describa la cantidad de días que tiene un año biciesto podríamos llamarla \"cantidadDeDíasEnAñoBiciesto\". A continuación se muestra cómo quedaría la definición de dicha _función_ en Gobstones Sr.:\n\n```\nfunction cantidadDeDíasEnAñoBiciesto {\n  return (366)\n}"
     }
+  },{"reference_id": "mcProcedimientosYFunciones1",
+    "title": "Evaluá tu propio aprendizaje (1)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que calificar del 0 al 10 tu aprendizaje sobre los conceptos que aquí trabajamos (_procedimientos_, _funciones_), ¿qué puntaje te darías?",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
+  },{"reference_id": "mcProcedimientosYFunciones2",
+    "title": "Evaluá tu propio aprendizaje (2)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que identificar esos conceptos en un lenguaje diferente, ¿cuán bien crees que lo harías? Calificate usando una escala del 0 al 10, dónde 0 significa \"No podría hacerlo\" y 10 \"Podría hacerlo muy bien\".",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
   },{"reference_id": "cierrePersonalizadas",
     "title": "Cierre",
     "activity_type": "lesson",
     "requires_feedback": false,
     "content": {
-      "markdown": "En los primeros dos módulos empezamos a trabajar sobre los _lenguajes de programación_ y sobre las _operaciones primitivas_ de cada uno. En este módulo aprendimos cómo definir nuevas _operaciones_ que no venían ya incluídas en el lenguaje. Esto nos permite expresar soluciones a problemas en _dominios_ distintos al _universo de discurso_ del lenguaje que estamos usandos."
+      "markdown": "En los primeros dos módulos empezamos a trabajar sobre los _lenguajes de programación_ y sobre las _operaciones primitivas_ de cada uno. En este módulo aprendimos cómo definir nuevas _operaciones_ que no venían ya incluídas en el lenguaje. Esto nos permite expresar soluciones a problemas en _dominios_ distintos al _universo de discurso_ del lenguaje que estamos usando."
+    }
+  },{"reference_id": "mcCierrePersonalizadas",
+    "title": "¿Qué aprendiste?",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Antes de finalizar el curso, te pedimos que completes la siguiente encuesta acerca de lo que aprendiste en este módulo del curso.\n\n[https://forms.gle/K7ZjbeAeMWLBKMt5A](https://forms.gle/K7ZjbeAeMWLBKMt5A)"
     }
   }]
 }
