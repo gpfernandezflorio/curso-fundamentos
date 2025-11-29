@@ -1,5 +1,4 @@
 { "course": {
-    "id":74,
     "title": "Iniciación a la programación",
     "description": "Curso básico de introducción a la programación. Cubre los aspectos fundamentales de la programación: comandos, expresiones, representación de información, procedimientos, funciones y parámetros. No se requiere ningún conocimiento previo.",
     "status": "draft",
@@ -333,7 +332,7 @@
     "activity_type": "lesson",
     "requires_feedback": false,
     "content": {
-      "markdown": "El _lenguaje de programación_ PilasBloques es muy similar a Code Slime. Ambos proponen _desafíos_ que consisten en darle _instrucciones_ a un personaje para que cumpla con un determinado _objetivo_. También ambos cuentan con un _escenario_ en forma de _grilla_ sobre la cual se encuentran tanto el personaje programable como otros objetos y obstáculos. El mecanismo para programar al personaje también es similar. En ambos se inicia con un _bloque principal_ (el bloque rojo con la inscripción 'CODE RUN' en Code Slime y el bloque verde con la inscripción 'AL EMPEZAR A EJECUTAR' en PilasBloques) y la construcción del _programa_ consiste en ir ubicando otros _bloques_ (los bloques de _instrucciones_) uno debajo del otro, dentro del principal (o debajo del mismo, en el caso de Code Slime). Las _reglas de ejecución_ son las mismas; las _instrucciones_ se ejecutan **en orden** y **de a una por vez** y la ejecución finaliza cuando se cumple el objetivo, cuando se acaban las instrucciones o cuando se intente ejecutar una instrucción que falla (moverse fuera de la grilla, moverse hacia un obstáculo o, en el caso de PilasBloques intentar comer un churrasco cuando Duba no está sobre un churrasco). Otra diferencia radica en la forma de iniciar la ejecución. Mientras que en Code Slime se inicia haciendo clic en el bloque principal, en PilasBloques existe un botón externo con la inscripción 'EJECUTAR'."
+      "markdown": "El _lenguaje de programación_ PilasBloques es muy similar a Code Slime. Ambos proponen _desafíos_ que consisten en darle _instrucciones_ a un personaje para que cumpla con un determinado _objetivo_. También ambos cuentan con un _escenario_ en forma de _grilla_ sobre la cual se encuentran tanto el personaje programable como otros objetos y obstáculos. El mecanismo para programar al personaje también es similar. En ambos se inicia con un _bloque principal_ (el bloque rojo con la inscripción 'RUN CODE' en Code Slime y el bloque verde con la inscripción 'AL EMPEZAR A EJECUTAR' en PilasBloques) y la construcción del _programa_ consiste en ir ubicando otros _bloques_ (los bloques de _instrucciones_) uno debajo del otro, dentro del principal (o debajo del mismo, en el caso de Code Slime). Las _reglas de ejecución_ son las mismas; las _instrucciones_ se ejecutan **en orden** y **de a una por vez** y la ejecución finaliza cuando se cumple el objetivo, cuando se acaban las instrucciones o cuando se intente ejecutar una instrucción que falla (moverse fuera de la grilla, moverse hacia un obstáculo o, en el caso de PilasBloques intentar comer un churrasco cuando Duba no está sobre un churrasco). Otra diferencia radica en la forma de iniciar la ejecución. Mientras que en Code Slime se inicia haciendo clic en el bloque principal, en PilasBloques existe un botón externo con la inscripción 'EJECUTAR'."
     }
   },{"reference_id": "ejercitaciónPilasBloques2",
     "title": "Más PilasBloques",
@@ -685,6 +684,7 @@
     }
   },{"reference_id": "mcCierreLenguajes",
     "title": "¿Qué aprendiste?",
+    "alts":["conMC"],
     "activity_type": "lesson",
     "requires_feedback": false,
     "content": {
@@ -1917,6 +1917,7 @@
     }
   },{"reference_id": "mcCierreLiteralesYPrimitivas",
     "title": "¿Qué aprendiste?",
+    "alts":["conMC"],
     "activity_type": "lesson",
     "requires_feedback": false,
     "content": {
@@ -2378,6 +2379,7 @@
     }
   },{"reference_id": "mcCierrePersonalizadas",
     "title": "¿Qué aprendiste?",
+    "alts":["conMC"],
     "activity_type": "lesson",
     "requires_feedback": false,
     "content": {

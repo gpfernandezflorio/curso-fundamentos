@@ -78,6 +78,8 @@ def copiaDeDatos(datosOriginales):
     return datosOriginales
   if type(datosOriginales) == type(0):
     return datosOriginales
+  if type(datosOriginales) == type(0.0):
+    return datosOriginales
   print("Tipo de dato desconocido: " + str(datosOriginales))
   print(type(datosOriginales))
   exit(0)

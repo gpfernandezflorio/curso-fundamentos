@@ -1,0 +1,825 @@
+{ "course": {
+    "title": "Introducción a los Lenguajes de programación",
+    "description": "Introducción a los lenguajes de programación a partir de varias plataformas simples que permiten escribir programas muy fácilmente.",
+    "status": "draft",
+    "requires_feedback": true
+  },
+  "modules": [
+    {"reference_id": "modPrimerosProgramas",
+    "title": "Primeros programas",
+    "description": "Análisis de un primer lenguaje de programación a partir de programas simples.",
+    "status": "draft",
+    "requires_feedback": false,
+    "dependencies": [],
+    "activities": [
+      "presentación",
+      "introMC",
+      "ejercitaciónCodeSlime",
+      "ejCodeSlime1",
+      "ejCodeSlime2",
+      "codeSlime1"
+  ]},{"reference_id": "modSeguimosProgramando",
+    "title": "Seguimos programando",
+    "description": "Continuamos con otro lenguaje de programación.",
+    "status": "draft",
+    "requires_feedback": false,
+    "dependencies": ["modPrimerosProgramas"],
+    "activities": [
+      "ejercitaciónPilasBloques1",
+      "ejPilasBloques1",
+      "ejPilasBloques2",
+      "pilasBloquesDuba",
+      "ejercitaciónPilasBloques2",
+      "ejPilasBloques3",
+      "ejPilasBloques4",
+      "pilasBloquesLita",
+      "mcPilasBloques",
+      "mcPilasBloquesA",
+      "mcPilasBloquesB",
+      "mcPilasBloquesC",
+      "mcPilasBloquesD",
+      "mcPilasBloquesE",
+      "mcPilasBloquesF",
+      "mcPilasBloquesG"
+  ]},{"reference_id": "modUniversoDeDiscurso",
+    "title": "Universo de Discurso",
+    "description": "Descubrimos una de las características centrales de los lenguajes de programación: su universo de discurso.",
+    "status": "draft",
+    "requires_feedback": false,
+    "dependencies": ["modSeguimosProgramando"],
+    "activities": [
+      "universoDeDiscurso",
+      "universoDeDiscursoCodeSlime",
+      "universoDeDiscursoPilasBloques",
+      "mcUniversoDeDiscurso1",
+      "mcUniversoDeDiscurso2"
+  ]},{"reference_id": "modOperaciones",
+    "title": "Operaciones Primitivas",
+    "description": "Analizamos otra de las características centrales de los lenguajes de programación: sus operaciones primitivas.",
+    "status": "draft",
+    "requires_feedback": false,
+    "dependencies": ["modUniversoDeDiscurso"],
+    "activities": [
+      "operaciones",
+      "operacionesCodeSlime",
+      "operacionesPilasBloques",
+      "mcOperaciones1",
+      "mcOperaciones2"
+  ]},{"reference_id": "modReglasSemánticas",
+    "title": "Reglas de Ejecución",
+    "description": "Analizamos otra de las características centrales de los lenguajes de programación: sus operaciones primitivas.",
+    "status": "draft",
+    "requires_feedback": false,
+    "dependencies": ["modOperaciones"],
+    "activities": [
+      "reglasSemanticas",
+      "reglasCodeSlime",
+      "reglasPilasBloques",
+      "mcReglasSemánticas1",
+      "mcReglasSemánticas2"
+  ]},{"reference_id": "modCierre",
+    "title": "Cierre",
+    "description": "Cerramos el curso redondeando algunas ideas.",
+    "status": "draft",
+    "requires_feedback": false,
+    "dependencies": ["modReglasSemánticas"],
+    "activities": [
+      "cierreLenguajes",
+      "mcCierreLenguajes",
+      "evaluaciónLenguajes"
+    ]
+  }],
+  "activities": [
+    {"reference_id": "presentación",
+    "title": "Presentación",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Bienvenida/o al curso de Introducción a los Lenguajes de Programación. El objetivo de este curso es **aprender los aspectos fundamentales de los lenguajes de programación**. Por eso, a diferencia de la mayoría de los cursos de programación convencionales, no nos vamos a concentrar en la sintaxis específica de un lenguaje particular sino que estudiaremos las **herramientas fundamentales para programar** en cualquier lenguaje y luego veremos ejemplos concretos de cómo se implementan tales herramientas en algunos lenguajes de programación específicos."
+    }
+  },{"reference_id": "introMC",
+    "title": "Antes de comenzar ...",
+    "alts":["conMC"],
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "En este curso, el aprendizaje requerirá de algunos momentos donde vas a reflexionar sobre ciertos aspectos trabajados, sobre cómo encaraste ese trabajo, sobre cómo los aprendiste o sobre ciertas estrategias de aprendizaje generales. Te pedimos máxima colaboración para realizar las actividades que esto conlleva."
+    }
+  },{"reference_id": "ejercitaciónCodeSlime",
+    "title": "Mi primer lenguaje de programación: Code Slime",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Comencemos con un lenguaje de programación muy sencillo. Ingresá a [https://bit.ly/code-slime](https://bit.ly/code-slime) y resolvé los primeros 3 niveles. Podés acceder tanto desde el celular como desde una computadora.\n\nPara poder programar en esta herramienta, vas a tener que tomar un bloque de la barra de la izquierda, y engancharlo debajo de 'RUN CODE'. Luego, para ejecutar el programa, deberás tocar en 'RUN CODE', de forma de ver si hace lo que querías.\n\n**IMPORTANTE**: no resuelvas más que los primeros 3 niveles. Cuando hayas terminado con el tercer nivel, volvé al curso y continuá con la siguiente lección."
+    }
+  },{"reference_id": "ejCodeSlime1",
+    "title": "Ejercitación de Code Slime (1)",
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuántas instrucciones tiene que ejecutar el _slime_ (como mínimo) para llegar hasta la gema en el escenario del nivel 3 de Code Slime?",
+      "is_multiple_selection": false,
+      "options": [{
+        "option": "2",
+        "score": 0
+      },{
+        "option": "3",
+        "score": 0
+      },{
+        "option": "4",
+        "score": 0
+      },{
+        "option": "5",
+        "score": 0
+      },{
+        "option": "6",
+        "score": 1
+      }]
+    }
+  },{"reference_id": "ejCodeSlime2",
+    "title": "Ejercitación de Code Slime (2)",
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuántas instrucciones tendría que ejecutar el _slime_ (como mínimo) para llegar hasta la gema en el escenario del nivel 3 **si se quitaran de él todos los obstáculos**?",
+      "is_multiple_selection": false,
+      "options": [{
+        "option": "2",
+        "score": 0
+      },{
+        "option": "3",
+        "score": 0
+      },{
+        "option": "4",
+        "score": 1
+      },{
+        "option": "5",
+        "score": 0
+      },{
+        "option": "6",
+        "score": 0
+      }]
+    }
+  },{"reference_id": "codeSlime1",
+    "title": "Presentación de Code Slime",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Aunque se presenta como un simple videojuego, Code Slime **es un lenguaje de programación**. En Code Slime, cada nivel nos muestra un _escenario_ distinto y nos propone el desafío de programar a un _slime_ (algo así como una babosa, creo) para que recoja una gema. El _escenario_ es siempre una _grilla_ de 4 _filas_ y 4 _columnas_ sobre el cual se encuentra el _slime_, la gema y algunos obstáculos. Para crear un _programa_ debemos armar una secuencia vertical de _bloques_, donde cada _bloque_ simboliza una _instrucción_ que el _slime_ ejecutará. Al hacer clic en el botón 'RUN CODE' el _slime_ comenzará a ejecutar el _programa_, realizando las _instrucciones_ **en orden** y **de a una por vez** hasta haberlas ejecutado todas, haber alcanzado la gema o encontrarse con una que no puede ejecutar (ya sea porque se sale de la grilla o se choca con un obstáculo)."
+    }
+  },{"reference_id": "ejercitaciónPilasBloques1",
+    "title": "PilasBloques",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Veamos otro ejemplo de lenguaje de programación. Resolvé el desafío [Dieta a base de churrascos (3)](https://pilasbloques.program.ar/online/#/desafio/203) de PilasBloques. Podés acceder desde el celular, pero te sugerimos hacerlo desde una tablet o computadora. Cuando hayas resuelto el desafío, volvé al curso y continuá con la siguiente lección.\n\nEnlace directo a la actividad: [https://bit.ly/pb-p13](https://bit.ly/pb-p13)."
+    }
+  },{"reference_id": "ejPilasBloques1",
+    "title": "Ejercitación de PilasBloques (1)",
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuántas instrucciones tiene que ejecutar Duba (como mínimo) para comer el churrasco en el escenario del desafío 'Dieta a base de churrascos (3)' de PilasBloques?",
+      "is_multiple_selection": false,
+      "options": [{
+        "option": "2",
+        "score": 0
+      },{
+        "option": "3",
+        "score": 0
+      },{
+        "option": "4",
+        "score": 0
+      },{
+        "option": "5",
+        "score": 1
+      },{
+        "option": "6",
+        "score": 0
+      }]
+    }
+  },{"reference_id": "ejPilasBloques2",
+    "title": "Ejercitación de PilasBloques (2)",
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "**Si Duba comenzara una posición más abajo**, ¿cuántas instrucciones tendría que ejecutar (como mínimo) para comer el churrasco en el escenario del desafío 'Dieta a base de churrascos (3)' de PilasBloques?",
+      "is_multiple_selection": false,
+      "options": [{
+        "option": "2",
+        "score": 0
+      },{
+        "option": "3",
+        "score": 0
+      },{
+        "option": "4",
+        "score": 1
+      },{
+        "option": "5",
+        "score": 0
+      },{
+        "option": "6",
+        "score": 0
+      }]
+    }
+  },{"reference_id": "pilasBloquesDuba",
+    "title": "Presentación de PilasBloques",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "El _lenguaje de programación_ PilasBloques es muy similar a Code Slime. Ambos proponen _desafíos_ que consisten en darle _instrucciones_ a un personaje para que cumpla con un determinado _objetivo_. También ambos cuentan con un _escenario_ en forma de _grilla_ sobre la cual se encuentran tanto el personaje programable como otros objetos y obstáculos. El mecanismo para programar al personaje también es similar. En ambos se inicia con un _bloque principal_ (el bloque rojo con la inscripción 'RUN CODE' en Code Slime y el bloque verde con la inscripción 'AL EMPEZAR A EJECUTAR' en PilasBloques) y la construcción del _programa_ consiste en ir ubicando otros _bloques_ (los bloques de _instrucciones_) uno debajo del otro, dentro del principal (o debajo del mismo, en el caso de Code Slime). Las _reglas de ejecución_ son las mismas; las _instrucciones_ se ejecutan **en orden** y **de a una por vez** y la ejecución finaliza cuando se cumple el objetivo, cuando se acaban las instrucciones o cuando se intente ejecutar una instrucción que falla (moverse fuera de la grilla, moverse hacia un obstáculo o, en el caso de PilasBloques intentar comer un churrasco cuando Duba no está sobre un churrasco). Otra diferencia radica en la forma de iniciar la ejecución. Mientras que en Code Slime se inicia haciendo clic en el bloque principal, en PilasBloques existe un botón externo con la inscripción 'EJECUTAR'."
+    }
+  },{"reference_id": "ejercitaciónPilasBloques2",
+    "title": "Más PilasBloques",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "No todos los desafíos de PilasBloques consisten en hacer que Duba coma un churrasco. Resolvé el desafío [¡Marche una de lechuga y tomate! (2)](https://pilasbloques.program.ar/online/#/desafio/215) de PilasBloques. Podés acceder desde el celular, pero te sugerimos hacerlo desde una tablet o computadora. Cuando hayas resuelto el desafío, volvé al curso y continuá con la siguiente lección.\n\nEnlace directo a la actividad: [https://bit.ly/pb-p32](https://bit.ly/pb-p32)"
+    }
+  },{"reference_id": "ejPilasBloques3",
+    "title": "Ejercitación de PilasBloques (3)",
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuántas instrucciones tiene que ejecutar Lita (como mínimo) para preparar la ensalada en el escenario del desafío '¡Marche una de lechuga y tomate! (2)' de PilasBloques?",
+      "is_multiple_selection": false,
+      "options": [{
+        "option": "1",
+        "score": 0
+      },{
+        "option": "3",
+        "score": 0
+      },{
+        "option": "6",
+        "score": 0
+      },{
+        "option": "7",
+        "score": 0
+      },{
+        "option": "8",
+        "score": 0
+      },{
+        "option": "9",
+        "score": 0
+      },{
+        "option": "10",
+        "score": 0
+      },{
+        "option": "11",
+        "score": 1
+      },{
+        "option": "12",
+        "score": 0
+      },{
+        "option": "13",
+        "score": 0
+      }]
+    }
+  },{"reference_id": "ejPilasBloques4",
+    "title": "Ejercitación de PilasBloques (4)",
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "**Si el tazón estuviera en la misma posición que Lita**, ¿cuántas instrucciones tendría que ejecutar (como mínimo) para preparar la ensalada en el escenario del desafío '¡Marche una de lechuga y tomate! (2)' de PilasBloques?",
+      "is_multiple_selection": false,
+      "options": [{
+        "option": "1",
+        "score": 0
+      },{
+        "option": "2",
+        "score": 0
+      },{
+        "option": "3",
+        "score": 0
+      },{
+        "option": "4",
+        "score": 0
+      },{
+        "option": "5",
+        "score": 0
+      },{
+        "option": "6",
+        "score": 0
+      },{
+        "option": "8",
+        "score": 0
+      },{
+        "option": "9",
+        "score": 0
+      },{
+        "option": "10",
+        "score": 0
+      },{
+        "option": "11",
+        "score": 1
+      }]
+    }
+  },{"reference_id": "pilasBloquesLita",
+    "title": "Otros desafíos de PilasBloques",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Como pudimos observar, en PilasBloques varios aspectos del lenguaje se modifican de un desafío a otro. Aunque las _reglas de ejecución_ se mantienen (la ejecución consiste en realizar las acciones correspondientes a cada uno de los bloques dentro del bloque principal, en orden y de a una a la vez, hasta que se acaben o hasta que alguna falle), cambian los elementos que aparecen en el _escenario_, así como los _bloques_ disponibles para construir el _programa_. En el caso del desafío de Duba, entre los elementos pertinentes están Duba (el personaje que podemos programar) y el churrasco. En el caso del desafío de Lita, contamos con Lita (el personaje que podemos programar), el tomate, la lechuga y el tazón donde se prepara la ensalada. En cuanto a los _bloques_ de _instrucciones_, ambos cuentan con aquellos que mueven al personaje programable una posición hacia alguna de las cuatro direcciones pero cambian las otras acciones que este personaje puede realizar además de moverse. Duba puede comer un churrasco (siempre que esté en la misma posición que un churrasco). Lita puede recoger un ingrediente (siempre que esté en la misma posición que un ingrediente) y puede preparar la ensalada (siempre que esté en la misma posición que el tazón y que haya recogido antes los dos ingredientes)."
+    }
+  },{"reference_id": "mcPilasBloques",
+    "title": "Evaluá tu propio aprendizaje",
+    "alts":["conMC"],
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Antes de continuar, evaluá tu propio aprendizaje respondiendo a las siguientes afirmaciones. Marcá en cada caso cuánto estás de acuerdo, usando la escala del 1 al 5, dónde 1 significa \"Totalmente en desacuerdo\" y 5 \"Totalmente de acuerdo\"."
+    }
+  },{"reference_id": "mcPilasBloquesA",
+    "title": "Evaluá tu propio aprendizaje (a)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nConsideré varias alternativas al problema antes de probar.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcPilasBloquesB",
+    "title": "Evaluá tu propio aprendizaje (b)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nPensé una posible solución antes de comenzar a manipular los bloques.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcPilasBloquesC",
+    "title": "Evaluá tu propio aprendizaje (c)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nAntes de ejecutar el programa sabía si iba a funcionar o no.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcPilasBloquesD",
+    "title": "Evaluá tu propio aprendizaje (d)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nConcentré conscientemente mi atención en la información importante.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcPilasBloquesE",
+    "title": "Evaluá tu propio aprendizaje (e)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nMe hice preguntas sobre el desafío antes de empezar a ejecutarlo.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcPilasBloquesF",
+    "title": "Evaluá tu propio aprendizaje (f)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nPensé en varias formas de resolver el desafío y elegí la mejor.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "mcPilasBloquesG",
+    "title": "Evaluá tu propio aprendizaje (g)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "¿Cuán de acuerdo estás con la siguiente frase?\n\nFui buena/o juzgando cuán bien iba a resolver el desafío.",
+      "is_multiple_selection": false,
+      "options": [{"option": "1 (Totalmente en desacuerdo)","score": 1},{
+        "option": "2","score": 1},{"option": "3","score": 1},{"option": "4","score": 1},{
+        "option": "5 (Totalmente de acuerdo)","score": 1
+      }]
+    }
+  },{"reference_id": "universoDeDiscurso",
+    "title": "Concepto: Universo de discurso",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Una de las principales características que distinguen a un lenguaje de programación es lo que llamamos su _universo de discurso_. Todos los lenguajes (no sólo los de programación) _predican_ sobre un _universo de discurso_ (es decir, hablan sobre o se expresan respecto a este universo). En el caso de los lenguajes hablados por humanos (como el español o el inglés) el _universo de discurso_ es **prácticamente infinito**, ya que estos lenguajes pueden _predicar_ sobre **casi cualquier concepto**. Los lenguajes formales (entre los que se incluyen a los _lenguajes de programación_) suelen tener _universos de discurso_ **mucho más acotados**. Por ejemplo, el _universo de discurso_ de la _aritmética_ permite _predicar_ sobre los números y las relaciones entre ellos pero no sobre aspectos filosóficos o políticos de una sociedad. Para describir el _universo de discurso_ de un lenguaje se deben identificar los _elementos_ que pertenecen a dicho universo. A estos _elementos_ que conforman el _universo de discurso_ de un lenguaje los llamamos _elementos primitivos_. Al _universo de discurso_ también se lo suele llamar _dominio_ y a sus elementos, _elementos del dominio_. Ya dijimos que en la _aritmética_ el _dominio_ está compuesto únicamente por los números. Otros lenguajes formales podrían ser la notación musical (cuyo _dominio_ está compuesto por notas musicales, tiempos, escalas, etc.) y las señales de tránsito (cuyo _dominio_ está compuesto por tipos de transporte, tipos de rutas, reglas, etc.).\n\n**Para reflexionar**: Pensar qué otros lenguajes formales conocen e identificar cuál es su _universo de discurso_."
+    }
+  },{"reference_id": "universoDeDiscursoCodeSlime",
+    "title": "El universo de discurso de Code Slime",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "En Code Slime, el _universo de discurso_ está compuesto por el _escenario_ en forma de _grilla_, el _slime_, la gema y los obstáculos."
+    }
+  },{"reference_id": "universoDeDiscursoPilasBloques",
+    "title": "El universo de discurso de PilasBloques",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "En PilasBloques, el _universo de discurso_ depende de cada desafío. En todos se incluye el _escenario_ en forma de _grilla_ y los elementos que se pueden ubicar sobre él. En los desafíos de Duba, tales _elementos_ incluyen a Duba, al churrasco y a los obstáculos. En los desafíos de Lita, a Lita, a los ingredientes, al tazón y a los obstáculos. En todos los casos hay uno de esos elementos que es distinguido porque es el que se puede programar (Duba en el primer caso y Lita en el segundo)."
+    }
+  },{"reference_id": "mcUniversoDeDiscurso1",
+    "title": "Evaluá tu propio aprendizaje (1)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que calificar del 0 al 10 tu aprendizaje sobre los conceptos que aquí trabajamos (_universo de discurso_, _elementos primitivos_, _elementos de dominio_), ¿qué puntaje te darías?",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
+  },{"reference_id": "mcUniversoDeDiscurso2",
+    "title": "Evaluá tu propio aprendizaje (2)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que identificar esos conceptos en un lenguaje diferente, ¿cuán bien crees que lo harías? Calificate usando una escala del 0 al 10, dónde 0 significa \"No podría hacerlo\" y 10 \"Podría hacerlo muy bien\".",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
+  },{"reference_id": "operaciones",
+    "title": "Concepto: Operaciones",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Otra característica distintiva de los lenguajes de programación es el conjunto de _operaciones_ que se pueden utilizar para construir un _programa_. A estas _operaciones_ se las suele llamar _construcciones programáticas_, justamente porque son las que se utilizan para construir un _programa_. En términos formales, describir las _construcciones programáticas_ es equivalente a definir la _sintaxis_ del lenguaje. Las _construcciones programáticas_ más elementales son las _operaciones primitivas_ que se corresponden a aquellas operaciones que se realizan con los _elementos primitivos_ del lenguaje. Por ejemplo, en la _aritmética_ (cuyos _elementos primitivos_ son los números) las _operaciones primitivas_ son la suma, la multiplicación y el resto de operaciones aritméticas."
+    }
+  },{"reference_id": "operacionesCodeSlime",
+    "title": "Las operaciones primitivas de Code Slime",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "En Code Slime, las _operaciones primitivas_ son únicamente mover al _slime_ una posición hacia cada una de las cuatro direcciones."
+    }
+  },{"reference_id": "operacionesPilasBloques",
+    "title": "Las operaciones primitivas de PilasBloques",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "En PilasBloques, las _operaciones primitivas_ también dependen de cada desafío aunque la gran mayoría incluye mover al personaje programable hacia cada una de las cuatro direcciones, además de algunas _operaciones_ específicas del desafío. En el caso del desafío de Duba se trata únicamente de comer un churrasco, mientras que en el caso de Lita, estas incluyen recoger la lechuga, recoger el tomate y preparar la ensalada."
+    }
+  },{"reference_id": "mcOperaciones1",
+    "title": "Evaluá tu propio aprendizaje (1)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que calificar del 0 al 10 tu aprendizaje sobre los conceptos que aquí trabajamos (_operaciones primitivas_), ¿qué puntaje te darías?",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
+  },{"reference_id": "mcOperaciones2",
+    "title": "Evaluá tu propio aprendizaje (2)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que identificar esos conceptos en un lenguaje diferente, ¿cuán bien crees que lo harías? Calificate usando una escala del 0 al 10, dónde 0 significa \"No podría hacerlo\" y 10 \"Podría hacerlo muy bien\".",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
+  },{"reference_id": "reglasSemanticas",
+    "title": "Concepto: Reglas de ejecución",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "La tercera característica que vamos a resaltar sobre un _lenguaje de programación_ es el conjunto de reglas que explican cómo se produce la ejecución de un _programa_. A estas reglas las llamamos _reglas de ejecución_ o _reglas semánticas_ (ya que definen la _semántica_ de las _operaciones_). Entre las _reglas de ejecución_ se incluyen las _generales_, que explican cómo se interpreta en general un _programa_ y las _específicas_, que explican qué efecto produce cada una de las _operaciones_."
+    }
+  },{"reference_id": "reglasCodeSlime",
+    "title": "Las reglas de ejecución de Code Slime",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Las _reglas de ejecución_ generales de Code Slime establecen que, cuando inicia la ejecución del _programa_ (tras hacer clic en el botón 'RUN CODE'), cada una de las _operaciones_ que componen el _programa_ se van a ir ejecutando **en orden** y **de a una por vez** (según la _regla semántica_ específica de cada _operación_). La ejecución finaliza cuando se ejecuta la última _operación_ del _programa_, cuando el _slime_ se encuentra en la misma posición que la gema (independientemente de si quedan _operaciones_ por _ejecutar_) o cuando la ejecución de alguna de las _operaciones_ falla. Las _reglas de ejecución_ específicas de cada _operación_ establecen que, si el _slime_ se puede mover hacia la dirección correspondiente, lo hace y si no (ya sea porque se está intentando mover contra el borde del escenario o porque se está intentando mover hacia un obstáculo), falla."
+    }
+  },{"reference_id": "reglasPilasBloques",
+    "title": "Las reglas de ejecución de PilasBloques",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Las _reglas de ejecución_ generales de PilasBloques son muy similares a las de Code Slime. Cuando inicia la ejecución del _programa_ (tras hacer clic en el botón 'EJECUTAR'), cada una de las _operaciones_ que componen el _programa_ se van a ir ejecutando **en orden** y **de a una por vez** (según la _regla semántica_ específica de cada _operación_). La ejecución finaliza cuando se ejecuta la última _operación_ del _programa_ o cuando la ejecución de alguna de las _operaciones_ falla. Las _reglas de ejecución_ específicas de las _operaciones_ de movimiento (las que mueven al personaje programable hacia alguna de las cuatro direcciones) establecen que, si el personaje se puede mover hacia la dirección correspondiente, lo hace y si no (ya sea porque se está intentando mover contra el borde del escenario o porque se está intentando mover hacia un obstáculo), falla. La _regla de ejecución_ de la _operación_ para comer un churrasco establece que, si Duba está en la misma posición que el churrasco, lo come y si no, falla. Las _reglas de ejecución_ de las _operaciones_ para recoger la lechuga y para recoger el tomate establecen que, si Lita está en la misma posición que el ingrediente correspondiente, lo recoge y si no, falla. La _regla de ejecución_ de la _operación_ para preparar la ensalada establece que, si Lita está en la misma posición que el tazón y ya recogió el tomate y la lechuga, prepara la ensalada y si no, falla."
+    }
+  },{"reference_id": "mcReglasSemánticas1",
+    "title": "Evaluá tu propio aprendizaje (1)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que calificar del 0 al 10 tu aprendizaje sobre los conceptos que aquí trabajamos (_reglas de ejecución_), ¿qué puntaje te darías?",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
+  },{"reference_id": "mcReglasSemánticas2",
+    "title": "Evaluá tu propio aprendizaje (2)",
+    "alts":["conMC"],
+    "activity_type": "exercise",
+    "requires_feedback": true,
+    "content": {
+      "exercise_type": "multiple_choice",
+      "statement": "Si tuvieras que identificar esos conceptos en un lenguaje diferente, ¿cuán bien crees que lo harías? Calificate usando una escala del 0 al 10, dónde 0 significa \"No podría hacerlo\" y 10 \"Podría hacerlo muy bien\".",
+      "is_multiple_selection": false,
+      "options": [{"option": "0","score": 1},{"option": "1","score": 1},{"option": "2","score": 1},
+      {"option": "3","score": 1},{"option": "4","score": 1},{"option": "5","score": 1},{"option": "6","score": 1},
+      {"option": "7","score": 1},{"option": "8","score": 1},{"option": "9","score": 1},{"option": "10","score": 1}]
+    }
+  },{"reference_id": "cierreLenguajes",
+    "title": "En resumen",
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Hicimos un primer acercamiento a los _lenguajes de programación_ y algunas de las principales características que los distinguen. Ejemplificamos estas características a partir de dos lenguajes (tres si consideramos los desafíos de PilasBloques como lenguajes distintos). La primera característica es su _universo de discurso_ o _dominio_ que consiste en el conjunto de _elementos_ (llamados _elementos primitivos_ o _elementos del dominio_) sobre el cual el lenguaje se puede expresar. En todos los lenguajes vistos, el _universo de discurso_ incluye un _escenario_ en forma de _grilla_ sobre el cual se pueden encontrar distintos _elementos_ (como personajes, objetos y obstáculos). En todos los casos uno de esos _elementos_ es un personaje programable (el _slime_, Duba y Lita).\n\nLa segunda característica es su conjunto de _construcciones programáticas_ que consiste en aquellas _operaciones_ que se pueden realizar al construir un _programa_ en el lenguaje (y se asocia a su _sintaxis_). En todos los lenguajes vistos, todas las _construcciones programáticas_ disponibles son _operaciones primitivas_ (_operaciones_ que se realizan sobre los _elementos primitivos_). En todos los casos, entre estas _operaciones_ se incluyen las de mover al personaje programable una posición hacia cada una de las cuatro direcciones. En el caso del desafío de Duba se incluye, también, la _operación_ de comer un churrasco. En el caso del desafío de Lita, se incluyen también las _operaciones_ para recoger cada uno de los ingredientes y para preparar la ensalada.\n\nLa tercera característica es el conjunto de _reglas de ejecución_ o _reglas semánticas_ que consiste en aquellas reglas que explican cómo se interpreta un _programa_ en el lenguaje (y se asocia a su _semántica_). En todos los lenguajes vistos, las _reglas de ejecución_ establecen una _ejecución secuencial_ de las _operaciones_ que componen el _programa_ (esto es, cada _operación_ se ejecuta **en orden** y **de a una por vez** hasta terminar o hasta fallar).\n\nEn los otros cursos estudiaremos otras categorías de _construcciones programáticas_ (además de sólo _operaciones primitivas_) y _reglas semánticas_ más complejas (que no consistirán únicamente en una _ejecución secuencial_ de _operaciones_)."
+    }
+  },{"reference_id": "mcCierreLenguajes",
+    "title": "¿Qué aprendiste?",
+    "alts":["conMC"],
+    "activity_type": "lesson",
+    "requires_feedback": false,
+    "content": {
+      "markdown": "Antes de terminar, te pedimos que completes la siguiente encuesta acerca de lo que aprendiste en curso.\n\n[https://forms.gle/QVfJixoXC1VmUgJc6](https://forms.gle/QVfJixoXC1VmUgJc6)"
+    }
+  },{"reference_id": "evaluaciónLenguajes",
+    "title": "Evaluación",
+    "activity_type": "evaluation",
+    "requires_feedback": false,
+    "content": {
+      "minimum_grade": 0.6,
+      "exercises": [
+        {"grade": 1,
+          "required_to_approve": false,
+          "exercise_type": "multiple_choice",
+          "statement": "¿Qué pasa en Code Slime si se intenta mover al _slime_ hacia una posición sobre la que se encuentra un obstáculo?",
+          "is_multiple_selection": false,
+          "options": [{
+            "option": "El slime se queda en lugar.",
+            "score": 0
+          },{
+            "option": "El slime atraviesa el obstáculo y continúa la ejecución de la siguiente instrucción.",
+            "score": 0
+          },{
+            "option": "El slime choca contra el obstáculo y continúa la ejecución de la siguiente instrucción.",
+            "score": 0
+          },{
+            "option": "El slime choca contra el obstáculo y finaliza la ejecución.",
+            "score": 0
+          },{
+            "option": "La instrucción se ignora y continúa la ejecución de la siguiente instrucción.",
+            "score": 0
+          },{
+            "option": "La instrucción se ignora y finaliza la ejecución.",
+            "score": 1
+          }]
+        },{"grade": 1,
+          "required_to_approve": false,
+          "exercise_type": "multiple_choice",
+          "statement": "¿Qué pasa en PilasBloques si se intenta mover a Duba hacia una posición sobre la que se encuentra un obstáculo?",
+          "is_multiple_selection": false,
+          "options": [{
+            "option": "Duba se queda en lugar.",
+            "score": 0
+          },{
+            "option": "Duba atraviesa el obstáculo y continúa la ejecución de la siguiente instrucción.",
+            "score": 0
+          },{
+            "option": "Duba choca contra el obstáculo y continúa la ejecución de la siguiente instrucción.",
+            "score": 1
+          },{
+            "option": "Duba choca contra el obstáculo y finaliza la ejecución.",
+            "score": 0
+          },{
+            "option": "La instrucción se ignora y continúa la ejecución de la siguiente instrucción.",
+            "score": 0
+          },{
+            "option": "La instrucción se ignora y finaliza la ejecución.",
+            "score": 0
+          }]
+        },{"grade": 2,
+          "required_to_approve": false,
+          "exercise_type": "multiple_choice",
+          "statement": "¿A qué llamamos universo de discurso?",
+          "is_multiple_selection": false,
+          "options": [{
+            "option": "A todo aquello sobre lo que se puede predicar en un lenguaje particular.",
+            "score": 1
+          },{
+            "option": "A todo lo que existe en el universo.",
+            "score": 0
+          },{
+            "option": "A todo aquello sobre lo que se puede predicar en cualquier lenguaje.",
+            "score": 0
+          }]
+        },{"grade": 2,
+          "required_to_approve": false,
+          "exercise_type":"fill_gap",
+          "statement": "Completar la siguiente oración.",
+          "code": "Cada lenguaje de programación cuenta con un conjunto (generalmente {{1}}) de elementos {{2}} y de {{3}} que definen {{4}}.",
+          "options": [{
+            "option": "acotado",
+            "position": 1,
+            "score": 1
+          },{
+            "option": "del dominio",
+            "position": 2,
+            "score": 1
+          },{
+            "option": "primitivos",
+            "position": 2,
+            "score": 1
+          },{
+            "option": "operaciones entre ellos",
+            "position": 3,
+            "score": 1
+          },{
+            "option": "su universo de discurso",
+            "position": 4,
+            "score": 1
+          },{
+            "option": "infinito",
+            "position": 0,
+            "score": 0
+          },{
+            "option": "básicos",
+            "position": 0,
+            "score": 0
+          },{
+            "option": "finitos",
+            "position": 0,
+            "score": 0
+          },{
+            "option": "numéricos",
+            "position": 0,
+            "score": 0
+          },{
+            "option": "instrucciones",
+            "position": 0,
+            "score": 0
+          },{
+            "option": "acciones",
+            "position": 0,
+            "score": 0
+          },{
+            "option": "estructuras de control",
+            "position": 0,
+            "score": 0
+          },{
+            "option": "cómo escribir código",
+            "position": 0,
+            "score": 0
+          },{
+            "option": "su sintaxis",
+            "position": 0,
+            "score": 0
+          }]
+        },{"grade": 1,
+          "required_to_approve": false,
+          "exercise_type": "multiple_choice",
+          "statement": "¿Cuáles de los siguientes son elementos primitivos de Code Slime? Marcar todas las que correspondan.",
+          "is_multiple_selection": true,
+          "options": [{
+            "option": "El slime.",
+            "score": 1
+          },{
+            "option": "La gema.",
+            "score": 1
+          },{
+            "option": "El escenario.",
+            "score": 1
+          },{
+            "option": "Los obstáculos.",
+            "score": 1
+          },{
+            "option": "El bloque rojo con la inscripción 'RUN CODE'.",
+            "score": 0
+          },{
+            "option": "Los bloques de instrucciones.",
+            "score": 0
+          }]
+        },{"grade": 1,
+          "required_to_approve": false,
+          "exercise_type": "multiple_choice",
+          "statement": "¿Cuáles de las siguientes son operaciones primitivas de Code Slime? Marcar todas las que correspondan.",
+          "is_multiple_selection": true,
+          "options": [{
+            "option": "Hacer que el slime se mueva una posición hacia el norte.",
+            "score": 1
+          },{
+            "option": "Hacer que el slime se mueva una posición hacia donde está la gema.",
+            "score": 0
+          },{
+            "option": "Hacer que el slime mire hacia el norte.",
+            "score": 0
+          },{
+            "option": "Hacer que el slime agarre la gema.",
+            "score": 0
+          },{
+            "option": "Hacer que el slime gire en sentido horario.",
+            "score": 0
+          }]
+        },{"grade": 1,
+          "required_to_approve": false,
+          "exercise_type": "multiple_choice",
+          "statement": "¿Cuáles de los siguientes son elementos primitivos de la actividad de Duba de PilasBloques? Marcar todas las que correspondan.",
+          "is_multiple_selection": true,
+          "options": [{
+            "option": "Duba.",
+            "score": 1
+          },{
+            "option": "El churrasco.",
+            "score": 1
+          },{
+            "option": "El escenario.",
+            "score": 1
+          },{
+            "option": "Los obstáculos.",
+            "score": 1
+          },{
+            "option": "El bloque verde con la inscripción 'AL EMPEZAR A EJECUTAR'.",
+            "score": 0
+          },{
+            "option": "El botón con la inscripción 'EJECUTAR'.",
+            "score": 0
+          },{
+            "option": "Los bloques que hacen que Duba se mueva.",
+            "score": 0
+          },{
+            "option": "El bloque que hace que Duba coma el churrasco.",
+            "score": 0
+          }]
+        },{"grade": 1,
+          "required_to_approve": false,
+          "exercise_type": "multiple_choice",
+          "statement": "¿Cuáles de las siguientes son operaciones primitivas de la actividad de Duba de PilasBloques? Marcar todas las que correspondan.",
+          "is_multiple_selection": true,
+          "options": [{
+            "option": "Hacer que Duba se mueva una posición hacia arriba.",
+            "score": 1
+          },{
+            "option": "Hacer que Duba se mueva una posición hacia donde está el churrasco.",
+            "score": 0
+          },{
+            "option": "Hacer que Duba mire hacia arriba.",
+            "score": 0
+          },{
+            "option": "Hacer que Duba se coma el churrasco.",
+            "score": 1
+          },{
+            "option": "Hacer que Duba gire en sentido horario.",
+            "score": 0
+          }]
+        }
+      ]
+    }
+  }]
+}
+
